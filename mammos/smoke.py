@@ -113,6 +113,5 @@ smesh.SetName(a3_1, '3')
 smesh.SetName(a2_1, '2')
 smesh.SetName(a1_1, '1')
 
-
 if salome.sg.hasDesktop():
   salome.sg.updateObjBrowser()
