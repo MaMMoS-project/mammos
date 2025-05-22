@@ -5,9 +5,9 @@ dependencies:
   - python=3.10
   - pip
   - pip:
-      - git+https://github.com/MaMMoS-project/mammos-units.git
-      - git+https://github.com/MaMMoS-project/mammos-entity.git
-      - git+https://github.com/MaMMoS-project/mammos-dft.git
-      - git+https://github.com/MaMMoS-project/mammos-spindynamics.git
-      - git+https://github.com/MaMMoS-project/mammos-mumag.git
-      
+      - git+https://github.com/MaMMoS-project/mammos-units.git@main
+      - git+https://github.com/MaMMoS-project/mammos-entity.git@main
+      - git+https://github.com/MaMMoS-project/mammos-dft.git@main
+      - git+https://github.com/MaMMoS-project/mammos-spindynamics.git@main
+      - git+https://github.com/MaMMoS-project/mammos-mumag.git@main
+
