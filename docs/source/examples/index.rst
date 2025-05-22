@@ -7,7 +7,8 @@ End-to-end workflows are shown in the following set of tutorials:
    :caption: Workflows
    :maxdepth: 1
 
-   workflows/hysteresis
+   workflows/Nd2Fe14B
+   workflows/Linearisation
 
 Further examples for the individual packages are available in these tutorials:
 
