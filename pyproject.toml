@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+build-backend = "hatchling.build"
+requires = ["hatchling"]
 
 [project]
 name = "mammos"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="Swapneel Amit Pathak"},
   { name="Samuel Holt"},
@@ -14,11 +14,54 @@ authors = [
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 requires-python = ">=3.8"
+dependencies = [
+  "mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git@first_functions",
+  "mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git",
+  "mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git",
+  "mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git",
+  "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git",
+  "mammos-units @ git+https://github.com/mammos-project/mammos-units.git",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
 ]
 
+[project.optional-dependencies]
+docs = [
+  "nbsphinx",
+  "pydata_sphinx_theme",
+  "sphinx",
+  'sphinx_design',
+  "ipykernel",
+]
+
 [project.urls]
 Homepage = "https://mammos-project.github.io"
+Documentation = "https://mammos-project.github.io/mammos"
+Repository = "https://github.com/MaMMoS-project/mammos"
+Issues = "https://github.com/MaMMoS-project/mammos/issues"
+Changelog = "https://mammos-project.github.io/mammos/changelog"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+
+[tool.pixi.pypi-dependencies]
+mammos = { path = ".", editable = true }
+
+
+[tool.pixi.environments]
+docs = { features = ["docs"], solve-group = "default" }
+
+[tool.pixi.feature.docs.tasks]
+docs = "cd docs && make prepare && make html"
+docs-clean = "cd docs && make clean"
+
+[tool.pixi.feature.docs.dependencies]
+pandoc = "*"
+
+[tool.hatch.metadata]
+allow-direct-references = true
