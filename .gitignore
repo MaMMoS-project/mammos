@@ -69,7 +69,10 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+docs/build/
+docs/packages
+docs/source/_autosummary
+docs/source/examples/mammos-*
 
 # PyBuilder
 .pybuilder/
