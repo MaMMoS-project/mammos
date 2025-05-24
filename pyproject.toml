@@ -29,7 +29,7 @@ dependencies = [
   "mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git",
   "mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git",
   "mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git@changes",
-  "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git@table_headers",
+  "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git",
   "mammos-units @ git+https://github.com/mammos-project/mammos-units.git",
 ]
 optional-dependencies.docs = [

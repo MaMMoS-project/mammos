@@ -258,7 +258,7 @@ environments:
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
       - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
       - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#813e32ecb789fc83f1549ba0e6e22d5df0933a7a
-      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git?rev=table_headers#e1ac5e44ed5d747dc27e1544f39f0b1a1db81705
+      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
@@ -557,7 +557,7 @@ environments:
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
       - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
       - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#813e32ecb789fc83f1549ba0e6e22d5df0933a7a
-      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git?rev=table_headers#e1ac5e44ed5d747dc27e1544f39f0b1a1db81705
+      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
@@ -2869,13 +2869,13 @@ packages:
 - pypi: ./
   name: mammos
   version: 0.1.0
-  sha256: cc7111da4f4214e30ad90b02981e3b84664436e34711add6e81d0ec2af56b648
+  sha256: 3bbc46e6e6160484a5f81ab2772534959901674c6d64a1a154126092a5085044
   requires_dist:
   - mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git@check_workings
   - mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git
   - mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git
   - mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git@changes
-  - mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git@table_headers
+  - mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git
   - mammos-units @ git+https://github.com/mammos-project/mammos-units.git
   - ipykernel ; extra == 'docs'
   - nbsphinx ; extra == 'docs'
@@ -2936,19 +2936,16 @@ packages:
   - jax[cuda12] ; extra == 'gpu'
   - pytest ; extra == 'test'
   requires_python: '>=3.11'
-- pypi: git+https://github.com/mammos-project/mammos-spindynamics.git?rev=table_headers#e1ac5e44ed5d747dc27e1544f39f0b1a1db81705
+- pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
   name: mammos-spindynamics
-  version: 0.1.6
+  version: 0.1.8
   requires_dist:
   - mammos-entity>=0.2.1
   - mammos-units
+  - matplotlib>=3.10.1,<4
   - pandas
   - pydantic
-  - matplotlib>=3.10.1,<4
   - rich
-  - ruff==0.8 ; extra == 'format'
-  - pytest==8.3 ; extra == 'test'
-  - jupyter ; extra == 'examples'
   requires_python: '>=3.11'
 - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
   name: mammos-units
