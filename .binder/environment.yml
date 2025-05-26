@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.12
+  - esys-escript
   - pip
   - pip:
       - git+https://github.com/MaMMoS-project/mammos.git@main
