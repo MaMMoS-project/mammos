@@ -237,11 +237,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.23.0-py311h9ecbd09_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
       - pypi: https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e2/ce/1a75384e01dd1bf546898b6062b1b5f7a59b6692ef802e4dd6db64fed264/aiohttp-3.11.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/da/96/ced0a23a2898aa97facc8aa7dc92e207541811de1c34f30cb4338f57dda1/aiohttp-3.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6a/bc7e17a3e87a2985d3e8f4da4cd0f481060eb78fb08596c42be62c90a4d9/aiosignal-1.3.2-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/a1/87254b4f8ec58308ad745574da66fd205ba59da74cdf7e8319d442bb3161/astropy-7.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/07/92/4b295904df8ded23123e88169141e3bbcbd5ce38de87d70b9d8e11d0be31/astropy_iers_data-0.2025.5.19.0.38.36-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/54/90/5c99b2926b5813e9f31e29ff4c7bd044d9ace3db5e65c847b8cdcac96866/astropy_iers_data-0.2025.5.26.0.37.21-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/03/74/489f85a78247609c6b4f13733cbf3ba0d864b11aa565617b645d6fdf2a4a/blessings-1.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/86/7b/97754548e9da3d41d7334e375b2cd712e9406a3f48823a5f0a166f42d63d/cmocean-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c6/c6/9963d588cc3d75d766c819e0377a168ef83cf3316a92769971527a1ad1de/colorcet-3.1.0-py3-none-any.whl
@@ -254,10 +254,10 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/89/99805cd801919b4535e023bfe2de651f5a3ec4f5846a867cbc08006db455/jax-0.6.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6e/6a/94aeafd16d610b09dff8d917b8bdf5f985a6aa2b1a414bc1cfdf5421c09d/jaxlib-0.6.1-cp311-cp311-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/fd/c6/e4a1d9fdd22d40962befd82780a98b20b67ef9cafe87246e4955f44b8f09/jupyter_server_proxy-4.4.0-py3-none-any.whl
-      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#a4f2be46bcdce39b23cefd64a5a559a87e36c888
+      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
       - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
-      - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#813e32ecb789fc83f1549ba0e6e22d5df0933a7a
+      - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#752bfb0aff4a0f281d207b3ecf53328ef4d923ac
       - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
@@ -533,12 +533,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
       - pypi: https://files.pythonhosted.org/packages/8d/3f/95338030883d8c8b91223b4e21744b04d11b161a3ef117295d8241f50ab4/accessible_pygments-0.0.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e2/ce/1a75384e01dd1bf546898b6062b1b5f7a59b6692ef802e4dd6db64fed264/aiohttp-3.11.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/da/96/ced0a23a2898aa97facc8aa7dc92e207541811de1c34f30cb4338f57dda1/aiohttp-3.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/6a/bc7e17a3e87a2985d3e8f4da4cd0f481060eb78fb08596c42be62c90a4d9/aiosignal-1.3.2-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7e/b3/6b4067be973ae96ba0d615946e314c5ae35f9f993eca561b356540bb0c2b/alabaster-1.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/a1/87254b4f8ec58308ad745574da66fd205ba59da74cdf7e8319d442bb3161/astropy-7.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/07/92/4b295904df8ded23123e88169141e3bbcbd5ce38de87d70b9d8e11d0be31/astropy_iers_data-0.2025.5.19.0.38.36-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/54/90/5c99b2926b5813e9f31e29ff4c7bd044d9ace3db5e65c847b8cdcac96866/astropy_iers_data-0.2025.5.26.0.37.21-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/03/74/489f85a78247609c6b4f13733cbf3ba0d864b11aa565617b645d6fdf2a4a/blessings-1.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/86/7b/97754548e9da3d41d7334e375b2cd712e9406a3f48823a5f0a166f42d63d/cmocean-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c6/c6/9963d588cc3d75d766c819e0377a168ef83cf3316a92769971527a1ad1de/colorcet-3.1.0-py3-none-any.whl
@@ -553,10 +553,10 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/89/99805cd801919b4535e023bfe2de651f5a3ec4f5846a867cbc08006db455/jax-0.6.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6e/6a/94aeafd16d610b09dff8d917b8bdf5f985a6aa2b1a414bc1cfdf5421c09d/jaxlib-0.6.1-cp311-cp311-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/fd/c6/e4a1d9fdd22d40962befd82780a98b20b67ef9cafe87246e4955f44b8f09/jupyter_server_proxy-4.4.0-py3-none-any.whl
-      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#a4f2be46bcdce39b23cefd64a5a559a87e36c888
+      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
       - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
-      - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#813e32ecb789fc83f1549ba0e6e22d5df0933a7a
+      - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#752bfb0aff4a0f281d207b3ecf53328ef4d923ac
       - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
@@ -646,12 +646,12 @@ packages:
   version: 2.6.1
   sha256: f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8
   requires_python: '>=3.9'
-- pypi: https://files.pythonhosted.org/packages/e2/ce/1a75384e01dd1bf546898b6062b1b5f7a59b6692ef802e4dd6db64fed264/aiohttp-3.11.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+- pypi: https://files.pythonhosted.org/packages/da/96/ced0a23a2898aa97facc8aa7dc92e207541811de1c34f30cb4338f57dda1/aiohttp-3.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
   name: aiohttp
-  version: 3.11.18
-  sha256: 73b8870fe1c9a201b8c0d12c94fe781b918664766728783241a79e0468427e4f
+  version: 3.12.0
+  sha256: 02b33c67d7db1a4b2df28e5c1e4d8c025db8e4432b3d054db3ea695063cbfc52
   requires_dist:
-  - aiohappyeyeballs>=2.3.0
+  - aiohappyeyeballs>=2.5.0
   - aiosignal>=1.1.2
   - async-timeout>=4.0,<6.0 ; python_full_version < '3.11'
   - attrs>=17.3.0
@@ -659,7 +659,7 @@ packages:
   - multidict>=4.5,<7.0
   - propcache>=0.2.0
   - yarl>=1.17.0,<2.0
-  - aiodns>=3.2.0 ; (sys_platform == 'darwin' and extra == 'speedups') or (sys_platform == 'linux' and extra == 'speedups')
+  - aiodns>=3.3.0 ; extra == 'speedups'
   - brotli ; platform_python_implementation == 'CPython' and extra == 'speedups'
   - brotlicffi ; platform_python_implementation != 'CPython' and extra == 'speedups'
   requires_python: '>=3.9'
@@ -816,10 +816,10 @@ packages:
   - astropy[dev] ; extra == 'dev-all'
   - astropy[test-all] ; extra == 'dev-all'
   requires_python: '>=3.11'
-- pypi: https://files.pythonhosted.org/packages/07/92/4b295904df8ded23123e88169141e3bbcbd5ce38de87d70b9d8e11d0be31/astropy_iers_data-0.2025.5.19.0.38.36-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/54/90/5c99b2926b5813e9f31e29ff4c7bd044d9ace3db5e65c847b8cdcac96866/astropy_iers_data-0.2025.5.26.0.37.21-py3-none-any.whl
   name: astropy-iers-data
-  version: 0.2025.5.19.0.38.36
-  sha256: 561dcda3577dfe8186020c6a3fd305282183f533b158cb4b07887fb9af15cd6c
+  version: 0.2025.5.26.0.37.21
+  sha256: 0a725f7f84f44f6718347518a2a559bc5464aa53fa2f335d47188d1467a9926b
   requires_dist:
   - pytest ; extra == 'test'
   - pytest-remotedata ; extra == 'test'
@@ -860,7 +860,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/attrs?source=compressed-mapping
+  - pkg:pypi/attrs?source=hash-mapping
   size: 57181
   timestamp: 1741918625732
 - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
@@ -2884,7 +2884,7 @@ packages:
   - sphinx-design ; extra == 'docs'
   requires_python: '>=3.11'
   editable: true
-- pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#a4f2be46bcdce39b23cefd64a5a559a87e36c888
+- pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
   name: mammos-analysis
   version: 0.1.0.dev202505221528
   requires_dist:
@@ -2912,9 +2912,9 @@ packages:
   - mammos-units>=0.2.1
   - numpy<3
   requires_python: '>=3.11'
-- pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#813e32ecb789fc83f1549ba0e6e22d5df0933a7a
+- pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#752bfb0aff4a0f281d207b3ecf53328ef4d923ac
   name: mammos-mumag
-  version: 0.5.0.dev202505241100
+  version: 0.5.0.dev202505260945
   requires_dist:
   - jax
   - jinja2>=3.1.6,<4
@@ -3568,7 +3568,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/platformdirs?source=compressed-mapping
+  - pkg:pypi/platformdirs?source=hash-mapping
   size: 23531
   timestamp: 1746710438805
 - pypi: https://files.pythonhosted.org/packages/a8/87/77cc11c7a9ea9fd05503def69e3d18605852cd0d4b0d3b8f15bbeb3ef1d1/pooch-1.8.2-py3-none-any.whl
