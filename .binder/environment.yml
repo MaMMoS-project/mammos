@@ -2,7 +2,7 @@ name: mammos
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python
   - esys-escript
   - pip
   - pip:
