@@ -25,7 +25,7 @@ classifiers = [
 ]
 
 dependencies = [
-  "mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git@check_workings",
+  "mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git",
   "mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git",
   "mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git",
   "mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git@changes",

@@ -73,7 +73,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter-lsp-2.2.5-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_client-8.6.3-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_console-6.6.3-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.7.2-pyh31011fe_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.8.0-pyh31011fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_events-0.12.0-pyh29332c3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_server-2.16.0-pyhe01879c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_server_terminals-0.5.3-pyhd8ed1ab_1.conda
@@ -254,11 +254,11 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/89/99805cd801919b4535e023bfe2de651f5a3ec4f5846a867cbc08006db455/jax-0.6.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6e/6a/94aeafd16d610b09dff8d917b8bdf5f985a6aa2b1a414bc1cfdf5421c09d/jaxlib-0.6.1-cp311-cp311-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/fd/c6/e4a1d9fdd22d40962befd82780a98b20b67ef9cafe87246e4955f44b8f09/jupyter_server_proxy-4.4.0-py3-none-any.whl
-      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
+      - pypi: git+https://github.com/mammos-project/mammos-analysis.git#c9960080993da69a528f2e9ff81574c7306a642c
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
-      - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
+      - pypi: git+https://github.com/mammos-project/mammos-entity.git#1e679a8d01bcbab4446f268515c24c4ab734df45
       - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#752bfb0aff4a0f281d207b3ecf53328ef4d923ac
-      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
+      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#f1b827c4941e1334a029247050c081527412ff75
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
@@ -367,7 +367,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter-lsp-2.2.5-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_client-8.6.3-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_console-6.6.3-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.7.2-pyh31011fe_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.8.0-pyh31011fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_events-0.12.0-pyh29332c3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_server-2.16.0-pyhe01879c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_server_terminals-0.5.3-pyhd8ed1ab_1.conda
@@ -553,11 +553,11 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/89/99805cd801919b4535e023bfe2de651f5a3ec4f5846a867cbc08006db455/jax-0.6.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6e/6a/94aeafd16d610b09dff8d917b8bdf5f985a6aa2b1a414bc1cfdf5421c09d/jaxlib-0.6.1-cp311-cp311-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/fd/c6/e4a1d9fdd22d40962befd82780a98b20b67ef9cafe87246e4955f44b8f09/jupyter_server_proxy-4.4.0-py3-none-any.whl
-      - pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
+      - pypi: git+https://github.com/mammos-project/mammos-analysis.git#c9960080993da69a528f2e9ff81574c7306a642c
       - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
-      - pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
+      - pypi: git+https://github.com/mammos-project/mammos-entity.git#1e679a8d01bcbab4446f268515c24c4ab734df45
       - pypi: git+https://github.com/mammos-project/mammos-mumag.git?rev=changes#752bfb0aff4a0f281d207b3ecf53328ef4d923ac
-      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
+      - pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#f1b827c4941e1334a029247050c081527412ff75
       - pypi: git+https://github.com/mammos-project/mammos-units.git#f0587804c1588cc2d6aaf4735062a1d9acc08bee
       - pypi: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
@@ -1902,9 +1902,9 @@ packages:
   - pkg:pypi/jupyter-console?source=hash-mapping
   size: 26874
   timestamp: 1733818130068
-- conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.7.2-pyh31011fe_1.conda
-  sha256: 732b1e8536bc22a5a174baa79842d79db2f4956d90293dd82dc1b3f6099bcccd
-  md5: 0a2980dada0dd7fd0998f0342308b1b1
+- conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.8.0-pyh31011fe_0.conda
+  sha256: 0a25f5e3b24243f3b8ac5295b9784e5cd4ec435c33702afe349d5dc9bd8d61a0
+  md5: 83a1cebad0a0f877cea1424452b63dd1
   depends:
   - __unix
   - platformdirs >=2.5
@@ -1913,9 +1913,9 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/jupyter-core?source=hash-mapping
-  size: 57671
-  timestamp: 1727163547058
+  - pkg:pypi/jupyter-core?source=compressed-mapping
+  size: 59383
+  timestamp: 1748260841604
 - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_events-0.12.0-pyh29332c3_0.conda
   sha256: 37e6ac3ccf7afcc730c3b93cb91a13b9ae827fd306f35dd28f958a74a14878b5
   md5: f56000b36f09ab7533877e695e4e8cb0
@@ -2869,9 +2869,9 @@ packages:
 - pypi: ./
   name: mammos
   version: 0.1.0
-  sha256: ecb47b210b199b0f3147a724f863ac723c2ea1317a6cc58ce5515e7d33b2bc3f
+  sha256: b41871614f4d31a7e239874abe486464686ff3f04e0d38b662ab10b693cad4e8
   requires_dist:
-  - mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git@check_workings
+  - mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git
   - mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git
   - mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git
   - mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git@changes
@@ -2884,7 +2884,7 @@ packages:
   - sphinx-design ; extra == 'docs'
   requires_python: '>=3.11'
   editable: true
-- pypi: git+https://github.com/mammos-project/mammos-analysis.git?rev=check_workings#596d17438c4273d8d68e818525aacf5c4c6edef3
+- pypi: git+https://github.com/mammos-project/mammos-analysis.git#c9960080993da69a528f2e9ff81574c7306a642c
   name: mammos-analysis
   version: 0.1.0.dev202505221528
   requires_dist:
@@ -2893,6 +2893,7 @@ packages:
   - numpy
   - pydantic
   - scipy
+  - matplotlib
   requires_python: '>=3.11'
 - pypi: git+https://github.com/mammos-project/mammos-dft.git#814cf67a4f462be7fa0ab135c470818e545d19a2
   name: mammos-dft
@@ -2904,9 +2905,9 @@ packages:
   - pydantic
   - rich
   requires_python: '>=3.11'
-- pypi: git+https://github.com/mammos-project/mammos-entity.git#2277ac8c9fe8c14a6cff550d7232e4150101826f
+- pypi: git+https://github.com/mammos-project/mammos-entity.git#1e679a8d01bcbab4446f268515c24c4ab734df45
   name: mammos-entity
-  version: 0.3.1
+  version: 0.4.0
   requires_dist:
   - emmontopy>=0.8,<0.9
   - mammos-units>=0.2.1
@@ -2936,7 +2937,7 @@ packages:
   - jax[cuda12] ; extra == 'gpu'
   - pytest ; extra == 'test'
   requires_python: '>=3.11'
-- pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#ccc4744404ffff8d4a0413e88a0b0a28074c6040
+- pypi: git+https://github.com/mammos-project/mammos-spindynamics.git#f1b827c4941e1334a029247050c081527412ff75
   name: mammos-spindynamics
   version: 0.1.8
   requires_dist:
