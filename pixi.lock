@@ -2869,7 +2869,7 @@ packages:
 - pypi: ./
   name: mammos
   version: 0.1.0
-  sha256: 3bbc46e6e6160484a5f81ab2772534959901674c6d64a1a154126092a5085044
+  sha256: ecb47b210b199b0f3147a724f863ac723c2ea1317a6cc58ce5515e7d33b2bc3f
   requires_dist:
   - mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git@check_workings
   - mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git

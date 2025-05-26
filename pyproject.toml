@@ -63,10 +63,12 @@ jupyter = "*"
 [tool.pixi.environments]
 docs = { features = [ "docs" ], solve-group = "default" }
 
+[tool.pixi.tasks]
+example-hard-magnet = "jupyter lab docs/source/examples/workflows/Nd2Fe14B.ipynb"
+
 [tool.pixi.feature.docs.tasks]
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
 
 [tool.pixi.feature.docs.dependencies]
 pandoc = "*"
-
