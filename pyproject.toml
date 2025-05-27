@@ -4,7 +4,7 @@ requires = [ "hatchling" ]
 
 [project]
 name = "mammos"
-version = "0.1.0"
+version = "0.1.1"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 license = "MIT"
