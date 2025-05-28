@@ -2,7 +2,9 @@
 Changelog
 =========
 
-The format follows `Keep a Changelog <https://keepachangelog.com/>`__.
+The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
+follow `semantic versioning <https://semver.org/>`__, the metapackage version is
+updated according to the largest bump of any of the dependent packages.
 
 Unreleased
 ==========
