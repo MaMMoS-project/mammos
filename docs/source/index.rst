@@ -73,7 +73,9 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
    .. tab-item:: pixi (recommended)
 
-      Use `pixi <https://pixi.sh/latest/>`__ to also install Python and optionally packages from conda-forge.
+      Requirements: ``pixi`` (https://pixi.sh/)
+
+      Install Python and mammos:
 
       .. code:: shell
 
@@ -83,7 +85,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``. (``packaging`` needs to be pinned due to a limitation of
-      pixi/PyPI.)
+      pixi/PyPI.):
 
       .. code:: shell
 
@@ -92,38 +94,63 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
       install it from conda-forge. On Mac or Windows refer to the esys-escript
-      installation instructions.
+      installation instructions:
 
       .. code:: shell
 
          pixi add esys-escript   # linux only
 
-      Finally start a shell where the installed packages are available.
+      Finally start a shell where the installed packages are available:
 
       .. code:: shell
 
          pixi shell
 
    .. tab-item:: pip
-      :sync: pip_install
+
+      Requirements: ``python>=3.11`` and ``pip``
 
       When using ``pip`` we recommend creating a virtual environment to isolate the MaMMoS installation.
 
+      First, create a new virtual environment. Here, we choose the name
+      ``mammos-venv``.
+
       .. code:: shell
 
-         python3 -m venv .env
-         . .env/bin/activate
-         pip install mammos
+         python3 -m venv mammos-venv
+
+      To activate it run
+
+      - on MacOS/Linux
+
+        .. code:: shell
+
+          . mammos-venv/bin/activate
+          pip install mammos
+
+      - on Windows
+
+        .. code:: shell
+
+           mammos-venv/bin/activate.sh
+
+      Finally install ``mammos`` from PyPI:
+
+      .. code:: shell
+
+        pip install mammos
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__, which must be
       installed separately. Please refer to the documentation of esys-escript
       for installation instructions.
 
-   .. tab-item:: conda/mamba
+   .. tab-item:: conda
 
-      Use ``conda`` or ``mamba`` in combination with ``pip`` to get packages from
-      conda-forge and PyPI. We recommend using `miniforge <https://github.com/conda-forge/miniforge>`__.
+      Requirements: ``conda`` (https://github.com/conda-forge/miniforge)
+
+      Use ``conda`` in combination with ``pip`` to get packages from
+      conda-forge and PyPI.
 
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``. (``packaging`` needs to be pinned due to a dependency
