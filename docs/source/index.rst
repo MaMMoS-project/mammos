@@ -147,7 +147,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
    .. tab-item:: conda
 
-      Requirements: ``conda`` (https://github.com/conda-forge/miniforge)
+      Requirements: ``conda`` (https://conda-forge.org/download/)
 
       Use ``conda`` in combination with ``pip`` to get packages from
       conda-forge and PyPI.
