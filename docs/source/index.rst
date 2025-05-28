@@ -71,10 +71,43 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
 .. tab-set::
 
+   .. tab-item:: pixi (recommended)
+
+      Use `pixi <https://pixi.sh/latest/>`__ to also install Python and optionally packages from conda-forge.
+
+      .. code:: shell
+
+         pixi init
+         pixi add python=3.13
+         pixi add mammos --pypi
+
+      To conveniently work with the notebook tutorials we install
+      ``jupyterlab``. (``packaging`` needs to be pinned due to a limitation of
+      pixi/PyPI.)
+
+      .. code:: shell
+
+         pixi add jupyterlab packaging<25
+
+      Some examples also require `esys-escript
+      <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
+      install it from conda-forge. On Mac or Windows refer to the esys-escript
+      installation instructions.
+
+      .. code:: shell
+
+         pixi add esys-escript   # linux only
+
+      Finally start a shell where the installed packages are available.
+
+      .. code:: shell
+
+         pixi shell
+
    .. tab-item:: pip
       :sync: pip_install
 
-      We recommend to create a virtual environment to isolate the MaMMoS installation.
+      When using ``pip`` we recommend creating a virtual environment to isolate the MaMMoS installation.
 
       .. code:: shell
 
@@ -82,22 +115,30 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
          . .env/bin/activate
          pip install mammos
 
-   .. tab-item:: pixi
+      Some examples also require `esys-escript
+      <https://github.com/LutzGross/esys-escript.github.io>`__, which must be
+      installed separately. Please refer to the documentation of esys-escript
+      for installation instructions.
 
-      Use pixi to also install packages Python and optionally packages from conda-forge.
+   .. tab-item:: conda/mamba
+
+      Use ``conda`` or ``mamba`` in combination with ``pip`` to get packages from
+      conda-forge and PyPI. We recommend using `miniforge <https://github.com/conda-forge/miniforge>`__.
+
+      To conveniently work with the notebook tutorials we install
+      ``jupyterlab``. (``packaging`` needs to be pinned due to a dependency
+      issue in ``mammos-entity``.)
+
+      Some examples also require `esys-escript
+      <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
+      install it from conda-forge. On Mac or Windows refer to the esys-escript
+      installation instructions.
 
       .. code:: shell
 
-         pixi init
-         pixi add python=3.13
-         pixi add mammos --pypi
-         pixi shell
-
-..
-  .. tab-item:: conda
-
-      Not yet supported
-
+         conda create -n mammos-environment python=3.13 pip jupyterlab packaging<25 esys-escript
+         conda activate mammos-environment
+         pip install mammos
 
 Acknowledgement
 ---------------

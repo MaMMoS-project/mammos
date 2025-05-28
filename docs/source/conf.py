@@ -25,6 +25,7 @@ author = "Thomas Schrefl, Swapneel Amit Pathak, Andrea Petrocchi, Samuel Holt, M
 
 extensions = [
     "nbsphinx",
+    "sphinx_copybutton",
     "sphinx_design",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
@@ -33,8 +34,6 @@ extensions = [
 ]
 
 templates_path = ["_templates"]
-exclude_patterns = []
-
 autosummary_generate = True
 autosummary_generate_overwrite = True
 autodoc_mock_imports = ["esys-escript", "mammos_mumag.simulation"]

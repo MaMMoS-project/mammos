@@ -32,13 +32,6 @@ dependencies = [
   "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git",
   "mammos-units @ git+https://github.com/mammos-project/mammos-units.git",
 ]
-optional-dependencies.docs = [
-  "ipykernel",
-  "nbsphinx",
-  "pydata-sphinx-theme",
-  "sphinx",
-  "sphinx-design",
-]
 urls.Changelog = "https://mammos-project.github.io/mammos/changelog"
 urls.Documentation = "https://mammos-project.github.io/mammos"
 urls.Homepage = "https://mammos-project.github.io"
@@ -59,16 +52,15 @@ mammos = { path = ".", editable = true }
 packaging = "<25"  # HACK: to make emmontopy happy
 esys-escript = "*"
 jupyter = "*"
-
-[tool.pixi.environments]
-docs = { features = [ "docs" ], solve-group = "default" }
+nbsphinx = "*"
+ipykernel = "*"
+pydata-sphinx-theme = "*"
+sphinx = "*"
+sphinx-design = "*"
+sphinx-copybutton = "*"
+pandoc = "*"
 
 [tool.pixi.tasks]
 example-hard-magnet = "jupyter lab docs/source/examples/workflows/Nd2Fe14B.ipynb"
-
-[tool.pixi.feature.docs.tasks]
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
-
-[tool.pixi.feature.docs.dependencies]
-pandoc = "*"
