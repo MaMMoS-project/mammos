@@ -23,41 +23,41 @@ MaMMoS provides software suite for magnetic multiscale modeling. It consists of 
 .. list-table::
    :header-rows: 1
 
-   * - Package
+   * - Package repository
      - Examples
      - API
      - Interactive examples
-   * - mammos-analysis
+   * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`_autosummary/mammos_analysis`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos-dft
+   * - `mammos-dft <https://github.com/mammos-project/mammos-dft>`__
      - :doc:`examples/mammos-dft/index`
      - :doc:`_autosummary/mammos_dft`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos-entity
+   * - `mammos-entity <https://github.com/mammos-project/mammos-entity>`__
      - :doc:`examples/mammos-entity/index`
      - :doc:`_autosummary/mammos_entity`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos-mumag
+   * - `mammos-mumag <https://github.com/mammos-project/mammos-mumag>`__
      - :doc:`examples/mammos-mumag/index`
      - :doc:`_autosummary/mammos_mumag`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos-spindynamics
+   * - `mammos-spindynamics <https://github.com/mammos-project/mammos-spindynamics>`__
      - :doc:`examples/mammos-spindynamics/index`
      - :doc:`_autosummary/mammos_spindynamics`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos-units
+   * - `mammos-units <https://github.com/mammos-project/mammos-units>`__
      - :doc:`examples/mammos-units/index`
      - :doc:`_autosummary/mammos_units`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
-   * - mammos
+   * - `mammos <https://github.com/mammos-project/mammos>`__
      - Workflows in :doc:`examples/index`
      - –
      - .. image:: https://mybinder.org/badge_logo.svg
