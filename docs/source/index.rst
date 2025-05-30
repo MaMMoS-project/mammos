@@ -23,15 +23,15 @@ MaMMoS provides software suite for magnetic multiscale modeling. It consists of 
 .. list-table::
    :header-rows: 1
 
+   * - Package repository
+     - Examples
+     - API
+     - Interactive examples
    * - `mammos <https://github.com/mammos-project/mammos>`__
      - Workflows in :doc:`examples/index`
      - –
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fdocs%2Fsource%2Fexamples%2Fworkflows
-   * - Package repository
-     - Examples
-     - API
-     - Interactive examples
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`_autosummary/mammos_analysis`
