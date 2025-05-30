@@ -165,7 +165,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       .. code:: shell
 
-         conda create -n mammos-environment python=3.13 pip jupyterlab packaging<25 esys-escript
+         conda create -n mammos-environment python pip jupyterlab "packaging<25" esys-escript
          conda activate mammos-environment
          pip install mammos
 
