@@ -45,7 +45,7 @@ autodoc_default_options = {
     # Autodoc undocumented memebers
     "undoc-members": True,
     # Autodoc private memebers
-    "private-members": True,
+    "private-members": False,
     # Autodoc special members (for the moment only __init__)
     "special-members": "__init__",
 }
