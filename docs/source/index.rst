@@ -75,30 +75,32 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       Requirements: ``pixi`` (https://pixi.sh/)
 
-      Install Python and mammos:
-
-      .. code:: shell
-
-         pixi init
-         pixi add python=3.13
-         pixi add mammos --pypi
+      Install Python and mammos.
 
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``. (``packaging`` needs to be pinned due to a limitation of
       pixi/PyPI.):
-
-      .. code:: shell
-
-         pixi add jupyterlab "packaging<25"
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
       install it from conda-forge. On Mac or Windows refer to the esys-escript
       installation instructions:
 
-      .. code:: shell
+      - Linux:
 
-         pixi add esys-escript   # linux only
+        .. code:: shell
+
+           pixi init
+           pixi add python jupyterlab "packaging<25" esys-escript
+           pixi add mammos --pypi
+
+      - Mac/Windows:
+
+        .. code:: shell
+
+           pixi init
+           pixi add python jupyterlab "packaging<25"
+           pixi add mammos --pypi
 
       Finally start a shell where the installed packages are available:
 
