@@ -89,7 +89,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       .. code:: shell
 
-         pixi add jupyterlab packaging<25
+         pixi add jupyterlab "packaging<25"
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
