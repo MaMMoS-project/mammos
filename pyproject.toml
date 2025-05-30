@@ -59,8 +59,9 @@ sphinx = "*"
 sphinx-design = "*"
 sphinx-copybutton = "*"
 pandoc = "*"
+jupyterlab = "*"
 
 [tool.pixi.tasks]
-example-hard-magnet = "jupyter lab docs/source/examples/workflows/Nd2Fe14B.ipynb"
+examples = "jupyter lab docs/source/examples/workflows"
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
