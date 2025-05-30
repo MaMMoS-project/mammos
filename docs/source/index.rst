@@ -75,7 +75,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       Requirements: ``pixi`` (https://pixi.sh/)
 
-      Install Python and mammos.
+      Pixi will install Python and mammos.
 
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``. (``packaging`` needs to be pinned due to a limitation of

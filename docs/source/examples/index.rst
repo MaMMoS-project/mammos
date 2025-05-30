@@ -14,7 +14,7 @@ Further examples for the individual packages are available in these tutorials:
 
 .. toctree::
    :caption: Packages
-   :maxdepth: 1
+   :maxdepth: 2
 
    mammos-analysis/index
    mammos-dft/index
