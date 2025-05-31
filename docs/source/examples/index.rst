@@ -8,7 +8,7 @@ End-to-end workflows are shown in the following set of tutorials:
    :maxdepth: 1
 
    workflows/Nd2Fe14B
-   workflows/Linearisation
+   workflows/sensor
 
 Further examples for the individual packages are available in these tutorials:
 
