@@ -14,6 +14,7 @@ MaMMoS documentation
    examples/index
    api
    changelog
+   design
 
 About
 -----
