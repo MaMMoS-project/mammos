@@ -60,6 +60,9 @@ sphinx-design = "*"
 sphinx-copybutton = "*"
 pandoc = "*"
 jupyterlab = "*"
+ubermag = "=2024"
+trame = "*"
+bayesian-optimization = "*"
 
 [tool.pixi.tasks]
 examples = "jupyter lab docs/source/examples/workflows"
