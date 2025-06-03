@@ -1,29 +1,28 @@
 [build-system]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
-requires = [ "hatchling" ]
 
 [project]
 name = "mammos"
 version = "0.1.1"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
-license = "MIT"
-license-files = [ "LICENSE" ]
 authors = [
   { name = "Swapneel Amit Pathak" },
   { name = "Samuel Holt" },
   { name = "Martin Lang" },
   { name = "Hans Fangohr" },
 ]
-requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
 classifiers = [
-  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3.13",
+  'Topic :: Scientific/Engineering :: Physics',
 ]
-
+requires-python = ">=3.11"
 dependencies = [
   "mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git",
   "mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git",
@@ -32,45 +31,88 @@ dependencies = [
   "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git",
   "mammos-units @ git+https://github.com/mammos-project/mammos-units.git",
 ]
-urls.Changelog = "https://mammos-project.github.io/mammos/changelog"
-urls.Documentation = "https://mammos-project.github.io/mammos"
-urls.Homepage = "https://mammos-project.github.io"
-urls.Issues = "https://github.com/MaMMoS-project/mammos/issues"
-urls.Repository = "https://github.com/MaMMoS-project/mammos"
 
-[tool.hatch.metadata]
-allow-direct-references = true
+[project.urls]
+Homepage = "https://MaMMoS-project.github.io"
+Documentation = "https://mammos-project.github.io/mammos"
+Repository = "https://github.com/MaMMoS-project/mammos"
+Issues = "https://github.com/MaMMoS-project/mammos/issues"
+Changelog = "https://mammos-project.github.io/mammos/changelog"
 
-[tool.pixi.project]
+[tool.ruff]
+target-version = "py311"
+exclude = [
+  "dev",
+  "docs",
+]
+[tool.ruff.lint]
+select = [
+  "B",   # flake8-bugbear
+  "D",   # pydocstyle
+  "E",   # pycodestyle
+  "F",   # Pyflakes
+  "I",   # isort
+  "SIM", # flake8-simplify
+  "UP",  # pyupgrade
+]
+isort.known-local-folder = [ "src/mammos_units" ]
+pydocstyle.convention = "pep257"
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["B018", "D103"]  # "Found useless expression. Either assign it to a variable or remove it."; false positives when using implicit __repr__ in the notebook. do not enforce docstrings in notebooks
+"tests/*" = ["D100", "D103"]  # do not enforce docstrings in tests
+
+[tool.pixi.workspace]
 channels = [ "conda-forge" ]
-platforms = [ "linux-64" ]
-
-[tool.pixi.pypi-dependencies]
-mammos = { path = ".", editable = true }
+platforms = [ "osx-arm64", "linux-64", "osx-64", "win-64" ]
 
 [tool.pixi.dependencies]
-packaging = "<25"  # HACK: to make emmontopy happy
-esys-escript = "*"
-jupyter = "*"
-nbsphinx = "*"
-ipykernel = "*"
-pydata-sphinx-theme = "*"
-sphinx = "*"
-sphinx-design = "*"
-sphinx-copybutton = "*"
-pandoc = "*"
-jupyterlab = "*"
-ubermag = ">=2024"
+python = "==3.11"
 bayesian-optimization = "*"
-# Pyvista deps
-# jupyter-server-proxy = "*"
+hatch = "*"
+ipython = "*"
+jupyterlab = ">3"
+nbval = "*"
+packaging = "<25"
+pre-commit = "*"
+pytest = "*"
+ruff = "*"
+trame = ">=2.5.2"
 trame-client = ">=2.12.7"
 trame-server = ">=2.11.7"
 trame-vtk = ">=2.5.8"
 trame-vuetify = ">=2.3.1"
-trame = ">=2.5.2"
+
+[tool.pixi.target.linux-64.dependencies]
+esys-escript = ">=5.10,<6"
+ubermag = ">=2024"
+
+[tool.pixi.pypi-dependencies]
+mammos = { path = ".", editable = true }
 
 [tool.pixi.tasks]
-examples = "jupyter lab docs/source/examples/workflows"
+examples = "jupyter-lab examples"
+test-unittest = "pytest -v tests"
+test-docstrings = "pytest -v --doctest-modules src/mammos"
+test-notebooks = "pytest -v --nbval-lax examples"
+test-all = { depends-on = ["test-unittest", "test-docstrings", "test-notebooks"] }
+style = "pre-commit run --all-files"
+
+[tool.pixi.feature.docs.dependencies]
+ipykernel = "*"
+nbsphinx = "*"
+pandoc = "*"
+pydata-sphinx-theme = "*"
+sphinx = "*"
+sphinx-copybutton = "*"
+sphinx-design = "*"
+
+[tool.pixi.feature.docs.pypi-dependencies]
+mammos = { path = ".", editable = true }
+
+[tool.pixi.feature.docs.tasks]
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
+
+[tool.pixi.environments]
+docs = {features = ["docs"], no-default-feature = true}
