@@ -5,10 +5,9 @@ End-to-end workflows are shown in the following set of tutorials:
 
 .. toctree::
    :caption: Workflows
-   :maxdepth: 1
+   :maxdepth: 2
 
-   workflows/Nd2Fe14B
-   workflows/sensor
+   workflows/index
 
 Further examples for the individual packages are available in these tutorials:
 
