@@ -6,8 +6,8 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-0.1.0 - Unreleased
-==================
+0.1.0 -- Unreleased
+===================
 
 Added
 -----
@@ -25,13 +25,13 @@ Added
   - Database lookup functionality for a selection of pre-computed materials.
 ``mammos-entity`` -- v0.x.y
   - Provides entities: quantities with links to the MaMMoS ontology (based on
-    EMMO) by combining ``mammos-units`` and
-    [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy).
+    EMMO) by combining ``mammos-units`` and `EMMOntoPy
+    <https://github.com/emmo-repo/EMMOntoPy>`__.
   - Helper functions to simplify creation of commonly required magnetic entities.
 ``mammos-mumag`` -- v0.x.y
   - Finite-element hysteresis loop calculations.
-  - Requires a separate installation of
-    [esys-escript](https://github.com/LutzGross/esys-escript.github.io/).
+  - Requires a separate installation of `esys-escript
+    <https://github.com/LutzGross/esys-escript.github.io/>`__.
 ``mammos-spindynamics`` -- v0.x.y
   - Database lookup functionality for a selection of pre-computed materials.
 ``mammos-units`` -- v0.x.y
