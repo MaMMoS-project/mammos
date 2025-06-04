@@ -60,6 +60,15 @@ sphinx-design = "*"
 sphinx-copybutton = "*"
 pandoc = "*"
 jupyterlab = "*"
+ubermag = ">=2024"
+bayesian-optimization = "*"
+# Pyvista deps
+# jupyter-server-proxy = "*"
+trame-client = ">=2.12.7"
+trame-server = ">=2.11.7"
+trame-vtk = ">=2.5.8"
+trame-vuetify = ">=2.3.1"
+trame = ">=2.5.2"
 
 [tool.pixi.tasks]
 examples = "jupyter lab docs/source/examples/workflows"
