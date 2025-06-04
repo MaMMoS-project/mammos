@@ -68,9 +68,19 @@ html_theme_options = {
     "external_links": [
         {"name": "MaMMoS project", "url": "https://mammos-project.github.io"},
     ],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/MaMMoS-project",
+            "icon": "fab fa-github-square",
+        },
+    ],
+    "header_links_before_dropdown": 6,
+
 }
 html_sidebars = {
     "changelog": [],
+    "design": [],
 }
 
 
