@@ -7,5 +7,5 @@ End-to-end workflows are shown in the following set of tutorials. Some require a
    :caption: Workflows
    :maxdepth: 1
 
-   workflows/Nd2Fe14B
-   workflows/sensor
+   Nd2Fe14B
+   sensor
