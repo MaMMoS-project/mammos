@@ -24,12 +24,12 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-  "mammos-analysis @ git+https://github.com/mammos-project/mammos-analysis.git",
-  "mammos-dft @ git+https://github.com/mammos-project/mammos-dft.git",
-  "mammos-entity @ git+https://github.com/mammos-project/mammos-entity.git",
-  "mammos-mumag @ git+https://github.com/mammos-project/mammos-mumag.git",
-  "mammos-spindynamics @ git+https://github.com/mammos-project/mammos-spindynamics.git",
-  "mammos-units @ git+https://github.com/mammos-project/mammos-units.git",
+  "mammos-analysis",
+  "mammos-dft",
+  "mammos-entity",
+  "mammos-mumag",
+  "mammos-spindynamics",
+  "mammos-units",
 ]
 
 [project.urls]
