@@ -13,8 +13,8 @@ MaMMoS documentation
    Home <self>
    examples/index
    api
-   changelog
    design
+   changelog
 
 About
 -----
