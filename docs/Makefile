@@ -20,6 +20,11 @@ prepare:
 	done
 	rsync -a examples/ source/examples/workflows
 
+prepare-local:
+	for PKG in mammos-analysis mammos-dft mammos-entity mammos-mumag mammos-spindynamics mammos-units ; do \
+		rsync -a ../../$$PKG/examples/ source/examples/$$PKG;\
+	done
+
 clean:
 	rm -rf build packages source/_autosummary
 
