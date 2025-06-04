@@ -13,3 +13,7 @@ docs/build/
 docs/packages
 docs/source/_autosummary
 docs/source/examples/mammos-*
+docs/source/examples/workflows
+
+examples/hystloop
+examples/sensor
