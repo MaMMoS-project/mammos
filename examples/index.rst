@@ -7,5 +7,6 @@ End-to-end workflows are shown in the following set of tutorials. Some require a
    :caption: Workflows
    :maxdepth: 1
 
-   Nd2Fe14B
+   hard-magnet-tutorial
+   hard-magnet-material-exploration
    sensor
