@@ -1,0 +1,17 @@
+name: conda-environment
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - nbval
+  - packaging=24.2
+  - pandas=2.2.3
+  - pytest
+  - trame
+  - trame-client
+  - trame-server
+  - trame-vtk
+  - trame-vuetify

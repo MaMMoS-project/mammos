@@ -20,20 +20,36 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - name: Setup Pixi
-      uses: prefix-dev/setup-pixi@v0.8.8
-    - name: unit tests
-      run: pixi run test-unittest
-    - name: doc tests
-      run: pixi run test-docstrings
-    - name: Test examples
-      run: pixi run test-notebooks
-      if: matrix.os == 'ubuntu-latest'  # optional dependecies OOMMF and esys-escript only available on linux
-    - name: Keep pixi.lock artifact for debugging
-      uses: actions/upload-artifact@v4
+    - name: Set up conda
+      uses: conda-incubator/setup-miniconda@v3
       with:
-        path: pixi.lock
-      if: ${{ matrix.os == 'ubuntu-latest' && !cancelled() }}
+        auto-update-conda: true
+        activate-environment: conda-environment
+        environment-file: .github/environment.yml
+    - name: Install linux dependencies
+      run: conda install -y ubermag esys-escript
+      if: matrix.os == 'ubuntu-latest'  # optional dependecies OOMMF and esys-escript only available on linux
+    - name: Install package
+      run: pip install .
+    - name: unittests
+      run: pytest -v tests
+    - name: Test examples
+      run: pytest -v --nbval-lax examples
+      if: matrix.os == 'ubuntu-latest'  # optional dependecies OOMMF and esys-escript only available on linux
+    # - name: Setup Pixi
+    #   uses: prefix-dev/setup-pixi@v0.8.8
+    # - name: unit tests
+    #   run: pixi run test-unittest
+    # - name: doc tests
+    #   run: pixi run test-docstrings
+    # - name: Test examples
+    #   run: pixi run test-notebooks
+    #   if: matrix.os == 'ubuntu-latest'  # optional dependecies OOMMF and esys-escript only available on linux
+    # - name: Keep pixi.lock artifact for debugging
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     path: pixi.lock
+    #   if: ${{ matrix.os == 'ubuntu-latest' && !cancelled() }}
 
   build:
     needs: test
