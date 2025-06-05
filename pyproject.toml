@@ -74,6 +74,7 @@ ipython = "*"
 jupyterlab = ">3"
 nbval = "*"
 packaging = "<25"
+pandas = "<2.3"
 pre-commit = "*"
 pytest = "*"
 ruff = "*"
@@ -107,12 +108,9 @@ sphinx = "*"
 sphinx-copybutton = "*"
 sphinx-design = "*"
 
-[tool.pixi.feature.docs.pypi-dependencies]
-mammos = { path = ".", editable = true }
-
 [tool.pixi.feature.docs.tasks]
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
 
 [tool.pixi.environments]
-docs = {features = ["docs"], no-default-feature = true}
+docs = ["docs"]
