@@ -47,7 +47,7 @@ autodoc_default_options = {
     # Autodoc private memebers
     "private-members": False,
     # Autodoc special members (for the moment only __init__)
-    "special-members": "__init__",
+    # "special-members": "__init__",
 }
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
@@ -63,7 +63,8 @@ exclude_patterns = ["**.ipynb_checkpoints"]
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
-
+html_show_sourcelink = False
+html_sourcelink_suffix = ''
 html_theme_options = {
     "external_links": [
         {"name": "MaMMoS project", "url": "https://mammos-project.github.io"},
