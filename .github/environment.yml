@@ -2,6 +2,7 @@ name: conda-environment
 
 channels:
   - conda-forge
+  - no-defaults
 
 dependencies:
   - python=3.11
