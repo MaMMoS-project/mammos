@@ -64,6 +64,9 @@ MaMMoS provides software suite for magnetic multiscale modeling. It consists of 
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
 
+To conveniently download all example notebooks use the ``mammos-fetch-examples``
+script, which is installed as part of the ``mammos`` package (:ref:`further details <download-all-examples>`).
+
 Installation
 ------------
 
