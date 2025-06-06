@@ -95,7 +95,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
         .. code:: shell
 
            pixi init
-           pixi add python jupyterlab "packaging<25" esys-escript
+           pixi add python jupyterlab "packaging<25" "pandas<2.3" esys-escript
            pixi add mammos --pypi
 
       - Mac/Windows:
@@ -103,7 +103,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
         .. code:: shell
 
            pixi init
-           pixi add python jupyterlab "packaging<25"
+           pixi add python jupyterlab "packaging<25" "pandas<2.3"
            pixi add mammos --pypi
 
       Finally start a shell where the installed packages are available:
@@ -130,7 +130,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
       .. code:: shell
 
-         conda create -n mammos-environment python pip jupyterlab "packaging<25" esys-escript
+         conda create -n mammos-environment python pip jupyterlab "packaging<25" "pandas<2.3" esys-escript
          conda activate mammos-environment
          pip install mammos
 
@@ -147,7 +147,7 @@ The MaMMoS software suite consists of a collection of packages for ... workflows
 
          python3 -m venv mammos-venv
 
-      To activate it run
+      To activate it, run
 
       - on MacOS/Linux
 
