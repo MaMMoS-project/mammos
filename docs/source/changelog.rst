@@ -27,6 +27,7 @@ Fixed
 ``mammos-entity``
   - ``Entity.to`` did not return a new entity in the requested units instead
     used the default entity units.
+  - ``Entity.axis_label``: unit inside parentheses instead of brackets.
 
 0.1.0 -- 2025-06-05
 ===================
