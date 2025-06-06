@@ -101,4 +101,9 @@ jobs:
         uses: EndBug/latest-tag@latest
 
   update-pages:
+    needs:
+      - publish-to-pypi
+    permissions:
+      pages: write
+      id-token: write
     uses: ./.github/workflows/documentation.yml
