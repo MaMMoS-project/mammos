@@ -1,8 +1,3 @@
-.. MaMMoS documentation master file, created by
-   sphinx-quickstart on Wed May 21 08:47:01 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 MaMMoS documentation
 ====================
 
@@ -19,7 +14,11 @@ MaMMoS documentation
 About
 -----
 
-MaMMoS provides software suite for magnetic multiscale modeling. It consists of several software components. The following table provides a short overview and contains links to example and API reference for the individual packages. The binder badges allow running the examples for the individual packages interactively in the cloud.
+MaMMoS provides software suite for magnetic multiscale modeling. It consists of
+several software components. The following table provides a short overview and
+contains links to example and API reference for the individual packages. The
+binder badges allow running the examples for the individual packages
+interactively in the cloud.
 
 .. list-table::
    :header-rows: 1
@@ -65,12 +64,15 @@ MaMMoS provides software suite for magnetic multiscale modeling. It consists of 
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
 
 To conveniently download all example notebooks use the ``mammos-fetch-examples``
-script, which is installed as part of the ``mammos`` package (:ref:`further details <download-all-examples>`).
+script, which is installed as part of the ``mammos`` package (:ref:`further
+details <download-all-examples>`).
 
 Installation
 ------------
 
-The MaMMoS software suite consists of a collection of packages for ... workflows. The metapackage ``mammos`` can be used to install a consistent set of sub-packages.
+The MaMMoS software suite consists of a collection of packages for different
+steps of the simulation workflows. The metapackage ``mammos`` can be used to
+install a consistent set of sub-packages.
 
 
 .. tab-set::
