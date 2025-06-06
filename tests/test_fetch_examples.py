@@ -1,5 +1,6 @@
 import os
 import textwrap
+from pathlib import Path
 
 import pytest
 
@@ -8,18 +9,18 @@ from mammos import _fetch_examples as fetch_examples
 
 def test_fetch_file():
     url = fetch_examples.url_from_template(
-        repo="mammos", repo_version="0.1.0", repo_dir="examples", repo_file="index.rst"
+        repository="mammos", version="0.1.0", directory="examples", file="index.rst"
     )
     index_file = fetch_examples.fetch_file(url)
-    assert index_file.startswith("mammos\n======")
+    assert index_file.startswith(b"mammos\n======")
 
 
 def test_fetch_file_wrong():
     url = fetch_examples.url_from_template(
-        repo="mammos",
-        repo_version="0.1.0",
-        repo_dir="not-examples",
-        repo_file="non-existent",
+        repository="mammos",
+        version="0.1.0",
+        directory="not-examples",
+        file="non-existent",
     )
     with pytest.raises(RuntimeError):
         fetch_examples.fetch_file(url)
@@ -77,9 +78,14 @@ def test_fech_notebooks_for_mammos(tmp_path):
         assert (tmp_path / "mammos" / notebook).exists()
 
 
-def test_main(tmp_path):
+def test_main(tmp_path, capsys):
     os.chdir(tmp_path)
     fetch_examples.main()
 
     assert (tmp_path / "examples" / "mammos").exists()
     assert (tmp_path / "examples" / "mammos-analysis").exists()
+
+    captured = capsys.readouterr()
+    assert captured.err == ""
+    assert captured.out.startswith("Downloading examples...")
+    assert str(Path("examples/mammos-analysis/quickstart.ipynb")) in captured.out

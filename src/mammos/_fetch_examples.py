@@ -7,28 +7,26 @@ from pathlib import Path
 import requests
 
 
-def url_from_template(
-    repo: str, repo_version: str, repo_dir: str, repo_file: str
-) -> str:
+def url_from_template(repository: str, version: str, directory: str, file: str) -> str:
     """Create url to fetch single file."""
     return (
-        f"https://raw.githubusercontent.com/MaMMoS-project/{repo}"
-        f"/refs/tags/{repo_version}/{repo_dir}/{repo_file}"
+        f"https://raw.githubusercontent.com/MaMMoS-project/{repository}"
+        f"/refs/tags/{version}/{directory}/{file}"
     )
 
 
-def fetch_file(url: str) -> str:
-    """Fetch from url and return content as string."""
+def fetch_file(url: str) -> bytes:
+    """Fetch from url and return content as bytes (encoded as utf-8)."""
     response = requests.get(url, timeout=5)
     if response.status_code != 200:
         msg = f"Fetching '{url}' failed:\n{response.text}"
         raise RuntimeError(msg)
-    return response.text
+    return response.content
 
 
 # TODO should we replace this with docutils?
 def parse_index_rst(content: str) -> list[str]:
-    """Parse index.rst file and find content of first TOC.
+    """Parse index.rst file and find content of first TOC (assuming they are notebooks).
 
     Expected file structure::
 
@@ -84,7 +82,7 @@ def parse_index_rst(content: str) -> list[str]:
 
 
 def fetch_notebooks_for_repo(
-    repo: str, repo_version: str, repo_dir: str, base_dir: Path
+    repository: str, version: str, repo_dir: str, base_dir: Path
 ) -> None:
     """Fetch all notebooks for a given repository and write them to output_dir.
 
@@ -94,21 +92,28 @@ def fetch_notebooks_for_repo(
 
     If no notebooks were found nothing is written to disk.
     """
-    index_url = url_from_template(repo, repo_version, repo_dir, "index.rst")
+    index_url = url_from_template(repository, version, repo_dir, "index.rst")
     index_file = fetch_file(index_url)
 
-    notebooks = parse_index_rst(index_file)
+    notebooks = parse_index_rst(index_file.decode("utf-8"))
 
     if not notebooks:
         return
 
-    output_dir = base_dir / repo
+    output_dir = base_dir / repository
     output_dir.mkdir()
 
     for notebook in notebooks:
-        notebook_url = url_from_template(repo, repo_version, repo_dir, notebook)
+        notebook_url = url_from_template(repository, version, repo_dir, notebook)
         notebook_content = fetch_file(notebook_url)
-        (output_dir / notebook).write_text(notebook_content)
+        (output_dir / notebook).write_bytes(notebook_content)
+
+
+def show_files(base_dir: Path) -> None:
+    """Print a list of all notebooks in the base_dir subtree."""
+    print("The following examples have been downloaded:")
+    for notebook in sorted(base_dir.rglob("*.ipynb")):
+        print(notebook)
 
 
 def main():
@@ -138,7 +143,8 @@ def main():
     """
     base_dir = Path("examples")
     base_dir.mkdir()
-    for repo in [
+    print("Downloading examples...")
+    for package in [
         "mammos",
         "mammos-analysis",
         "mammos-dft",
@@ -147,5 +153,7 @@ def main():
         "mammos-spindynamics",
         "mammos-units",
     ]:
-        package = importlib.import_module(repo.replace("-", "_"))
-        fetch_notebooks_for_repo(repo, package.__version__, "examples", base_dir)
+        module = importlib.import_module(package.replace("-", "_"))
+        fetch_notebooks_for_repo(package, module.__version__, "examples", base_dir)
+
+    show_files(base_dir)
