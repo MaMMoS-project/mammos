@@ -7,7 +7,7 @@ follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
 
-0.2.0 -- Unreleased
+0.2.0 -- 2025-06-06
 ===================
 
 Added
@@ -19,13 +19,13 @@ Added
 ``mammos-entity``  -- 0.6.0
   - Entity objects have ``ontology_label_with_iri`` attribute.
   - When trying to initialize an entity with a wrong unit the error message does
-    now show the correct unit defined in the ontology.
+    now show the required unit defined in the ontology.
 
 Fixed
 -----
 
 ``mammos-entity``
-  - ``Entity.to`` did not return a new entity in the requested units instead
+  - ``Entity.to`` did not return a new entity in the requested units and instead
     used the default entity units.
   - ``Entity.axis_label``: unit inside parentheses instead of brackets.
 
