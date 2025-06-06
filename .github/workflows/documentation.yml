@@ -2,6 +2,12 @@ name: Publish documentation
 
 on:
   workflow_dispatch:
+    inputs:
+      deploy_pages:
+        description: 'Whether to deploy pages'
+        required: true
+        type: boolean
+        default: false
   push:
     branches:
       - main
@@ -23,7 +29,7 @@ jobs:
 
 
   deploy:
-    if: ${{ github.ref_name == 'latest' }}
+    if: ${{ github.ref_name == 'latest' && inputs.deploy_pages }}
     needs: build
     permissions:
       pages: write
