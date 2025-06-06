@@ -32,6 +32,9 @@ dependencies = [
   "mammos-units==0.3.1",
 ]
 
+[project.scripts]
+mammos-fetch-examples = "mammos._fetch_examples:main"
+
 [project.urls]
 Homepage = "https://MaMMoS-project.github.io"
 Documentation = "https://mammos-project.github.io/mammos"
