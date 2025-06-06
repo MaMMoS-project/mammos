@@ -6,6 +6,28 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+
+0.2.0 -- Unreleased
+===================
+
+Added
+-----
+
+``mammos``
+  - Command-line script ``mammos-fetch-examples`` to download all example
+    notebooks.
+``mammos-entity``  -- 0.6.0
+  - Entity objects have ``ontology_label_with_iri`` attribute.
+  - When trying to initialize an entity with a wrong unit the error message does
+    now show the correct unit defined in the ontology.
+
+Fixed
+-----
+
+``mammos-entity``
+  - ``Entity.to`` did not return a new entity in the requested units instead
+    used the default entity units.
+
 0.1.0 -- 2025-06-05
 ===================
 
