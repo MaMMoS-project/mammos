@@ -1,5 +1,5 @@
-Tutorials
-=========
+Examples
+========
 
 End-to-end workflows are shown in the following set of tutorials:
 
