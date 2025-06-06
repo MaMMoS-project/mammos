@@ -24,11 +24,11 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-  "mammos-analysis==0.1.0",
+  "mammos-analysis==0.1.1",
   "mammos-dft==0.3.0",
-  "mammos-entity==0.5.0",
-  "mammos-mumag==0.6.0",
-  "mammos-spindynamics==0.2.0",
+  "mammos-entity==0.6.0",
+  "mammos-mumag==0.6.1",
+  "mammos-spindynamics==0.2.1",
   "mammos-units==0.3.1",
 ]
 
