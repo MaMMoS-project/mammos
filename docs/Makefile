@@ -27,7 +27,7 @@ prepare-local:
 	rsync -a ../examples/ source/examples/workflows
 
 clean:
-	rm -rf build packages source/_autosummary
+	rm -rf build packages source/_autosummary source/examples/workflows source/examples/mammos*
 
 .PHONY: help prepare clean Makefile
 
