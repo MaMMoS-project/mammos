@@ -6,6 +6,16 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+UNRELEASED
+==========
+
+Added
+-----
+
+``mammos-entity``
+  - new predefined entity `mammos_entity.J`
+  - new predefined entity `mammos_entity.Js`
+
 
 0.2.0 -- 2025-06-06
 ===================
