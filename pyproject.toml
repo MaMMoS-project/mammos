@@ -114,6 +114,7 @@ sphinx-design = "*"
 [tool.pixi.feature.docs.tasks]
 docs = "cd docs && make prepare && make html"
 docs-clean = "cd docs && make clean"
+docs-linkcheck = "cd docs && make prepare && make linkcheck"
 
 [tool.pixi.environments]
 docs = ["docs"]
