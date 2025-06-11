@@ -1,12 +1,12 @@
-diagram.png: diagram.puml
-	plantuml -tpng diagram.puml
+overview.png: overview.puml
+	plantuml -tpng overview.puml
 
 
-diagram.pdf: diagram.puml
-	plantuml -teps diagram.puml
-	epstopdf diagram.eps
+overview.pdf: overview.puml
+	plantuml -teps overview.puml
+	epstopdf overview.eps
 
 
 clean:
-	rm -f diagram.pdf diagram.png
+	rm -f overview.pdf overview.png
 
