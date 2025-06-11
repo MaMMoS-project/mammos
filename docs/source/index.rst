@@ -74,6 +74,11 @@ The MaMMoS software suite consists of a collection of packages for different
 steps of the simulation workflows. The metapackage ``mammos`` can be used to
 install a consistent set of sub-packages.
 
+The package ``mammos-mumag`` depends on ``jax``. To get jax with GPU support you
+will need to manually install ``jax`` with the required optional dependencies
+matching your GPU hardware/software, e.g. for an NVIDIA GPU you may need to
+install ``jax[cuda12]``. For details please refer to the `jax installation
+instructions <https://docs.jax.dev/en/latest/installation.html>`__.
 
 .. tab-set::
 
