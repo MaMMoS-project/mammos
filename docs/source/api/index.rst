@@ -2,7 +2,7 @@ API Reference
 =============
 
 .. autosummary::
-   :toctree: _autosummary
+   :toctree: .
    :recursive:
 
    mammos_analysis

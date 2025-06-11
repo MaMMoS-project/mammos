@@ -11,7 +11,7 @@ dist
 
 docs/build/
 docs/packages
-docs/source/_autosummary
+docs/source/api/mammos*
 docs/source/examples/mammos-*
 docs/source/examples/workflows
 

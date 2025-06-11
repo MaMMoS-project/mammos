@@ -7,7 +7,7 @@ MaMMoS documentation
 
    Home <self>
    examples/index
-   api
+   api/index
    design
    changelog
 
@@ -34,32 +34,32 @@ interactively in the cloud.
           :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fdocs%2Fsource%2Fexamples%2Fworkflows
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
-     - :doc:`_autosummary/mammos_analysis`
+     - :doc:`api/mammos_analysis`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-dft <https://github.com/mammos-project/mammos-dft>`__
      - :doc:`examples/mammos-dft/index`
-     - :doc:`_autosummary/mammos_dft`
+     - :doc:`api/mammos_dft`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-entity <https://github.com/mammos-project/mammos-entity>`__
      - :doc:`examples/mammos-entity/index`
-     - :doc:`_autosummary/mammos_entity`
+     - :doc:`api/mammos_entity`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-mumag <https://github.com/mammos-project/mammos-mumag>`__
      - :doc:`examples/mammos-mumag/index`
-     - :doc:`_autosummary/mammos_mumag`
+     - :doc:`api/mammos_mumag`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-spindynamics <https://github.com/mammos-project/mammos-spindynamics>`__
      - :doc:`examples/mammos-spindynamics/index`
-     - :doc:`_autosummary/mammos_spindynamics`
+     - :doc:`api/mammos_spindynamics`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-units <https://github.com/mammos-project/mammos-units>`__
      - :doc:`examples/mammos-units/index`
-     - :doc:`_autosummary/mammos_units`
+     - :doc:`api/mammos_units`
      - .. image:: https://mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
 
