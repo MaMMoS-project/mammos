@@ -11,14 +11,14 @@ MaMMoS documentation
    design
    changelog
 
-About
------
 
-MaMMoS provides software suite for magnetic multiscale modeling. It consists of
-several software components. The following table provides a short overview and
-contains links to example and API reference for the individual packages. The
-binder badges allow running the examples for the individual packages
-interactively in the cloud.
+Framework
+---------
+
+The MaMMoS framework provides software components for magnetic multiscale
+modeling. The following table provides a short overview and contains links to
+example and API reference for the individual components. The binder badges allow
+running the examples for the individual packages interactively in the cloud.
 
 .. list-table::
    :header-rows: 1
@@ -63,16 +63,36 @@ interactively in the cloud.
      - .. image:: https://static.mybinder.org/badge_logo.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
 
-To conveniently download all example notebooks use the ``mammos-fetch-examples``
-script, which is installed as part of the ``mammos`` package (:ref:`further
-details <download-all-examples>`).
+Additional tools
+----------------
 
-Installation
-------------
+The following tools have been created through or supported by the MaMMoS
+project. For each, please follow the link for installation instructions and
+documentation:
 
-The MaMMoS software suite consists of a collection of packages for different
-steps of the simulation workflows. The metapackage ``mammos`` can be used to
-install a consistent set of sub-packages.
+.. list-table::
+   :header-rows: 1
+
+   * - Package repository
+     - Summary
+   * - `mochada_kit <https://mammos-project.github.io/mochada_kit/user/index.html>`__
+     - workflow diagram builder
+   * - `sem_io <https://github.com/MaMMoS-project/sem_io>`__
+     - data exchange with Zeiss SmartSEM and ThermoFischer Scientific xT
+   * - `DaHU <https://github.com/MaMMoS-project/DaHU>`__
+     - data analysis dashboard for specific instruments at Institut Néel
+   * - `Read_HDF5 <https://github.com/MaMMoS-project/Read_HDF5>`__
+     - data tools to read and write HDF5 files at Institute Néel
+
+
+----------------------
+
+
+Framework installation
+----------------------
+
+The MaMMoS framework consists of a collection of packages (see :doc:`design <design>` for more details).
+The metapackage ``mammos`` can be used to install a consistent set of these packages.
 
 The package ``mammos-mumag`` depends on ``jax``. To get jax with GPU support you
 will need to manually install ``jax`` with the required optional dependencies
@@ -183,7 +203,15 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       installed separately. Please refer to the documentation of esys-escript
       for installation instructions.
 
-Acknowledgement
----------------
+Framework example notebooks
+---------------------------
+
+To conveniently download all example notebooks use the ``mammos-fetch-examples``
+script, which is installed as part of the ``mammos`` package (:ref:`further
+details <download-all-examples>`).
+
+
+Acknowledgements
+----------------
 
 This software has been supported by the European Union’s Horizon Europe research and innovation programme under grant agreement No 101135546 `MaMMoS <https://mammos-project.github.io/>`__.
