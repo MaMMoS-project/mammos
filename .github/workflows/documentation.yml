@@ -8,13 +8,17 @@ on:
         required: true
         type: boolean
         default: false
+  workflow_call:
+    inputs:
+      deploy_pages:
+        required: true
+        type: boolean
   push:
     branches:
       - main
     tags:
-      - "latest"
+      - "latest"  # not triggered when 'latest' is updated in the CI, only when pushing the tag manually
   pull_request:
-  workflow_call:
 
 
 jobs:
@@ -30,7 +34,7 @@ jobs:
 
 
   deploy:
-    if: ${{ github.ref_name == 'latest' || github.event_name == 'workflow_call' || inputs.deploy_pages }}
+    if: ${{ github.ref_name == 'latest' || inputs.deploy_pages }}
     needs: build
     permissions:
       pages: write
