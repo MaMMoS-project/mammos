@@ -31,8 +31,13 @@ Added
 ``mammos``
   - Command-line script ``mammos-fetch-examples`` to download all example
     notebooks.
-``mammos-entity``  -- 0.6.0
+``mammos-entity``
   - Entity objects have ``ontology_label_with_iri`` attribute.
+
+Changed
+-------
+
+``mammos-entity``
   - When trying to initialize an entity with a wrong unit the error message does
     now show the required unit defined in the ontology.
 
