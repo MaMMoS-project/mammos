@@ -13,8 +13,8 @@ Added
 -----
 
 ``mammos-entity``
-  - new predefined entity `mammos_entity.J`
-  - new predefined entity `mammos_entity.Js`
+  - New predefined entity ``mammos_entity.J``
+  - New predefined entity ``mammos_entity.Js``
 
 
 0.2.0 -- 2025-06-06
