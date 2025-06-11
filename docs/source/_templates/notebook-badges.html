@@ -1,18 +1,8 @@
-{% set page_toc = generate_toc_html() %}
-
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> {{ _("On this page") }}
-</div>
-
-<nav id="bd-toc-nav">
-    {{ page_toc }}
-</nav>
-
 {% if ('examples' in pagename) and not 'index' in pagename %}
 <div class="tocsection onthispace pt-5 bp-3">
     <h5>Try online:</h5>
     {% if 'examples/workflows' in pagename %}
-        <a href="https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab/tree/examples/{{ pagename.split()[-1] }}.ipynb"  target="_blank" rel="noopener noreferrer">
+        <a href="https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab/tree/examples/{{ pagename.split('/')[-1] }}.ipynb"  target="_blank" rel="noopener noreferrer">
     {% else %}
         <a href="https://mybinder.org/v2/gh/mammos-project/{{ pagename.split('/')[-2] }}/latest?urlpath=lab/tree/examples/{{ pagename.split('/')[-1] }}.ipynb" target="_blank" rel="noopener noreferrer">
     {% endif %}

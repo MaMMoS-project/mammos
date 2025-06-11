@@ -6,8 +6,8 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-UNRELEASED
-==========
+0.3.0 -- 2025-06-11
+===================
 
 Added
 -----
@@ -15,9 +15,14 @@ Added
 ``mammos-entity``
   - New predefined entity ``mammos_entity.J``
   - New predefined entity ``mammos_entity.Js``
+``mammos-mumag``
+  - Optional argument ``plotter`` in ``plot_configuration`` to add a vector plot
+    of a magnetization configuration to a :py:class:`pyvista.Plotter` provided
+    by the caller.
 
 Changed
 -------
+
 ``mammos-entity``
   - Return a ``mammos_units.UnitConversionError`` (inherited from
     ``astropy.units``) when trying initialize an entity with incompatible units.
@@ -31,8 +36,13 @@ Added
 ``mammos``
   - Command-line script ``mammos-fetch-examples`` to download all example
     notebooks.
-``mammos-entity``  -- 0.6.0
+``mammos-entity``
   - Entity objects have ``ontology_label_with_iri`` attribute.
+
+Changed
+-------
+
+``mammos-entity``
   - When trying to initialize an entity with a wrong unit the error message does
     now show the required unit defined in the ontology.
 
