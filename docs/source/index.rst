@@ -74,6 +74,11 @@ The MaMMoS software suite consists of a collection of packages for different
 steps of the simulation workflows. The metapackage ``mammos`` can be used to
 install a consistent set of sub-packages.
 
+The package ``mammos-mumag`` depends on ``jax``. To get jax with GPU support you
+will need to manually install ``jax`` with the required optional dependencies
+matching your GPU hardware/software, e.g. for an NVIDIA GPU you may need to
+install ``jax[cuda12]``. For details please refer to the `jax installation
+instructions <https://docs.jax.dev/en/latest/installation.html>`__.
 
 .. tab-set::
 
@@ -99,6 +104,7 @@ install a consistent set of sub-packages.
            pixi init
            pixi add python jupyterlab "packaging<25" "pandas<2.3" esys-escript
            pixi add mammos --pypi
+           pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       - Mac/Windows:
 
@@ -107,6 +113,7 @@ install a consistent set of sub-packages.
            pixi init
            pixi add python jupyterlab "packaging<25" "pandas<2.3"
            pixi add mammos --pypi
+           pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Finally start a shell where the installed packages are available:
 
@@ -135,6 +142,7 @@ install a consistent set of sub-packages.
          conda create -n mammos-environment python pip jupyterlab "packaging<25" "pandas<2.3" esys-escript
          conda activate mammos-environment
          pip install mammos
+         pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
    .. tab-item:: pip
 
@@ -156,7 +164,6 @@ install a consistent set of sub-packages.
         .. code:: shell
 
           . mammos-venv/bin/activate
-          pip install mammos
 
       - on Windows
 
@@ -169,6 +176,7 @@ install a consistent set of sub-packages.
       .. code:: shell
 
         pip install mammos
+        pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__, which must be
