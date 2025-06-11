@@ -6,8 +6,8 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-UNRELEASED
-==========
+0.3.0 -- 2025-06-11
+===================
 
 Added
 -----
@@ -22,6 +22,7 @@ Added
 
 Changed
 -------
+
 ``mammos-entity``
   - Return a ``mammos_units.UnitConversionError`` (inherited from
     ``astropy.units``) when trying initialize an entity with incompatible units.
