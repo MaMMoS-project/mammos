@@ -2,7 +2,7 @@
 <div class="tocsection onthispace pt-5 bp-3">
     <h5>Try online:</h5>
     {% if 'examples/workflows' in pagename %}
-        <a href="https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab/tree/examples/{{ pagename.split()[-1] }}.ipynb"  target="_blank" rel="noopener noreferrer">
+        <a href="https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab/tree/examples/{{ pagename.split('/')[-1] }}.ipynb"  target="_blank" rel="noopener noreferrer">
     {% else %}
         <a href="https://mybinder.org/v2/gh/mammos-project/{{ pagename.split('/')[-2] }}/latest?urlpath=lab/tree/examples/{{ pagename.split('/')[-1] }}.ipynb" target="_blank" rel="noopener noreferrer">
     {% endif %}
