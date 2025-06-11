@@ -104,6 +104,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
            pixi init
            pixi add python jupyterlab "packaging<25" "pandas<2.3" esys-escript
            pixi add mammos --pypi
+           pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       - Mac/Windows:
 
@@ -112,6 +113,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
            pixi init
            pixi add python jupyterlab "packaging<25" "pandas<2.3"
            pixi add mammos --pypi
+           pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Finally start a shell where the installed packages are available:
 
@@ -140,6 +142,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
          conda create -n mammos-environment python pip jupyterlab "packaging<25" "pandas<2.3" esys-escript
          conda activate mammos-environment
          pip install mammos
+         pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
    .. tab-item:: pip
 
@@ -161,7 +164,6 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         .. code:: shell
 
           . mammos-venv/bin/activate
-          pip install mammos
 
       - on Windows
 
@@ -174,6 +176,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       .. code:: shell
 
         pip install mammos
+        pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__, which must be
