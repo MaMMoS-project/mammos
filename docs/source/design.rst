@@ -2,29 +2,115 @@
 Design
 ======
 
-We discuss the design of the mammos packages, in particular the use of ontology
+We discuss the design of the MaMMoS framework, and the use of ontology
 labels and units when exchanging data.
 
 TLDR
 ----
 
-- the use of ontology labels and units (through ``mammos-entities``) is
+- The MaMMoS framework is composed of specialized components (typically Python
+  packages) from complex workflows (typically Python scripts or notebooks) can
+  be created. :numref:`label-figure-overview` shows a graphical overview.
+
+- The use of ontology labels and units (through ``mammos-entities``) is
   supported and encouraged, but not compulsory.
 
-- A more detailed summary is available at the end of this page at
+  A more detailed summary is available at the end of this page at
   `Design principles for ontology labels and units`_.
 
+MaMMoS framework architecture
+-----------------------------
 
-FAIR data requirements
-----------------------
+The MAgnetic Multiscale MOdelling Software (MaMMoS) provides tools to help
+researchers and designers to accelerate the development of designs for future devices.
+
+To make this ambitious aim tractable, we use the following design strategy:
+
+- develop (small) units of functionality (such as python packages, classes or functions)
+
+- the units may depend on each other where needed (to avoid code duplication),
+  but should be as independent from each other as possible
+
+- more complex tasks can be solved by combining the use of multiple units of
+  functionality in a (Python) script or Jupyter notebook. These are called *workflows*.
+
+
+.. _label-figure-overview:
+
+.. figure:: images/overview/overview.png
+   :alt: UML-style overview of MaMMoS packages and their dependencies
+   :width: 100%
+
+   Overview of the components of the MaMMoS software (in box
+   ``mammos``), their interdependencies through arrows, how they can be combined
+   to form workflows (``hard_magnet_workflow`` and ``sensor_workflow``), and how
+   existing tools of the research software for magnetism can be connected
+   (example: ``ubermag``). 
+   Arrows show which package is used by which other package: the ``mammos-entity``
+   package uses the ``mammos-units`` package (through an ``import``). The
+   ``hard_magnetic_workflow.py`` makes use of the ``mammos-mumag`` package.
+
+Framework components
+~~~~~~~~~~~~~~~~~~~~
+
+:numref:`label-figure-overview` shows an overview of the components of
+the MaMMoS software, and how specific workflows can be composed out of those.
+
+The MaMMoS framework are a set of libraries that are united by the prefix
+``mammos`` and in the figure shown together as the package on the left with the
+light grey background. The python meta package ``mammos`` can be used to install
+all of the components together. The `mammos framework components <index.html>`__ are:
+
+- ``mammos-units`` providing Quantity objects (values with units)
+- ``mammos-entity`` providing Entity objects (Quantity and EMMO ontology label)
+- ``mammos-spinddynamics`` (SD) providing spindynamics-based magnetic material properties
+- ``mammos-dft`` providing DFT-based magnetic material properties
+- ``mammos-mumag`` providing finite-element micromagnetic hysteresis simulations
+- ``mammos-analysis`` providing post-processing tools (hysteresis loop, kuzmin, ...).
+
+Workflows
+~~~~~~~~~
+
+Out of these components, completed *workflows* can be constructed, that help
+with particular magnetic material research or design questions. Within MaMMoS, a
+python program or a (python) Jupyter notebook can be used to execute a sequence
+of operations making use of the mammos framework components (and other already
+existing tools if desired).
+
+The figures shows two demonstrator workflows:
+
+1. *Hard magnet workflow* shown in green in :numref:`label-figure-overview` (see `hard magnetic workflow tutorial <examples/workflows/hard-magnet-tutorial.html>`__). 
+
+2. *Sensor workflow* shown in blue in :numref:`label-figure-overview` (see `sensor workflow example <examples/workflows/sensor.html>`__). 
+
+Through choosing Python as the environment within which the MaMMoS capabilities
+are (most easily) accessible, users can immediately connect all existing
+magnetic research tools that have a python interface (such us Ubermag in the
+Sensor workflow example).
+
+As the workflows are defined through a Python program, there is (great) freedom
+to define new workflows to address requirements that may not be known at the
+moment: We strive to make the MaMMoS components as powerful, flexible and robust
+as possible within the scope of the MaMMoS project, and use them in workflows
+that are of interest to project partners. The biggest potential impact of the
+project is in the future use of the MaMMoS components and tools (individually or
+together) for new tasks and workflows, that may not even be known yet.
+
+
+FAIR data and ontologies
+------------------------
+
+FAIR data
+~~~~~~~~~
 
 In the context of open science, it is essential that numerical values in data
 are consistently associated both (i) units and (ii) ontology labels.
 
 We use the term `quantity` to refer to a value (such as a number) and associated units.
+(`mammos-units <https://github.com/mammos-project/mammos-units>`__)
 
 We understand `entity` as a data point with units that has a label from an
-ontology, such as the EMMO.
+ontology, such as the EMMO. (`mammos-entity <https://github.com/mammos-project/mammos-entity>`__)
 
 Units ensure that measurements are interpretable and comparable across datasets,
 avoiding ambiguity about scale or dimension. Entities---through they 
@@ -41,14 +127,14 @@ Together, Ontology labels, values and units make data more Findable, Accessible,
 Interoperable, and Reusable (FAIR) by enabling machines and researchers alike to
 interpret and integrate data correctly across disciplines and domains.
 
-Ontology labels (with mammos-entities)
---------------------------------------
+ 
 
-How can we support the use of units and ontology labels in
-day-to-day data-focused research?
+Ontology labels (mammos-entities)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We have created the `mammos_entity` `package
-<https://github.com/mammos-project/mammos-entity>`__ to make this easier.
+We have created the 
+`mammos-entity package <https://github.com/mammos-project/mammos-entity>`__ to support the use of units
+and ontology labels in day-to-day data-focused research.
 
 To define an entity for :math:`M_\mathrm{s}` as in the example above, we could write:
 
@@ -76,7 +162,7 @@ can get to the numerical value (here ``1e5``) through the attribute
 ``Ms.value``.
 
 Use of ontology-labels: support, desired or enforced?
------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The use of entities makes data exchange more robust, self-documenting, and
 machine readable. The use of entities (and thus units) reduces the number of
@@ -104,9 +190,6 @@ There is thus a trade-off: in principle, the use of entities is desirable.
 However, there is a cost for doing so. To convince researchers to embrace
 ontologies (for example through using entities), we need to reduce the practical
 burden as much as possible.
-
-MaMMoS entity support
----------------------
 
 Example
 ~~~~~~~
@@ -187,7 +270,7 @@ Design principles for ontology labels and units
 
 To balance the benefits of a complete specification (option 3) with the
 convenience of being able to just use a number (option 1), we have developed the
-following principles within the ``mammos`` packages:
+following principles within the MaMMoS framework packages:
 
 - Return values of functions (and objects behaving like functions):
 

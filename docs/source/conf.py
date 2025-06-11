@@ -56,7 +56,12 @@ intersphinx_mapping = {
     "astropy": ("https://docs.astropy.org/en/stable", None),
 }
 exclude_patterns = ["**.ipynb_checkpoints"]
-
+numfig = True
+numfig_format = {
+    'figure': 'Figure %s',
+    'table': 'Table %s',
+    'code-block': 'Listing %s',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
