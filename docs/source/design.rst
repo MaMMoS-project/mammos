@@ -59,7 +59,7 @@ the MaMMoS software, and how specific workflows can be composed out of those.
 The MaMMoS framework are a set of libraries that are united by the prefix
 ``mammos`` and in the figure shown together as the package on the left with the
 light grey background. The python meta package ``mammos`` can be used to install
-all of the components together. The `mammos framework components <index.html>`__ are:
+all of the components together. The :doc:`mammos framework components <index>` are:
 
 - ``mammos-units`` providing Quantity objects (values with units)
 - ``mammos-entity`` providing Entity objects (Quantity and EMMO ontology label)
@@ -79,9 +79,9 @@ existing tools if desired).
 
 The figures shows two demonstrator workflows:
 
-1. *Hard magnet workflow* shown in green in :numref:`label-figure-overview` (see `hard magnetic workflow tutorial <examples/workflows/hard-magnet-tutorial.html>`__). 
+1. *Hard magnet workflow* shown in green in :numref:`label-figure-overview` (see :doc:`hard magnetic workflow tutorial <examples/workflows/hard-magnet-tutorial>`). 
 
-2. *Sensor workflow* shown in blue in :numref:`label-figure-overview` (see `sensor workflow example <examples/workflows/sensor.html>`__). 
+2. *Sensor workflow* shown in blue in :numref:`label-figure-overview` (see :doc:`sensor workflow example <examples/workflows/sensor>`). 
 
 Through choosing Python as the environment within which the MaMMoS capabilities
 are (most easily) accessible, users can immediately connect all existing
