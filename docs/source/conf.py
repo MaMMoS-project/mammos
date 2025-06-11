@@ -78,7 +78,7 @@ html_theme_options = {
         },
     ],
     "header_links_before_dropdown": 6,
-
+    "secondary_sidebar_items": ["page-toc", "notebook-badges"],
 }
 html_sidebars = {
     "changelog": [],
