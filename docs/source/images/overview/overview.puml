@@ -1,0 +1,50 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam defaultTextAlignment center
+skinparam ArrowThickness 2
+skinparam defaultFontName Menlo
+skinparam dpi 300
+
+
+together {
+  ' Core components
+  package "mammos" #E8E8E8 {
+    [Units]
+    [Entity] <-- [Units]
+    [DFT] <-- [Entity]
+    [SD] <-- [Entity]
+    [Mumag] <-- [Entity]
+    [Analysis] <-- [Entity]
+  }
+  
+  ' Core components
+  component "Other tools" as OtherTools {
+    [Ubermag] <-- [OOMMF]
+    [Ubermag] <-- [mumax3]
+  }
+
+}
+
+' hidden lines to help placement
+[Analysis] -[hidden]-> [Ubermag]
+
+artifact "hard_magnet_workflow.py" as HardMagnetWorkflow #LightGreen
+
+artifact "sensor_workflow.ipynb" as SensorWorkflow #LightBlue
+
+HardMagnetWorkflow <--[#green]- Entity 
+' HardMagnetWorkflow <--[#green]- Units 
+HardMagnetWorkflow <--[#green]- Mumag 
+HardMagnetWorkflow <--[#green]- SD
+HardMagnetWorkflow <--[#green]- DFT
+HardMagnetWorkflow <--[#green]- Analysis
+
+SensorWorkflow <--[#darkblue]- Entity 
+' SensorWorkflow <--[#darkblue]- Units 
+SensorWorkflow <--[#darkblue]- SD
+SensorWorkflow <--[#darkblue]- Analysis
+SensorWorkflow <--[#darkblue]- Ubermag
+
+
+
+@enduml
