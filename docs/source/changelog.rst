@@ -15,6 +15,10 @@ Added
 ``mammos-entity``
   - New predefined entity ``mammos_entity.J``
   - New predefined entity ``mammos_entity.Js``
+``mammos-mumag``
+  - Optional argument ``plotter`` in ``plot_configuration`` to add a vector plot
+    of a magnetization configuration to a :py:class:`pyvista.Plotter` provided
+    by the caller.
 
 Changed
 -------
