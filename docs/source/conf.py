@@ -51,10 +51,13 @@ autodoc_default_options = {
     # "special-members": "__init__",
 }
 intersphinx_mapping = {
-    "python": ("https://docs.python.org/3", None),
-    "pydantic": ("https://docs.pydantic.dev/latest", None),
-    "pandas": ("https://pandas.pydata.org/docs/", None),
     "astropy": ("https://docs.astropy.org/en/stable", None),
+    "matplotlib": ("https://matplotlib.org/stable", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pandas": ("https://pandas.pydata.org/docs/", None),
+    "pydantic": ("https://docs.pydantic.dev/latest", None),
+    "python": ("https://docs.python.org/3", None),
+    "pyvista": ("https://docs.pyvista.org/", None),
 }
 exclude_patterns = ["**.ipynb_checkpoints"]
 
