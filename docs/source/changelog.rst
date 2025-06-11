@@ -16,6 +16,11 @@ Added
   - New predefined entity ``mammos_entity.J``
   - New predefined entity ``mammos_entity.Js``
 
+Changed
+-------
+``mammos-entity``
+  - Return a ``mammos_units.UnitConversionError`` (inherited from
+    ``astropy.units``) when trying initialize an entity with incompatible units.
 
 0.2.0 -- 2025-06-06
 ===================
