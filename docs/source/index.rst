@@ -5,7 +5,6 @@ MaMMoS documentation
    :maxdepth: 1
    :hidden:
 
-   Home <self>
    examples/index
    api/index
    design
