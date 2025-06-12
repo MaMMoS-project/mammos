@@ -76,6 +76,8 @@ exclude_patterns = ["**.ipynb_checkpoints"]
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
+html_logo = "_static/logo.png"
+html_favicon = "_static/favicon.png"
 html_show_sourcelink = False
 html_sourcelink_suffix = ''
 html_theme_options = {
@@ -90,6 +92,9 @@ html_theme_options = {
         },
     ],
     "header_links_before_dropdown": 6,
+    "logo": {
+        "text": "documentation",
+    },
     "secondary_sidebar_items": ["page-toc", "notebook-badges"],
 }
 html_sidebars = {
