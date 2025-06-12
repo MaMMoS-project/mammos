@@ -66,33 +66,15 @@ running the examples for the individual packages interactively in the cloud.
 Additional tools
 ----------------
 
-The following tools have been created through or supported by the MaMMoS
-project. For each, please follow the link for installation instructions and
-documentation:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Package repository
-     - Summary
-   * - `mochada_kit <https://mammos-project.github.io/mochada_kit/user/index.html>`__
-     - workflow diagram builder
-   * - `sem_io <https://github.com/MaMMoS-project/sem_io>`__
-     - data exchange with Zeiss SmartSEM and ThermoFischer Scientific xT
-   * - `DaHU <https://github.com/MaMMoS-project/DaHU>`__
-     - data analysis dashboard for specific instruments at Institut Néel
-   * - `Read_HDF5 <https://github.com/MaMMoS-project/Read_HDF5>`__
-     - data tools to read and write HDF5 files at Institute Néel
-
-
-----------------------
-
+An overview of other tools created through or supported by the MaMMoS project is
+available at https://mammos-project.github.io/#additional-tools.
 
 Framework installation
 ----------------------
 
-The MaMMoS framework consists of a collection of packages (see :doc:`design <design>` for more details).
-The metapackage ``mammos`` can be used to install a consistent set of these packages.
+The MaMMoS framework consists of a collection of packages (see :doc:`design
+<design>` for more details). The metapackage ``mammos`` can be used to install a
+consistent set of these packages.
 
 The package ``mammos-mumag`` depends on ``jax``. To get jax with GPU support you
 will need to manually install ``jax`` with the required optional dependencies
