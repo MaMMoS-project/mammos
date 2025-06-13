@@ -12,7 +12,7 @@ TLDR
   packages) from complex workflows (typically Python scripts or notebooks) can
   be created. :numref:`label-figure-overview` shows a graphical overview.
 
-- The use of ontology labels and units (through ``mammos-entities``) is
+- The use of ontology labels and units (through ``mammos-entity``) is
   supported and encouraged, but not compulsory.
 
   A more detailed summary is available at the end of this page at
