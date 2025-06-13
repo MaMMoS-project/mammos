@@ -26,7 +26,7 @@ researchers and designers to accelerate the development of designs for future de
 
 To make this ambitious aim tractable, we use the following design strategy:
 
-- develop (small) units of functionality (such as python packages, classes or functions)
+- develop (small) units of functionality (such as Python packages, classes or functions)
 
 - the units may depend on each other where needed (to avoid code duplication),
   but should be as independent from each other as possible
