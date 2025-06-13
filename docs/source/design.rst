@@ -86,7 +86,7 @@ The figures shows two demonstrator workflows:
 Through choosing Python as the environment within which the MaMMoS capabilities
 are (most easily) accessible, users can immediately connect all existing
 magnetic research tools that have a python interface (such us Ubermag in the
-Sensor workflow example).
+sensor workflow example).
 
 As the workflows are defined through a Python program, there is (great) freedom
 to define new workflows to address requirements that may not be known at the
