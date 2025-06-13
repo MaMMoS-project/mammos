@@ -20,7 +20,7 @@ TLDR
 MaMMoS framework architecture
 -----------------------------
 
-The MAgnetic Multiscale MOdelling Suite (MaMMoS) provides tools to help
+The **Ma**\ gnetic **M**\ ultiscale **Mo**\ delling **S**\ uite (MaMMoS) provides tools to help
 researchers and engineers to accelerate the development of designs for future devices.
 
 To make this ambitious aim tractable, we use the following design strategy:
