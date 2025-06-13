@@ -25,12 +25,12 @@ researchers and engineers to accelerate the development of designs for future de
 
 To make this ambitious aim tractable, we use the following design strategy:
 
-- develop (small) units of functionality (such as Python packages, classes or functions)
+- Develop (small) units of functionality (such as Python packages, classes or functions).
 
-- the units may depend on each other where needed (to avoid code duplication),
-  but should be as independent from each other as possible
+- The units may depend on each other where needed (to avoid code duplication),
+  but should be as independent from each other as possible.
 
-- more complex tasks can be solved by combining the use of multiple units of
+- More complex tasks can be solved by combining the use of multiple units of
   functionality in a (Python) script or Jupyter Notebook. These are called *workflows*.
 
 
@@ -41,11 +41,11 @@ To make this ambitious aim tractable, we use the following design strategy:
    :width: 100%
 
    Overview of the components of the MaMMoS software (in box
-   ``mammos``), their interdependencies through arrows, how they can be combined
+   ``mammos``), their interdependencies, how they can be combined
    to form workflows (``hard_magnet_workflow`` and ``sensor_workflow``), and how
    existing tools of the research software for magnetism can be connected
    (example: ``ubermag``). 
-   Arrows show which package is used by which other package: the ``mammos-entity``
+   Arrows show which package is used by which other package: e.g., the ``mammos-entity``
    package uses the ``mammos-units`` package (through an ``import``). The
    ``hard_magnetic_workflow.py`` makes use of the ``mammos-mumag`` package.
 
@@ -54,18 +54,17 @@ Framework components
 
 :numref:`label-figure-overview` shows an overview of the components of
 the MaMMoS software, and how specific workflows can be composed out of those.
-
 The MaMMoS framework are a set of libraries that are united by the prefix
 ``mammos`` and in the figure shown together as the package on the left with the
-light grey background. The Python meta package ``mammos`` can be used to install
+light gray background. The Python meta package ``mammos`` can be used to install
 all of the components together. The :doc:`mammos framework components <index>` are:
 
 - ``mammos-units`` providing Quantity objects (values with units)
 - ``mammos-entity`` providing Entity objects (Quantity and EMMO ontology label)
-- ``mammos-spinddynamics`` (SD) providing spindynamics-based magnetic material properties
+- ``mammos-spindynamics`` providing spindynamics-based magnetic material properties
 - ``mammos-dft`` providing DFT-based magnetic material properties
 - ``mammos-mumag`` providing finite-element micromagnetic hysteresis simulations
-- ``mammos-analysis`` providing post-processing tools (hysteresis loop, kuzmin, ...).
+- ``mammos-analysis`` providing post-processing tools (hysteresis loop, kuzmin, ...)
 
 Workflows
 ~~~~~~~~~
@@ -73,7 +72,7 @@ Workflows
 Out of these components, complete *workflows* can be constructed, that help
 with particular magnetic material research or design questions. Within MaMMoS, a
 Python program or a (Python) Jupyter Notebook can be used to execute a sequence
-of operations making use of the mammos framework components (and other already
+of operations making use of the MaMMoS framework components (and other already
 existing tools if desired).
 
 The figures shows two demonstrator workflows:
@@ -128,7 +127,7 @@ interpret and integrate data correctly across disciplines and domains.
 
  
 
-Ontology labels (mammos-entities)
+Ontology labels (mammos-entity)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We have created the 
@@ -160,7 +159,7 @@ An entity object behaves very much like a float or a numpy array. If needed, one
 can get to the numerical value (here ``1e5``) through the attribute
 ``Ms.value``.
 
-Use of ontology-labels: support, desired or enforced?
+Use of ontology-labels: supported, desired or enforced?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The use of entities makes data exchange more robust, self-documenting, and
@@ -267,8 +266,8 @@ that functionality was not available.
 Design principles for ontology labels and units
 -----------------------------------------------
 
-To balance the benefits of a complete specification (option 3) with the
-convenience of being able to just use a number (option 1), we have developed the
+To balance the benefits of a complete specification (option 3) with the
+convenience of being able to just use a number (option 1), we have developed the
 following principles within the MaMMoS framework packages:
 
 - Return values of functions (and objects behaving like functions):
