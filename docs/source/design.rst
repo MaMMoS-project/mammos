@@ -9,20 +9,19 @@ TLDR
 ----
 
 - The MaMMoS framework is composed of specialized components (typically Python
-  packages) from complex workflows (typically Python scripts or notebooks) can
+  packages) from which complex workflows (typically Python scripts or notebooks) can
   be created. :numref:`label-figure-overview` shows a graphical overview.
 
 - The use of ontology labels and units (through ``mammos-entity``) is
   supported and encouraged, but not compulsory.
-
   A more detailed summary is available at the end of this page at
   `Design principles for ontology labels and units`_.
 
 MaMMoS framework architecture
 -----------------------------
 
-The MAgnetic Multiscale MOdelling Software (MaMMoS) provides tools to help
-researchers and designers to accelerate the development of designs for future devices.
+The MAgnetic Multiscale MOdelling Suite (MaMMoS) provides tools to help
+researchers and engineers to accelerate the development of designs for future devices.
 
 To make this ambitious aim tractable, we use the following design strategy:
 
@@ -32,7 +31,7 @@ To make this ambitious aim tractable, we use the following design strategy:
   but should be as independent from each other as possible
 
 - more complex tasks can be solved by combining the use of multiple units of
-  functionality in a (Python) script or Jupyter notebook. These are called *workflows*.
+  functionality in a (Python) script or Jupyter Notebook. These are called *workflows*.
 
 
 .. _label-figure-overview:
@@ -73,7 +72,7 @@ Workflows
 
 Out of these components, complete *workflows* can be constructed, that help
 with particular magnetic material research or design questions. Within MaMMoS, a
-python program or a (python) Jupyter notebook can be used to execute a sequence
+Python program or a (Python) Jupyter Notebook can be used to execute a sequence
 of operations making use of the mammos framework components (and other already
 existing tools if desired).
 
@@ -85,7 +84,7 @@ The figures shows two demonstrator workflows:
 
 Through choosing Python as the environment within which the MaMMoS capabilities
 are (most easily) accessible, users can immediately connect all existing
-magnetic research tools that have a python interface (such us Ubermag in the
+magnetic research tools that have a Python interface (such us Ubermag in the
 sensor workflow example).
 
 As the workflows are defined through a Python program, there is (great) freedom

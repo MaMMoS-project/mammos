@@ -1,4 +1,4 @@
-@startuml
+@startumlp
 skinparam componentStyle rectangle
 skinparam defaultTextAlignment center
 skinparam ArrowThickness 2
@@ -9,41 +9,41 @@ skinparam dpi 300
 together {
   ' Core components
   package "mammos" #E8E8E8 {
-    [Units]
-    [Entity] <-- [Units]
-    [DFT] <-- [Entity]
-    [SD] <-- [Entity]
-    [Mumag] <-- [Entity]
-    [Analysis] <-- [Entity]
+    [units]
+    [entity] <-- [units]
+    [dft] <-- [entity]
+    [spindynamics] <-- [entity]
+    [mumag] <-- [entity]
+    [analysis] <-- [entity]
   }
   
   ' Core components
   component "Other tools" as OtherTools {
-    [Ubermag] <-- [OOMMF]
-    [Ubermag] <-- [mumax3]
+    [ubermag] <-- [oommf]
+    [ubermag] <-- [mumax3]
   }
 
 }
 
 ' hidden lines to help placement
-[Analysis] -[hidden]-> [Ubermag]
+[analysis] -[hidden]-> [ubermag]
 
 artifact "hard_magnet_workflow.py" as HardMagnetWorkflow #LightGreen
 
 artifact "sensor_workflow.ipynb" as SensorWorkflow #LightBlue
 
-HardMagnetWorkflow <--[#green]- Entity 
-' HardMagnetWorkflow <--[#green]- Units 
-HardMagnetWorkflow <--[#green]- Mumag 
-HardMagnetWorkflow <--[#green]- SD
-HardMagnetWorkflow <--[#green]- DFT
-HardMagnetWorkflow <--[#green]- Analysis
+HardMagnetWorkflow <--[#green]- entity 
+' HardMagnetWorkflow <--[#green]- units 
+HardMagnetWorkflow <--[#green]- mumag 
+HardMagnetWorkflow <--[#green]- spindynamics
+HardMagnetWorkflow <--[#green]- dft
+HardMagnetWorkflow <--[#green]- analysis
 
-SensorWorkflow <--[#darkblue]- Entity 
-' SensorWorkflow <--[#darkblue]- Units 
-SensorWorkflow <--[#darkblue]- SD
-SensorWorkflow <--[#darkblue]- Analysis
-SensorWorkflow <--[#darkblue]- Ubermag
+SensorWorkflow <--[#darkblue]- entity 
+' SensorWorkflow <--[#darkblue]- units 
+SensorWorkflow <--[#darkblue]- spindynamics
+SensorWorkflow <--[#darkblue]- analysis
+SensorWorkflow <--[#darkblue]- ubermag
 
 
 
