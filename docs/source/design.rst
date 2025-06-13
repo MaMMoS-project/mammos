@@ -71,7 +71,7 @@ all of the components together. The :doc:`mammos framework components <index>` a
 Workflows
 ~~~~~~~~~
 
-Out of these components, completed *workflows* can be constructed, that help
+Out of these components, complete *workflows* can be constructed, that help
 with particular magnetic material research or design questions. Within MaMMoS, a
 python program or a (python) Jupyter notebook can be used to execute a sequence
 of operations making use of the mammos framework components (and other already
