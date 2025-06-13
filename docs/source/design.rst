@@ -58,7 +58,7 @@ the MaMMoS software, and how specific workflows can be composed out of those.
 
 The MaMMoS framework are a set of libraries that are united by the prefix
 ``mammos`` and in the figure shown together as the package on the left with the
-light grey background. The python meta package ``mammos`` can be used to install
+light grey background. The Python meta package ``mammos`` can be used to install
 all of the components together. The :doc:`mammos framework components <index>` are:
 
 - ``mammos-units`` providing Quantity objects (values with units)
