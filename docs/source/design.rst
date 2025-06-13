@@ -54,7 +54,7 @@ Framework components
 
 :numref:`label-figure-overview` shows an overview of the components of
 the MaMMoS software, and how specific workflows can be composed out of those.
-The MaMMoS framework are a set of libraries that are united by the prefix
+The MaMMoS framework is a set of libraries that are united by the prefix
 ``mammos`` and in the figure shown together as the package on the left with the
 light gray background. The Python meta package ``mammos`` can be used to install
 all of the components together. The :doc:`mammos framework components <index>` are:
