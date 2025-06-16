@@ -1,13 +1,12 @@
 name: mybinder-env
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - python=3.11
+  - bayesian-optimization
   - esys-escript
-  - oommf
+  - ubermag
   - pip
   - pip:
-      - git+https://github.com/MaMMoS-project/mammos.git@main
-      - pydantic>=2.11.5
-      - ubermag
       - mammos
