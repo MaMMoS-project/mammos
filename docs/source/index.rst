@@ -30,7 +30,7 @@ running the examples for the individual packages interactively in the cloud.
      - :doc:`examples/workflows/index`
      - –
      - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fdocs%2Fsource%2Fexamples%2Fworkflows
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`api/mammos_analysis`
