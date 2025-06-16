@@ -1,4 +1,7 @@
+"""Python program to create the MODA diagram for the sensor workflow."""
+
 import pathlib
+
 import mochada_kit as mk
 from mochada_kit.running import run_plantuml_code
 
