@@ -9,6 +9,11 @@ updated according to the largest bump of any of the dependent packages.
 0.4.0 --
 ========
 
+Changed
+
+``mammos-entity``
+  - The class ``mammos_entity.Entity`` does not subclass from ``mammos_units.Quantity``
+  anymore. The attribute ``quantity`` contain the ``Quantity`` instead.
 0.3.0 -- 2025-06-11
 ===================
 
