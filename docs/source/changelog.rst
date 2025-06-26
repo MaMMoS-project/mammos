@@ -14,6 +14,9 @@ Changed
 ``mammos-entity``
   - The class ``mammos_entity.Entity`` does not subclass from ``mammos_units.Quantity``
   anymore. The attribute ``quantity`` contain the ``Quantity`` instead.
+``mammos``
+  - Use Fe16N2 instead of Nd2Fe14B in hard magnet workflow.
+
 0.3.0 -- 2025-06-11
 ===================
 
