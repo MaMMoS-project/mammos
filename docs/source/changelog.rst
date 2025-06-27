@@ -6,16 +6,26 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-0.4.0 --
-========
+0.4.0 -- 2025-06-27
+===================
 
 Changed
+-------
 
 ``mammos-entity``
-  - The class ``mammos_entity.Entity`` does not subclass from ``mammos_units.Quantity``
-    anymore. The attribute ``quantity`` contain the ``Quantity`` instead.
+  - The ``Entity`` class is no longer a subclass of ``mammos_units.Quantity``.
+    As a consequence it does no longer support mathematical operations. Use the
+    attribute ``.quantity`` (or the short-hand ``.q``) to access the underlying
+    quantity and to perform (mathematical) operations. (`PR28
+    <https://github.com/MaMMoS-project/mammos-entity/pull/28>`__)
+  - The package now comes with a bundled ontology consisting of `EMMO
+    <https://github.com/emmo-repo/EMMO>`__ (version 1.0.0-rc3) and `Magnetic
+    Material <https://github.com/MaMMoS-project/MagneticMaterialsOntology>`__
+    (version 0.0.3). Internet access is no longer required. (`PR33
+    <https://github.com/MaMMoS-project/mammos-entity/pull/33>`__)
 ``mammos``
-  - Use Fe16N2 instead of Nd2Fe14B in hard magnet workflow.
+  - Use Fe16N2 instead of Nd2Fe14B in hard magnet workflow. (`PR17
+    <https://github.com/MaMMoS-project/mammos/pull/17>`__)
 
 0.3.0 -- 2025-06-11
 ===================
