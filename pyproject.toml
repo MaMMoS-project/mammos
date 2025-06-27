@@ -8,6 +8,7 @@ version = "0.3.0"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 authors = [
+  { name = "Andrea Petrocchi" },
   { name = "Swapneel Amit Pathak" },
   { name = "Samuel Holt" },
   { name = "Martin Lang" },
