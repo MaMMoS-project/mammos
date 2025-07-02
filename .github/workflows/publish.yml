@@ -27,6 +27,8 @@ jobs:
       - run: echo $VERSION
       - name: Check that version and tag are identical
         run: test $GITHUB_REF_NAME = $VERSION
+      - name: Check that the correct version is pinned in the binder configuration
+        run: grep "mammos==$VERSION" .binder/environment.yml
 
   publish-to-pypi:
     name: Publish to PyPI
