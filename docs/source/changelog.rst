@@ -6,6 +6,15 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+x.x.x -- xxxx-xx-xx
+===================
+
+Fixed
+-----
+
+``mammos-entity``
+  - Fix bug when defining unitless entities (`PR37 <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__)
+
 0.4.0 -- 2025-06-27
 ===================
 
