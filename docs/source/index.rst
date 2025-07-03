@@ -29,38 +29,52 @@ running the examples for the individual packages interactively in the cloud.
    * - `mammos <https://github.com/mammos-project/mammos>`__
      - :doc:`examples/workflows/index`
      - –
-     - .. image:: https://static.mybinder.org/badge_logo.svg
+     - .. image:: /_static/badge-launch-binder.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`api/mammos_analysis`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-dft <https://github.com/mammos-project/mammos-dft>`__
      - :doc:`examples/mammos-dft/index`
      - :doc:`api/mammos_dft`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-entity <https://github.com/mammos-project/mammos-entity>`__
      - :doc:`examples/mammos-entity/index`
      - :doc:`api/mammos_entity`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-mumag <https://github.com/mammos-project/mammos-mumag>`__
      - :doc:`examples/mammos-mumag/index`
      - :doc:`api/mammos_mumag`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-spindynamics <https://github.com/mammos-project/mammos-spindynamics>`__
      - :doc:`examples/mammos-spindynamics/index`
      - :doc:`api/mammos_spindynamics`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
    * - `mammos-units <https://github.com/mammos-project/mammos-units>`__
      - :doc:`examples/mammos-units/index`
      - :doc:`api/mammos_units`
-     - .. image:: https://static.mybinder.org/badge_logo.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/main?urlpath=lab%2Ftree%2Fexamples
+     - .. image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/latest?urlpath=lab%2Ftree%2Fexamples
+       .. image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-units/latest?urlpath=lab%2Ftree%2Fexamples
 
 Additional tools
 ----------------
