@@ -29,52 +29,61 @@ running the examples for the individual packages interactively in the cloud.
    * - `mammos <https://github.com/mammos-project/mammos>`__
      - :doc:`examples/workflows/index`
      - –
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-mammos-1| |binder-mammos-2|
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`api/mammos_analysis`
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-analysis-1| |binder-analysis-2|
    * - `mammos-dft <https://github.com/mammos-project/mammos-dft>`__
      - :doc:`examples/mammos-dft/index`
      - :doc:`api/mammos_dft`
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-dft-1| |binder-dft-2|
    * - `mammos-entity <https://github.com/mammos-project/mammos-entity>`__
      - :doc:`examples/mammos-entity/index`
      - :doc:`api/mammos_entity`
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-entity-1| |binder-entity-2|
    * - `mammos-mumag <https://github.com/mammos-project/mammos-mumag>`__
      - :doc:`examples/mammos-mumag/index`
      - :doc:`api/mammos_mumag`
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-mumag-1| |binder-mumag-2|
    * - `mammos-spindynamics <https://github.com/mammos-project/mammos-spindynamics>`__
      - :doc:`examples/mammos-spindynamics/index`
      - :doc:`api/mammos_spindynamics`
-     - .. image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
+     - |binder-spindynamics-1| |binder-spindynamics-2|
    * - `mammos-units <https://github.com/mammos-project/mammos-units>`__
      - :doc:`examples/mammos-units/index`
      - :doc:`api/mammos_units`
-     - .. image:: /_static/badge-launch-binder.svg
+     - |binder-units-1| |binder-units-2|
+
+.. |binder-mammos-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos/main?urlpath=lab%2Ftree%2Fexamples
+.. |binder-mammos-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-analysis-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-analysis-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-dft-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-dft-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-dft/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-entity-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-entity-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-mumag-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-mumag-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-spindynamics-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-spindynamics-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-units-1| image:: /_static/badge-launch-binder.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/latest?urlpath=lab%2Ftree%2Fexamples
-       .. image:: /_static/badge-launch-binder2.svg
+.. |binder-units-2| image:: /_static/badge-launch-binder2.svg
           :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-units/latest?urlpath=lab%2Ftree%2Fexamples
+
 
 Additional tools
 ----------------
