@@ -6,6 +6,21 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+x.x.x -- xxxx-xx-xx
+===================
+
+Changed
+-------
+
+``mammos-analysis``
+  - The Kuz'min formula to evaluate micromagnetic properties can now accept Curie Temperature Tc and spontaneous magnetisation at zero temperature Ms_0 as optional inputs. If given, they are not optimised by fitting the magnetisation curve. (`PR12 <https://github.com/MaMMoS-project/mammos-analysis/pull/12>`__)
+
+Fixed
+-----
+
+``mammos-entity``
+  - Fix bug when defining unitless entities. (`PR37 <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__)
+
 0.4.0 -- 2025-06-27
 ===================
 
