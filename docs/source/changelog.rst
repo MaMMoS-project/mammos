@@ -21,6 +21,8 @@ Fixed
 
 ``mammos-entity``
   - Fix bug when defining unitless entities. (`PR37 <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__)
+``mammos-mumag``
+  - Fixed the default values of the `MaterialDomain` class (`PR41 <https://github.com/MaMMoS-project/mammos-mumag/pull/41>__`)
 
 0.4.0 -- 2025-06-27
 ===================
