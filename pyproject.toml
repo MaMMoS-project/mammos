@@ -48,6 +48,7 @@ target-version = "py311"
 exclude = [
   "dev",
   "docs",
+  "examples/images",
 ]
 [tool.ruff.lint]
 select = [
