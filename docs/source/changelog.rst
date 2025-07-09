@@ -14,6 +14,7 @@ Changed
 
 ``mammos-analysis``
   - The Kuz'min formula to evaluate micromagnetic properties can now accept Curie Temperature Tc and spontaneous magnetisation at zero temperature Ms_0 as optional inputs. If given, they are not optimised by fitting the magnetisation curve. (`PR12 <https://github.com/MaMMoS-project/mammos-analysis/pull/12>`__)
+  - The initial guess for the optimization of the Curie Temperature in Kuz'min formula is set to a much lower temperature (depending on the data). (`PR18 <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
 
 Fixed
 -----
