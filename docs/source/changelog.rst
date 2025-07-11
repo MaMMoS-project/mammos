@@ -6,6 +6,24 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.5.0 -- 2025-07-11
+===================
+
+Added
+-----
+
+``mammos-entity``
+  - A new submodule :py:mod:`mammos-entity.io` that provides two functions to
+    write and read CSV files with additional ontology metadata. For more details
+    refer to the new :doc:`io documentation </examples/mammos-entity/io>`.
+    (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46 <https://github.com/MaMMoS-project/mammos-entity/pull/46>`__, `PR47 <https://github.com/MaMMoS-project/mammos-entity/pull/47>`__ )
+
+Fixed
+-----
+
+``mammos-entity``
+  - Fix bug when defining unitless entities. (`PR37 <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__ and `PR45 <https://github.com/MaMMoS-project/mammos-entity/pull/45>`__)
+
 0.4.0 -- 2025-06-27
 ===================
 
