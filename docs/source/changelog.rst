@@ -6,7 +6,7 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-x.x.x -- xxxx-xx-xx
+0.5.0 -- 2025-07-11
 ===================
 
 Added
