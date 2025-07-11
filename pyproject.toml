@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mammos"
-version = "0.5.0"
+version = "0.5.1"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 authors = [
