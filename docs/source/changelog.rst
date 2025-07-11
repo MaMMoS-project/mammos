@@ -16,7 +16,6 @@ Added
   - A new submodule :py:mod:`mammos-entity.io` that provides two functions to
     write and read CSV files with additional ontology metadata. For more details
     refer to the new :doc:`io documentation </examples/mammos-entity/io>`.
-    (`PR29 https://github.com/MaMMoS-project/mammos-entity/pull/29>`__)
 
 Changed
 -------
@@ -24,6 +23,7 @@ Changed
 ``mammos-analysis``
   - The Kuz'min formula to evaluate micromagnetic properties can now accept Curie Temperature Tc and spontaneous magnetisation at zero temperature Ms_0 as optional inputs. If given, they are not optimised by fitting the magnetisation curve. (`PR12 <https://github.com/MaMMoS-project/mammos-analysis/pull/12>`__)
   - The initial guess for the optimization of the Curie Temperature in Kuz'min formula is set to a much lower temperature (depending on the data). (`PR18 <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
+    (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46 <https://github.com/MaMMoS-project/mammos-entity/pull/46>`__, `PR47 <https://github.com/MaMMoS-project/mammos-entity/pull/47>`__ )
 
 Fixed
 -----
