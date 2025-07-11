@@ -46,6 +46,7 @@ Upon completion a list of downloaded examples is displayed:
    examples/mammos-analysis/quickstart.ipynb
    examples/mammos-dft/quickstart.ipynb
    examples/mammos-entity/quickstart.ipynb
+   examples/mammos-entity/io.ipynb
    examples/mammos-mumag/quickstart.ipynb
    examples/mammos-spindynamics/quickstart.ipynb
    examples/mammos-units/example.ipynb
