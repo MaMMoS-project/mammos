@@ -6,6 +6,29 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.6.0 -- xxxx.xx.xx
+===================
+
+Changed
+-------
+
+``mammos-analysis``
+  - The Kuz'min formula to evaluate micromagnetic properties can now accept
+    Curie Temperature Tc and spontaneous magnetisation at zero temperature Ms_0
+    as optional inputs. If given, they are not optimised by fitting the
+    magnetisation curve. (`PR12
+    <https://github.com/MaMMoS-project/mammos-analysis/pull/12>`__)
+  - The initial guess for the optimization of the Curie Temperature in Kuz'min
+    formula is set to a much lower temperature (depending on the data). (`PR18
+    <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
+
+Fixed
+-----
+
+``mammos-mumag``
+  - Fixed the default values of the `MaterialDomain` class (`PR41
+    <https://github.com/MaMMoS-project/mammos-mumag/pull/41>`__)
+
 0.5.0 -- 2025-07-11
 ===================
 
@@ -16,13 +39,17 @@ Added
   - A new submodule :py:mod:`mammos-entity.io` that provides two functions to
     write and read CSV files with additional ontology metadata. For more details
     refer to the new :doc:`io documentation </examples/mammos-entity/io>`.
-    (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46 <https://github.com/MaMMoS-project/mammos-entity/pull/46>`__, `PR47 <https://github.com/MaMMoS-project/mammos-entity/pull/47>`__ )
+    (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46
+    <https://github.com/MaMMoS-project/mammos-entity/pull/46>`__, `PR47
+    <https://github.com/MaMMoS-project/mammos-entity/pull/47>`__ )
 
 Fixed
 -----
 
 ``mammos-entity``
-  - Fix bug when defining unitless entities. (`PR37 <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__ and `PR45 <https://github.com/MaMMoS-project/mammos-entity/pull/45>`__)
+  - Fix bug when defining unitless entities. (`PR37
+    <https://github.com/MaMMoS-project/mammos-entity/pull/37>`__ and `PR45
+    <https://github.com/MaMMoS-project/mammos-entity/pull/45>`__)
 
 0.4.0 -- 2025-06-27
 ===================
