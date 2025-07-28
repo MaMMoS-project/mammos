@@ -88,6 +88,7 @@ trame-client = ">=2.12.7"
 trame-server = ">=2.11.7"
 trame-vtk = ">=2.5.8"
 trame-vuetify = ">=2.3.1"
+towncrier = "*"
 
 [tool.pixi.target.linux-64.dependencies]
 esys-escript = ">=5.10,<6"
@@ -120,3 +121,41 @@ docs-linkcheck = "cd docs && make linkcheck"
 
 [tool.pixi.environments]
 docs = ["docs"]
+
+[tool.towncrier]
+directory = "changes"
+filename = "CHANGELOG.md"
+package = "mammos"
+title_format = "## [mammos {version}](https://github.com/MaMMoS-project/mammos/tree/{version}) – {project_date}"
+# point to PRs instead of issues; CI ensures that the correct PR numbers exist
+issue_format = "[#{issue}](https://github.com/MaMMoS-project/mammos/pull/{issue})"
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Misc"
+showcontent = true
