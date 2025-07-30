@@ -57,6 +57,7 @@ autodoc_default_options = {
     "private-members": False,
     # Autodoc special members (for the moment only __init__)
     # "special-members": "__init__",
+    "special-members": "__class_getitem__",
 }
 intersphinx_mapping = {
     "astropy": ("https://docs.astropy.org/en/stable", None),
