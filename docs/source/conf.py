@@ -45,7 +45,7 @@ extensions = [
 templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
-autodoc_mock_imports = ["esys-escript", "mammos_mumag.simulation"]
+autodoc_mock_imports = ["esys-escript"]
 autoclass_content = "both"
 autodoc_typehints = "description"
 autodoc_default_options = {
@@ -57,9 +57,11 @@ autodoc_default_options = {
     "private-members": False,
     # Autodoc special members (for the moment only __init__)
     # "special-members": "__init__",
+    "special-members": "__class_getitem__",
 }
 intersphinx_mapping = {
     "astropy": ("https://docs.astropy.org/en/stable", None),
+    "ontopy": ("https://emmo-repo.github.io/EMMOntoPy/latest/", None),
     "matplotlib": ("https://matplotlib.org/stable", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
     "owlready2": ("https://owlready2.readthedocs.io/en/latest/", None),
