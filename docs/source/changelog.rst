@@ -28,8 +28,8 @@ Added
     entities, quantities and array-likes into a single entity. (`PR56
     <https://github.com/MaMMoS-project/mammos-entity/pull/56>`__)
 ``mammos-mumag``
-  - Add function `mammos_mumag.hysteresis.read_result` to read the result of a hysteresis loop from a folder (without running the hysteresis calculation again). (`PR48 <https://github.com/MaMMoS-project/mammos-mumag/pull/48>`__)
-  - Implement `mammos_mumag.mesh.Mesh` class that can read and display information of local meshes, meshes on Zenodo and meshes given by the user. (`PR53 <https://github.com/MaMMoS-project/mammos-mumag/pull/53>`__)
+  - Add function :py:func:`mammos_mumag.hysteresis.read_result` to read the result of a hysteresis loop from a folder (without running the hysteresis calculation again). (`PR48 <https://github.com/MaMMoS-project/mammos-mumag/pull/48>`__)
+  - Implement :py:class:`mammos_mumag.mesh.Mesh` class that can read and display information of local meshes, meshes on Zenodo and meshes given by the user. (`PR53 <https://github.com/MaMMoS-project/mammos-mumag/pull/53>`__)
   - (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 Changed
@@ -50,7 +50,7 @@ Changed
     between IRI and ontology label. (`PR68
     <https://github.com/MaMMoS-project/mammos-entity/pull/68>`__)
 ``mammos-mumag``
-  - Changed the output of the hysteresis loop in compliance with `mammos_entity.io` v2. (`PR54 <https://github.com/MaMMoS-project/mammos-mumag/pull/54>`__)
+  - Changed the output of the hysteresis loop in compliance with :py:mod:`mammos_entity.io` v2. (`PR54 <https://github.com/MaMMoS-project/mammos-mumag/pull/54>`__)
   - (`PR46 <https://github.com/MaMMoS-project/mammos-mumag/pull/46>`__)
 
 Deprecated
