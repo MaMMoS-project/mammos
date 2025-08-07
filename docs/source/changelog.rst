@@ -9,6 +9,25 @@ updated according to the largest bump of any of the dependent packages.
 0.6.0 -- xxxx.xx.xx
 ===================
 
+Added
+-----
+
+``mammos-entity``
+  - CSV files written with :py:mod:`mammos_entity.io` can now optionally contain
+    a description. (`PR52
+    <https://github.com/MaMMoS-project/mammos-entity/pull/52>`__)
+  - Support for YAML as additional file format in :py:mod:`mammos_entity.io`.
+    (`PR59 <https://github.com/MaMMoS-project/mammos-entity/pull/59>`__, `PR69
+    <https://github.com/MaMMoS-project/mammos-entity/pull/69>`__, `PR70
+    <https://github.com/MaMMoS-project/mammos-entity/pull/70>`__)
+  - Two new functions :py:func:`mammos_entity.io.entities_to_file` and
+    :py:func:`mammos_entity.io.entities.from_file` to write and read entity
+    files. The file type is inferred from the file extension. (`PR57
+    <https://github.com/MaMMoS-project/mammos-entity/pull/57>`__)
+  - A function :py:func:`mammos_entity.concat_flat` to concatenate compatible
+    entities, quantities and array-likes into a single entity. (`PR56
+    <https://github.com/MaMMoS-project/mammos-entity/pull/56>`__)
+
 Changed
 -------
 
@@ -22,8 +41,32 @@ Changed
     formula is set to a much lower temperature (depending on the data). (`PR18
     <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
 
+``mammos-entity``
+  - When reading files with :py:mod:`mammos_entity.io` IRIs are now checked in
+    addition to ontology labels and file reading fails if there is a mismatch
+    between IRI and ontology label. (`PR68
+    <https://github.com/MaMMoS-project/mammos-entity/pull/68>`__)
+
+Deprecated
+----------
+
+``mammos-entity``
+  - The functions ``mammos.entity.io.entities_to_csv`` and
+    ``mammos_entity.io.entities_from_csv`` have been deprecated. Use
+    :py:func:`mammos_entity.io.entities_to_file` and
+    :py:func:`mammos_entity.io.entities.from_file` instead. (`PR58
+    <https://github.com/MaMMoS-project/mammos-entity/pull/58>`__)
+
 Fixed
 -----
+
+``mammos-entity``
+  - On Windows, CSV files written with ``mammos-entity.io`` had blank lines
+    between all data lines. (`PR66
+    <https://github.com/MaMMoS-project/mammos-entity/pull/66`__)
+  - Writing CSV files with entities of different shapes 0 and 1, where elements
+    with shape 0 were broadcasted is no longer supported as it is not round-trip
+    safe. (`PR67 <https://github.com/MaMMoS-project/mammos-entity/pull/67>`__)
 
 ``mammos-mumag``
   - Fixed the default values of the `MaterialDomain` class (`PR41
