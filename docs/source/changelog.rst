@@ -21,7 +21,7 @@ Added
     <https://github.com/MaMMoS-project/mammos-entity/pull/69>`__, `PR70
     <https://github.com/MaMMoS-project/mammos-entity/pull/70>`__)
   - Two new functions :py:func:`mammos_entity.io.entities_to_file` and
-    :py:func:`mammos_entity.io.entities.from_file` to write and read entity
+    :py:func:`mammos_entity.io.entities_from_file` to write and read entity
     files. The file type is inferred from the file extension. (`PR57
     <https://github.com/MaMMoS-project/mammos-entity/pull/57>`__)
   - A function :py:func:`mammos_entity.concat_flat` to concatenate compatible
@@ -54,22 +54,22 @@ Deprecated
   - The functions ``mammos.entity.io.entities_to_csv`` and
     ``mammos_entity.io.entities_from_csv`` have been deprecated. Use
     :py:func:`mammos_entity.io.entities_to_file` and
-    :py:func:`mammos_entity.io.entities.from_file` instead. (`PR58
+    :py:func:`mammos_entity.io.entities_from_file` instead. (`PR58
     <https://github.com/MaMMoS-project/mammos-entity/pull/58>`__)
 
 Fixed
 -----
 
 ``mammos-entity``
-  - On Windows, CSV files written with ``mammos-entity.io`` had blank lines
-    between all data lines. (`PR66
-    <https://github.com/MaMMoS-project/mammos-entity/pull/66`__)
+  - On Windows, CSV files written with mammos-entity had blank lines between all
+    data lines. (`PR66
+    <https://github.com/MaMMoS-project/mammos-entity/pull/66>`__)
   - Writing CSV files with entities of different shapes 0 and 1, where elements
     with shape 0 were broadcasted is no longer supported as it is not round-trip
     safe. (`PR67 <https://github.com/MaMMoS-project/mammos-entity/pull/67>`__)
 
 ``mammos-mumag``
-  - Fixed the default values of the `MaterialDomain` class (`PR41
+  - Fixed the default values of the :py:class:`~mammos_mumag.materials.MaterialDomain` class (`PR41
     <https://github.com/MaMMoS-project/mammos-mumag/pull/41>`__)
 
 0.5.0 -- 2025-07-11
