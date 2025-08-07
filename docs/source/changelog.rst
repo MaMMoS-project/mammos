@@ -27,6 +27,10 @@ Added
   - A function :py:func:`mammos_entity.concat_flat` to concatenate compatible
     entities, quantities and array-likes into a single entity. (`PR56
     <https://github.com/MaMMoS-project/mammos-entity/pull/56>`__)
+``mammos-mumag``
+  - Add function `mammos_mumag.hysteresis.read_result` to read the result of a hysteresis loop from a folder (without running the hysteresis calculation again). (`PR48 <https://github.com/MaMMoS-project/mammos-mumag/pull/48>`__)
+  - Implement `mammos_mumag.mesh.Mesh` class that can read and display information of local meshes, meshes on Zenodo and meshes given by the user. (`PR53 <https://github.com/MaMMoS-project/mammos-mumag/pull/53>`__)
+  - (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 Changed
 -------
@@ -40,12 +44,14 @@ Changed
   - The initial guess for the optimization of the Curie Temperature in Kuz'min
     formula is set to a much lower temperature (depending on the data). (`PR18
     <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
-
 ``mammos-entity``
   - When reading files with :py:mod:`mammos_entity.io` IRIs are now checked in
     addition to ontology labels and file reading fails if there is a mismatch
     between IRI and ontology label. (`PR68
     <https://github.com/MaMMoS-project/mammos-entity/pull/68>`__)
+``mammos-mumag``
+  - Changed the output of the hysteresis loop in compliance with `mammos_entity.io` v2. (`PR54 <https://github.com/MaMMoS-project/mammos-mumag/pull/54>`__)
+  - (`PR46 <https://github.com/MaMMoS-project/mammos-mumag/pull/46>`__)
 
 Deprecated
 ----------
@@ -67,7 +73,6 @@ Fixed
   - Writing CSV files with entities of different shapes 0 and 1, where elements
     with shape 0 were broadcasted is no longer supported as it is not round-trip
     safe. (`PR67 <https://github.com/MaMMoS-project/mammos-entity/pull/67>`__)
-
 ``mammos-mumag``
   - Fixed the default values of the :py:class:`~mammos_mumag.materials.MaterialDomain` class (`PR41
     <https://github.com/MaMMoS-project/mammos-mumag/pull/41>`__)
