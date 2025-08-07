@@ -30,7 +30,7 @@ dependencies = [
   "mammos-entity==0.10.0",
   "mammos-mumag==0.7.1",
   "mammos-spindynamics==0.2.2",
-  "mammos-units==0.3.1",
+  "mammos-units==0.3.2",
 ]
 
 [project.scripts]
