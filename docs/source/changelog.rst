@@ -79,7 +79,7 @@ Added
 -----
 
 ``mammos-entity``
-  - A new submodule :py:mod:`mammos-entity.io` that provides two functions to
+  - A new submodule :py:mod:`mammos_entity.io` that provides two functions to
     write and read CSV files with additional ontology metadata. For more details
     refer to the new :doc:`io documentation </examples/mammos-entity/io>`.
     (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46
