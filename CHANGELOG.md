@@ -6,4 +6,8 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.6.0](https://github.com/MaMMoS-project/mammos/tree/0.6.0) – 2025-08-13
 
+### Misc
+
+- Use [towncrier](https://towncrier.readthedocs.io) to generate changelog from fragments. Each new PR must include a changelog fragment. ([#33](https://github.com/MaMMoS-project/mammos/pull/33))

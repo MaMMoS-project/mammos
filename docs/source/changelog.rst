@@ -6,7 +6,7 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-0.6.0 -- 2025-08-12
+0.6.0 -- 2025-08-13
 ===================
 
 Added
@@ -73,6 +73,10 @@ Fixed
   - Writing CSV files with entities of different shapes 0 and 1, where elements
     with shape 0 were broadcasted is no longer supported as it is not round-trip
     safe. (`PR67 <https://github.com/MaMMoS-project/mammos-entity/pull/67>`__)
+``mammos-dft``
+  - Update attribute name of uniaxial anisotropy constant to `Ku_0` from `K1_0`
+    for the returned `MicromagneticProperties` object during a database lookup.
+    ([#19](https://github.com/MaMMoS-project/mammos-dft/pull/19))
 ``mammos-mumag``
   - Fixed the default values of the :py:class:`~mammos_mumag.materials.MaterialDomain` class (`PR41
     <https://github.com/MaMMoS-project/mammos-mumag/pull/41>`__)
