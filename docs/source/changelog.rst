@@ -6,6 +6,18 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+Unpublished
+===========
+
+Added
+-----
+
+``mammos-mumag``
+  - Two new notebooks :doc:`/examples/mammos-mumag/hysteresis` and
+    :doc:`/examples/mammos-mumag/additional-functionality` documenting
+    additional functionality of ``mammos-mumag``. (`PR42
+    <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
+
 0.6.0 -- 2025-08-13
 ===================
 
@@ -35,10 +47,6 @@ Added
   - Implement :py:class:`mammos_mumag.mesh.Mesh` class that can read and display
     information of local meshes, meshes on Zenodo and meshes given by the user.
     (`PR53 <https://github.com/MaMMoS-project/mammos-mumag/pull/53>`__)
-  - Two new notebooks :doc:`/examples/mammos-mumag/hysteresis` and
-    :doc:`/examples/mammos-mumag/additional-functionality` documenting
-    additional functionality of ``mammos-mumag``. (`PR42
-    <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 Changed
 -------
