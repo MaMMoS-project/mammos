@@ -54,7 +54,6 @@ Changed
     <https://github.com/MaMMoS-project/mammos-entity/pull/68>`__)
 ``mammos-mumag``
   - Changed the output of the hysteresis loop in compliance with :py:mod:`mammos_entity.io` v2. (`PR54 <https://github.com/MaMMoS-project/mammos-mumag/pull/54>`__)
-  - (`PR46 <https://github.com/MaMMoS-project/mammos-mumag/pull/46>`__)
 
 Deprecated
 ----------
