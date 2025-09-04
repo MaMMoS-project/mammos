@@ -30,7 +30,10 @@ Added
 ``mammos-mumag``
   - Add function :py:func:`mammos_mumag.hysteresis.read_result` to read the result of a hysteresis loop from a folder (without running the hysteresis calculation again). (`PR48 <https://github.com/MaMMoS-project/mammos-mumag/pull/48>`__)
   - Implement :py:class:`mammos_mumag.mesh.Mesh` class that can read and display information of local meshes, meshes on Zenodo and meshes given by the user. (`PR53 <https://github.com/MaMMoS-project/mammos-mumag/pull/53>`__)
-  - (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
+  - Two new notebooks :doc:`/examples/mammos-mumag/hysteresis` and
+    :doc:`/examples/mammos-mumag/additional-functionality` documenting
+    additional functionality of ``mammos-mumag``. (`PR42
+    <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 Changed
 -------
