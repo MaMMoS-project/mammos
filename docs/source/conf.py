@@ -77,7 +77,7 @@ numfig_format = {
     'table': 'Table %s',
     'code-block': 'Listing %s',
 }
-jupyter_execute_notebooks = "off"
+nb_execution_mode = "off"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
