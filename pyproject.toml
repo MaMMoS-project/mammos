@@ -107,7 +107,7 @@ style = "pre-commit run --all-files"
 
 [tool.pixi.feature.docs.dependencies]
 ipykernel = "*"
-nbsphinx = "*"
+myst-nb = "*"
 pandoc = "*"
 pydata-sphinx-theme = "*"
 sphinx = "*"

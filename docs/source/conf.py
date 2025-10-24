@@ -32,7 +32,7 @@ nitpick_ignore = [
 ]
 
 extensions = [
-    "nbsphinx",
+    "myst_nb",
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx.ext.autodoc",
@@ -77,6 +77,7 @@ numfig_format = {
     'table': 'Table %s',
     'code-block': 'Listing %s',
 }
+jupyter_execute_notebooks = "off"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
