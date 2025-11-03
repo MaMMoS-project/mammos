@@ -6,8 +6,8 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
-Unpublished
-===========
+0.7.0 -- 2025-11-03
+===================
 
 Added
 -----
@@ -17,6 +17,32 @@ Added
     :doc:`/examples/mammos-mumag/additional-functionality` documenting
     additional functionality of ``mammos-mumag``. (`PR42
     <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
+  - Create cli command ``unv2fly`` to convert unv mesh to fly format. (`PR61 <https://github.com/MaMMoS-project/mammos-mumag/pull/61>`__)
+  - Added notebook :doc:`/examples/mammos-mumag/using_tesla` for information on how to set up a workflow in Tesla. (`PR68 <https://github.com/MaMMoS-project/mammos-mumag/pull/68>`__)
+  - Added possibility to install GPU support (both CUDA and ROCm) with ``pip`` via the extra dependencies. (`PR81 <https://github.com/MaMMoS-project/mammos-mumag/pull/81>`__)
+
+Fixed
+-----
+
+``mammos-analysis``
+  - The function :py:func:`mammos_analysis.kuzmin_properties` will not assume the magnetization input is in ``A/m``. If the input is in a unit not convertible to ``A/m`` (e.g., Tesla), an error is raised. (`PR31 <https://github.com/MaMMoS-project/mammos-analysis/pull/31>`__)
+``mammos-mumag``
+  - Fixed default ``outdir`` input in two functions in :py:mod:`mammos_mumag.simulation`. (`PR69 <https://github.com/MaMMoS-project/mammos-mumag/pull/69>`__)
+
+
+Changed
+-------
+
+``mammos-mumag``
+  - Now :py:func:`mammos_mumag.hysteresis.run` can be used to execute simulations with multigrain materials. (`PR46 <https://github.com/MaMMoS-project/mammos-mumag/pull/46>`__)
+  - Implement automatic retries to download meshes if the requests fail. The requests will try three times in total, with a backoff factor of 0.1. (`PR70 <https://github.com/MaMMoS-project/mammos-mumag/pull/70>`__)
+  - Documentation is updated. Parameters have been formatted to snake case when possible. The names ``h_start``, ``h_final``, ``h_step``,  ``n_h_steps``, ``m_step``, ``m_final``, and ``tol_h_mag_factor`` take the place of ``hstart``, ``hfinal``, ``hstep``, ``nhsteps``, ``mstep``, ``mfinal``, and ``tol_hmag_factor``. Whenever possible, reasonable entities have been defined. The unused variables ``iter_max``, ``tol_u``, and ``verbose`` have been removed. **Warning**: this PR causes failure in previously defined workflows if the variables  were defined by the user. (`PR71 <https://github.com/MaMMoS-project/mammos-mumag/pull/71>`__)
+
+Misc
+----
+
+``mammos-mumag``
+  - Added :doc:`examples/mammos-mumag/hysteresis` to document full functionality of :py:mod:`mammos-mumag` when running a hysteresis loop simulation. Additionally, show the functionality of the package irrelevant to an average user in :doc:`examples/mammos-mumag/additional-functionality`. (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 0.6.0 -- 2025-08-13
 ===================
