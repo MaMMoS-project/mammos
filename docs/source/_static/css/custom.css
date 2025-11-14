@@ -10,7 +10,21 @@
     width: 20%;
 }
 
-body { counter-reset: codecell; }
+body {
+    counter-reset: codecell;
+}
 
-.cell .cell_input::before { counter-increment: codecell; content: " In [" counter(codecell) "]"; display: block; font-weight: 500; margin-bottom: 0.25rem; margin-left: 0.5rem; color: var(--pst-color-text, inherit); /* adapts to PyData theme; remove if not needed */ }
+.cell_input {
+    background-color: var(--mystnb-source-border-color) !important;
+}
+
+.cell .cell_input::before {
+    counter-increment: codecell;
+    content: " [" counter(codecell) "]";
+    display: block;
+    margin-bottom: 0.3rem;
+    margin-left: 0.5rem;
+    color: var(--pst-color-on-surface);
+    font-family: var(--pst-font-family-monospace);
+}
 
