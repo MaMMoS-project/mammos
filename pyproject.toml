@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mammos"
-version = "0.7.0"
+version = "0.8.0"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 authors = [
@@ -25,10 +25,10 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-  "mammos-analysis==0.1.5",
+  "mammos-analysis==0.2.0",
   "mammos-dft==0.3.2",
-  "mammos-entity==0.10.0",
-  "mammos-mumag==0.9.1",
+  "mammos-entity==0.11.0",
+  "mammos-mumag==0.10.0",
   "mammos-spindynamics==0.2.3",
   "mammos-units==0.3.2",
 ]

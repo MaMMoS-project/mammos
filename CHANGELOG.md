@@ -6,6 +6,13 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.8.0](https://github.com/MaMMoS-project/mammos/tree/0.8.0) – 2025-11-27
+
+### Fixed
+
+- Typos fixed in Hard magnet tutorial notebook. ([#45](https://github.com/MaMMoS-project/mammos/pull/45))
+
+
 ## [mammos 0.7.0](https://github.com/MaMMoS-project/mammos/tree/0.7.0) – 2025-11-05
 
 ## [mammos 0.6.0](https://github.com/MaMMoS-project/mammos/tree/0.6.0) – 2025-08-13

@@ -6,6 +6,32 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.8.0 -- 2025-11-27
+===================
+
+Added
+-----
+
+``mammos-analysis``
+  - Added `celsius=True` option in the `plot` methods for the :py:mod:`mammos_analysis.kuzmin` module to generate plots in degree Celsius. (`PR40 <https://github.com/MaMMoS-project/mammos-analysis/pull/40>`__)
+``mammos-mumag``
+  - Added `tesla=True` option in the `plot` method of :py:class:`mammos_mumag.hysteresis.Result` to generate the hysteresis loop in Tesla units. (`PR87 <https://github.com/MaMMoS-project/mammos-mumag/pull/87>`__)
+
+
+Changed
+-------
+
+``mammos_entity``
+  - Improved :doc:`/examples/mammos-entity/io>` notebook. Use cases for working with :py:class:`~mammos_entity.io.EntityCollection` objects are added. (`PR83 <https://github.com/MaMMoS-project/mammos-entity/pull/83>`__)
+
+
+Misc
+----
+
+``mammos-entity``
+  - Fix dependencies: remove upper limit for `emmontopy` and add `pandas>2`. (`PR93 <https://github.com/MaMMoS-project/mammos-entity/pull/93>`__)
+
+
 0.7.0 -- 2025-11-05
 ===================
 
