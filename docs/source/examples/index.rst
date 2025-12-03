@@ -1,13 +1,10 @@
 Examples
 ========
 
-End-to-end workflows are shown in the following set of tutorials:
+End-to-end workflows are shown in the :doc:`Demonstrator <../demonstrator/index>` page. Some require additional software, see `Requirements` at the top of the individual workflows.
 
-.. toctree::
-   :caption: Workflows
-   :maxdepth: 2
-
-   workflows/index
+Tutorials for the individual packages
+-------------------------------------
 
 Further examples for the individual packages are available in these tutorials:
 

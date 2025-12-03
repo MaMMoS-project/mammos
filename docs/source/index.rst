@@ -5,6 +5,7 @@ MaMMoS documentation
    :maxdepth: 1
    :hidden:
 
+   Demonstrator <demonstrator/index>
    examples/index
    api/index
    design
@@ -26,8 +27,8 @@ running the examples for the individual packages interactively in the cloud.
      - Examples
      - API
      - Interactive examples
-   * - `mammos <https://github.com/mammos-project/mammos>`__
-     - :doc:`examples/workflows/index`
+   * - `mammmos <https://github.com/mammos-project/mammos>`__
+     - :doc:`Demonstrator <demonstrator/index>`
      - –
      - |binder-mammos-1| |binder-mammos-2|
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
