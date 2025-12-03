@@ -1,13 +1,37 @@
 Examples
 ========
 
-End-to-end workflows are shown in the following set of tutorials:
+End-to-end workflows are shown in the following set of tutorials. Some require additional software, see `Requirements` at the top of the individual workflows.
+
+Demonstrator workflows
+----------------------
 
 .. toctree::
-   :caption: Workflows
-   :maxdepth: 2
+   :caption: Demonstrator
+   :maxdepth: 1
+   :hidden:
 
-   workflows/index
+   workflows/hard-magnet-tutorial
+   workflows/hard-magnet-material-exploration
+   workflows/sensor
+
+* `Hard magnet tutorial <workflows/hard-magnet-tutorial>`__ |binder-1|
+* `Hard magnet material exploration <workflows/hard-magnet-material-exploration>`__ |binder-2|
+* `Sensor shape optimization workflow <workflows/sensor>`__  |binder-3|
+
+.. |binder-1| image:: /_static/badge-launch-binder2.svg
+   :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples%2Fhard-magnet-tutorial.ipynb
+
+.. |binder-2| image:: /_static/badge-launch-binder2.svg
+   :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples%2Fhard-magnet-material-exploration.ipynb
+
+.. |binder-3| image:: /_static/badge-launch-binder2.svg
+   :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples%2Fsensor.ipynb
+
+
+
+Tutorials for the individual packages
+-------------------------------------
 
 Further examples for the individual packages are available in these tutorials:
 
