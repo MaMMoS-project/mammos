@@ -6,6 +6,18 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.8.1 -- 2025-12-03
+===================
+
+Misc
+----
+
+``mammos-mumag``
+  - Fixed dependencies: added `matplotlib`, `pandas`, and `urllib3`. (`PR93 <https://github.com/MaMMoS-project/mammos-mumag/pull/93>`__)
+``mammos-spindynamics``
+  - Fixed dependencies: added `numpy`. (`PR38 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/38>`__)
+
+
 0.8.0 -- 2025-11-27
 ===================
 
