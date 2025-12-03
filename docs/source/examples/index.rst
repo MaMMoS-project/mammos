@@ -31,7 +31,7 @@ Demonstrator workflows
 
 
 Tutorials for the individual packages
---------------------------------
+-------------------------------------
 
 Further examples for the individual packages are available in these tutorials:
 
