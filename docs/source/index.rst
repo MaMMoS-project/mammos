@@ -27,7 +27,7 @@ running the examples for the individual packages interactively in the cloud.
      - Examples
      - API
      - Interactive examples
-   * - `mammmos <https://github.com/mammos-project/mammos>`__
+   * - `mammos <https://github.com/mammos-project/mammos>`__
      - :doc:`Demonstrator <demonstrator/index>`
      - –
      - |binder-mammos-1| |binder-mammos-2|
@@ -91,6 +91,8 @@ Additional tools
 
 An overview of other tools created through or supported by the MaMMoS project is
 available at https://mammos-project.github.io/#additional-tools.
+
+.. _installation:
 
 Framework installation
 ----------------------
@@ -208,13 +210,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       installed separately. Please refer to the documentation of esys-escript
       for installation instructions.
 
-Framework example notebooks
----------------------------
-
-To conveniently download all example notebooks use the ``mammos-fetch-examples``
-script, which is installed as part of the ``mammos`` package (:ref:`further
-details <download-all-examples>`).
-
+.. include:: /downloading-examples.rst
 
 Acknowledgements
 ----------------

@@ -1,4 +1,4 @@
-{% if ('examples' in pagename) and not 'index' in pagename %}
+{% if ('examples' in pagename or 'demonstrator' in pagename) and not 'index' in pagename %}
 <div class="tocsection onthispace pt-5 bp-3">
     <h5>Try online:</h5>
     {% if 'examples/workflows' in pagename %}
