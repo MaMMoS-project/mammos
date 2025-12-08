@@ -5,6 +5,7 @@ MaMMoS documentation
    :maxdepth: 1
    :hidden:
 
+   Demonstrator <demonstrator/index>
    examples/index
    api/index
    design
@@ -27,7 +28,7 @@ running the examples for the individual packages interactively in the cloud.
      - API
      - Interactive examples
    * - `mammos <https://github.com/mammos-project/mammos>`__
-     - :doc:`examples/workflows/index`
+     - :doc:`Demonstrator <demonstrator/index>`
      - –
      - |binder-mammos-1| |binder-mammos-2|
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
@@ -90,6 +91,8 @@ Additional tools
 
 An overview of other tools created through or supported by the MaMMoS project is
 available at https://mammos-project.github.io/#additional-tools.
+
+.. _installation:
 
 Framework installation
 ----------------------
@@ -207,13 +210,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       installed separately. Please refer to the documentation of esys-escript
       for installation instructions.
 
-Framework example notebooks
----------------------------
-
-To conveniently download all example notebooks use the ``mammos-fetch-examples``
-script, which is installed as part of the ``mammos`` package (:ref:`further
-details <download-all-examples>`).
-
+.. include:: /downloading-examples.rst
 
 Acknowledgements
 ----------------
