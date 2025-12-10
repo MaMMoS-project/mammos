@@ -6,6 +6,13 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.8.2](https://github.com/MaMMoS-project/mammos/tree/0.8.2) – 2025-12-10
+
+### Misc
+
+- Refactored Demonstrator page with examples from the `mammos` metapackage. ([#46](https://github.com/MaMMoS-project/mammos/pull/46))
+
+
 ## [mammos 0.8.1](https://github.com/MaMMoS-project/mammos/tree/0.8.1) – 2025-12-03
 
 ## [mammos 0.8.0](https://github.com/MaMMoS-project/mammos/tree/0.8.0) – 2025-11-27

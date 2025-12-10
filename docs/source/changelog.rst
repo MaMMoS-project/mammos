@@ -6,6 +6,20 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.8.2 -- 2025-12-10
+===================
+
+Misc
+----
+
+``mammos``
+  - Refactored Demonstrator page with examples from the ``mammos`` metapackage. (`PR46 <https://github.com/MaMMoS-project/mammos/pull/46>`__)
+``mammos-dft``
+  -Materials Fe3Y and Fe2.33Ta0.67Y were added to the database. (`PR39 <https://github.com/MaMMoS-project/mammos-dft/pull/39>`__)
+``mammos-spindynamics``
+  - Materials Fe3Y and Fe2.33Ta0.67Y were added to the database. (`PR41 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/41>`__)
+
+
 0.8.1 -- 2025-12-03
 ===================
 
