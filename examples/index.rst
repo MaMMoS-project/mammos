@@ -27,6 +27,7 @@ of the individual notebooks.
    hard-magnet-material-exploration
    sensor
    hard-magnet-ai-surrogate-model
+   spindynamics-temperature-dependent-parameters
 
 .. list-table::
    :header-rows: 1
@@ -41,6 +42,8 @@ of the individual notebooks.
      - |3-mybinder| |3-mpcdf|
    * - :doc:`hard-magnet-ai-surrogate-model`
      - |4-mybinder| |4-mpcdf|
+   * - :doc:`spindynamics-temperature-dependent-parameters`
+     - |5-mybinder| |5-mpcdf|
 
 .. note::
 
@@ -72,4 +75,7 @@ Additional notebooks showing more (low-level) details for the individual framewo
    :target: https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab%2Ftree%2Fexamples%2FAI-surrogate-model-hard-magnets.ipynb
 .. |4-mpcdf| image:: /_static/badge-launch-binder2.svg
    :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples%2FAI-surrogate-model-hard-magnets.ipynb
-
+.. |5-mybinder| image:: /_static/badge-launch-binder.svg
+   :target: https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab%2Ftree%2Fexamples%2Fspindynamics.ipynb
+.. |5-mpcdf| image:: /_static/badge-launch-binder2.svg
+   :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples%2Fspindynamics.ipynb
