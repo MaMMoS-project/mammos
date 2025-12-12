@@ -27,6 +27,7 @@ of the individual notebooks.
    hard-magnet-material-exploration
    sensor
    AI-surrogate-model-hard-magnets
+   benchmark-hard-magnet
 
 .. list-table::
    :header-rows: 1
