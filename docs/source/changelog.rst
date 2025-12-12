@@ -6,6 +6,18 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.9.1 -- 2025-12-12
+===================
+
+Fixed
+-----
+
+``mammos-entity``
+  - Fixed logic to establish ontology-preferred units. (`PR98 <https://github.com/MaMMoS-project/mammos-entity/pull/98>`__)
+``mammos-spindynamics``
+  - Fixed header of ``M.csv`` for Fe3Y and Fe2.33Ta0.67Y. (`PR45 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/45>`__)
+
+
 0.8.2 -- 2025-12-10
 ===================
 
