@@ -6,6 +6,16 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+0.10.0 -- 2025-12-15
+====================
+
+Added
+-----
+
+``mammos-dft``
+  - A new function :py:func:`mammos_dft.db.get_uppasd_properties` to get inputs required for UppASD from the database. (`PR41 <https://github.com/MaMMoS-project/mammos-dft/pull/41>`__)
+
+
 0.9.1 -- 2025-12-12
 ===================
 
@@ -18,6 +28,19 @@ Fixed
   - Fixed header of ``M.csv`` for Fe3Y and Fe2.33Ta0.67Y. (`PR45 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/45>`__)
 
 
+0.9.0 -- 2025-12-11
+===================
+
+New package ``mammos-ai`` added.
+
+Added
+-----
+
+``mammos-ai``
+  - A new AI model which can predict extrinsic magnetic properties (Hc, Mr, BHmax) from the
+    intrinsic micromagnetic parameters Ms, A and K has been added. (`PR5 <https://github.com/MaMMoS-project/mammos-ai/pull/5>`__, `PR6 <https://github.com/MaMMoS-project/mammos-ai/pull/6>`__)
+
+
 0.8.2 -- 2025-12-10
 ===================
 
@@ -27,7 +50,7 @@ Misc
 ``mammos``
   - Refactored Demonstrator page with examples from the ``mammos`` metapackage. (`PR46 <https://github.com/MaMMoS-project/mammos/pull/46>`__)
 ``mammos-dft``
-  -Materials Fe3Y and Fe2.33Ta0.67Y were added to the database. (`PR39 <https://github.com/MaMMoS-project/mammos-dft/pull/39>`__)
+  - Materials Fe3Y and Fe2.33Ta0.67Y were added to the database. (`PR39 <https://github.com/MaMMoS-project/mammos-dft/pull/39>`__)
 ``mammos-spindynamics``
   - Materials Fe3Y and Fe2.33Ta0.67Y were added to the database. (`PR41 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/41>`__)
 

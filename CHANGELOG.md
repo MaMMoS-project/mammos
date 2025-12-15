@@ -6,7 +6,15 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.10.0](https://github.com/MaMMoS-project/mammos/tree/0.10.0) – 2025-12-15
+
+No significant changes.
+
+
 ## [mammos 0.9.1](https://github.com/MaMMoS-project/mammos/tree/0.9.1) – 2025-12-12
+
+No significant changes.
+
 
 ## [mammos 0.9.0](https://github.com/MaMMoS-project/mammos/tree/0.9.0) – 2025-12-11
 
@@ -24,6 +32,9 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 ## [mammos 0.8.1](https://github.com/MaMMoS-project/mammos/tree/0.8.1) – 2025-12-03
 
+No significant changes.
+
+
 ## [mammos 0.8.0](https://github.com/MaMMoS-project/mammos/tree/0.8.0) – 2025-11-27
 
 ### Fixed
@@ -32,6 +43,9 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 
 ## [mammos 0.7.0](https://github.com/MaMMoS-project/mammos/tree/0.7.0) – 2025-11-05
+
+No significant changes.
+
 
 ## [mammos 0.6.0](https://github.com/MaMMoS-project/mammos/tree/0.6.0) – 2025-08-13
 
