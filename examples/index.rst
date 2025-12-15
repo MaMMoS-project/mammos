@@ -39,7 +39,7 @@ of the individual notebooks.
      - |2-mybinder| |2-mpcdf|
    * - :doc:`sensor`
      - |3-mybinder| |3-mpcdf|
-   * - :doc:`AI-surrogate-model-hard-magnets`
+   * - :doc:`hard-magnet-ai-surrogate-model`
      - |4-mybinder| |4-mpcdf|
 
 .. note::
