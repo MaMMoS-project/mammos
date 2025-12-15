@@ -26,7 +26,7 @@ of the individual notebooks.
    hard-magnet-tutorial
    hard-magnet-material-exploration
    sensor
-   AI-surrogate-model-hard-magnets
+   hard-magnet-ai-surrogate-model
 
 .. list-table::
    :header-rows: 1
