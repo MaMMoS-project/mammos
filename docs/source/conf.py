@@ -42,6 +42,9 @@ extensions = [
     "sphinx.ext.viewcode",
 ]
 
+myst_enable_extensions = [
+    "colon_fence",
+]
 templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
