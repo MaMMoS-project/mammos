@@ -129,7 +129,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         .. code:: shell
 
            pixi init
-           pixi add python jupyterlab "packaging<25" "pandas<2.3" esys-escript
+           pixi add python=3.11 jupyterlab esys-escript uppasd
            pixi add mammos --pypi
            pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
@@ -138,7 +138,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         .. code:: shell
 
            pixi init
-           pixi add python jupyterlab "packaging<25" "pandas<2.3"
+           pixi add python=3.11 jupyterlab uppasd
            pixi add mammos --pypi
            pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
@@ -166,14 +166,14 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
 
       .. code:: shell
 
-         conda create -n mammos-environment python pip jupyterlab "packaging<25" "pandas<2.3" esys-escript
+         conda create -n mammos-environment python=3.11 pip jupyterlab esys-escript uppasd
          conda activate mammos-environment
          pip install mammos
          pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
    .. tab-item:: pip
 
-      Requirements: ``python>=3.11`` and ``pip``
+      Requirements: ``python=3.11`` and ``pip``
 
       When using ``pip`` we recommend creating a virtual environment to isolate the MaMMoS installation.
 
