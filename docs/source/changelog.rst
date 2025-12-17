@@ -6,6 +6,40 @@ The format follows `Keep a Changelog <https://keepachangelog.com/>`__. Versions
 follow `semantic versioning <https://semver.org/>`__, the metapackage version is
 updated according to the largest bump of any of the dependent packages.
 
+..
+   ADD NEW ENTRIES BELOW THIS COMMENT.
+
+0.11.0 -- 2025-12-17
+====================
+
+Added
+-----
+
+``mammos``
+  - New demonstrator notebook: performing spindynamics simulations with UppASD
+    to get temperature-dependent intrinsic properties.
+    (`PR55 <https://github.com/MaMMoS-project/mammos/pull/55>`__)
+``mammos-analysis``
+  - Initial guesses for the Kuz'min fit are now allowed.
+    (`PR50 <https://github.com/MaMMoS-project/mammos-analysis/pull/50>`__)
+``mammos-spindynamics``
+  - Python interface for UppASD.
+    (`PR42 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/42>`__,
+    `PR43 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/43>`__)
+
+Changed
+-------
+
+``mammos``
+  - Hard magnet demonstrator notebooks now use ``Fe2.33Ta0.67Y`` as default
+    material. (`PR49 <https://github.com/MaMMoS-project/mammos/pull/49>`__)
+``mammos-analysis``
+  - Improved heuristics for the initial guess for the Kuz'min fit to make the
+    fitting more robust. (`PR50 <https://github.com/MaMMoS-project/mammos-analysis/pull/50>`__)
+``mammos-dft``
+  - The values of posfiletype and maptype were added to the databases.
+    (`PR43 <https://github.com/MaMMoS-project/mammos-dft/pull/43>`__)
+
 0.10.0 -- 2025-12-15
 ====================
 
