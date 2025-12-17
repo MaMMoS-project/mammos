@@ -12,5 +12,5 @@ dependencies:
   - pip:
       - --extra-index-url https://wheels.vtk.org  # based on https://github.com/pyvista/pyvista/blob/main/docker/slim.Dockerfile
       - vtk-osmesa
-      - mammos==0.10.0
+      - mammos==0.11.0
       - trame_jupyter_extension

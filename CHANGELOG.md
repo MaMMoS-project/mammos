@@ -6,6 +6,17 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.11.0](https://github.com/MaMMoS-project/mammos/tree/0.11.0) – 2025-12-17
+
+### Added
+
+- New demonstrator notebook: performing spindynamics simulations with UppASD to get temperature-dependent intrinsic properties. ([#55](https://github.com/MaMMoS-project/mammos/pull/55))
+
+### Changed
+
+- Hard magnet demonstrator notebooks now use `Fe2.33Ta0.67Y` as default material. ([#49](https://github.com/MaMMoS-project/mammos/pull/49))
+
+
 ## [mammos 0.10.0](https://github.com/MaMMoS-project/mammos/tree/0.10.0) – 2025-12-15
 
 No significant changes.
