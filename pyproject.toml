@@ -26,11 +26,11 @@ classifiers = [
 requires-python = ">=3.11"
 dependencies = [
   "mammos-ai==0.2.0",
-  "mammos-analysis==0.2.0",
+  "mammos-analysis==0.3.0",
   "mammos-dft==0.4.0",
   "mammos-entity==0.11.1",
   "mammos-mumag==0.10.1",
-  "mammos-spindynamics==0.2.6",
+  "mammos-spindynamics==0.3.0",
   "mammos-units==0.3.2",
 ]
 
@@ -90,6 +90,7 @@ trame-server = ">=2.11.7"
 trame-vtk = ">=2.5.8"
 trame-vuetify = ">=2.3.1"
 towncrier = "*"
+uppasd = "*"
 
 [tool.pixi.target.linux-64.dependencies]
 esys-escript = ">=5.10,<6"
