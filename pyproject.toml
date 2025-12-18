@@ -30,7 +30,7 @@ dependencies = [
   "mammos-dft==0.4.1",
   "mammos-entity==0.11.1",
   "mammos-mumag==0.10.1",
-  "mammos-spindynamics==0.3.0",
+  "mammos-spindynamics==0.3.1",
   "mammos-units==0.3.2",
 ]
 
