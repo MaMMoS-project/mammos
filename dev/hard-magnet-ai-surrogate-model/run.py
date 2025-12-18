@@ -16,10 +16,10 @@ with open(HERE / "inp_parameters.json") as f:
 H_max = (5*u.T).to("A/m")
 
 results_hysteresis = mammos_mumag.hysteresis.run(
-    mesh="cube50_singlegrain_msize2",
+    mesh="mesh.fly",  # this is cube50_singlegrain_msize2
     Ms=me.Ms(parameters["Ms"]),
     A=me.A(parameters["A"]),
-    K1=me.K1(parameters["K1"]),
+    K1=me.Ku(parameters["K1"]),
     theta=0,
     phi=0,
     h_start=H_max,
