@@ -56,6 +56,7 @@ def setup():
 
         shutil.copyfile(HERE / "submit.sh", outdir_i / "submit.sh")
         shutil.copyfile(HERE / "run.py", outdir_i / "run.py")
+        shutil.copy(HERE / "mesh.fly", outdir_i / "mesh.fly")
 
         res = subprocess.run(
             ["sbatch", "submit.sh"],
