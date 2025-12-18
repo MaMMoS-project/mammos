@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/zsh -l
 #
 # Standard output and error
 #SBATCH -o ./job.out.%j
@@ -14,7 +14,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem=128G
 #SBATCH --partition=gpu
 #
@@ -23,7 +23,8 @@
 #SBATCH --time=2-00:00:00
 
 module purge
-module load cuda/12.6
+mpsd-modules 25c $MPSD_MICROARCH
+module load gcc/13.2.0 cuda/12.6.2
 
 unset LD_LIBRARY_PATH
 
