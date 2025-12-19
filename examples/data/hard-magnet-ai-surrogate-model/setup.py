@@ -1,5 +1,4 @@
 import json
-import numpy as np
 import pathlib
 import shutil
 import subprocess
@@ -8,6 +7,7 @@ import mammos_analysis
 import mammos_dft
 import mammos_spindynamics
 import mammos_units as u
+import numpy as np
 
 u.set_enabled_equivalencies(u.magnetic_flux_field())
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -30,7 +30,7 @@ def setup():
         Ms = results_kuzmin.Ms(T)
         A = results_kuzmin.A(T)
         K1 = results_kuzmin.K1(T)
-        
+
         outdir_i = OUTDIR / f"T_{T}"
 
         if outdir_i.is_dir():
@@ -51,7 +51,7 @@ def setup():
                     "K1": K1.value,
                 },
                 f,
-                indent=4
+                indent=4,
             )
 
         shutil.copyfile(HERE / "submit.sh", outdir_i / "submit.sh")
@@ -65,11 +65,9 @@ def setup():
         )
 
         return_code = res.returncode
-        
+
         if return_code:
-            raise RuntimeError(
-                f"Simulation has failed. Exit with error: \n{res.stderr.decode('utf-8')}"
-            )
+            raise RuntimeError(f"Simulation has failed. Exit with error: \n{res.stderr.decode('utf-8')}")
 
     print("Submission complete.")
 

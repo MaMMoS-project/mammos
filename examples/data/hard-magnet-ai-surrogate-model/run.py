@@ -1,11 +1,11 @@
-import pathlib
 import json
-import pandas as pd
+import pathlib
 
+import mammos_analysis
 import mammos_entity as me
 import mammos_mumag
 import mammos_units as u
-import mammos_analysis
+import pandas as pd
 
 HERE = pathlib.Path(__file__).parent.resolve()
 u.set_enabled_equivalencies(u.magnetic_flux_field())
@@ -13,7 +13,7 @@ u.set_enabled_equivalencies(u.magnetic_flux_field())
 with open(HERE / "inp_parameters.json") as f:
     parameters = json.load(f)
 
-H_max = (5*u.T).to("A/m")
+H_max = (5 * u.T).to("A/m")
 
 results_hysteresis = mammos_mumag.hysteresis.run(
     mesh="mesh.fly",  # this is cube50_singlegrain_msize2
@@ -27,10 +27,12 @@ results_hysteresis = mammos_mumag.hysteresis.run(
     h_n_steps=30,
 )
 
-hyst_data = pd.DataFrame({
-    "H (A/m)": results_hysteresis.H.q,
-    "M (A/m)": results_hysteresis.M.q,
-})
+hyst_data = pd.DataFrame(
+    {
+        "H (A/m)": results_hysteresis.H.q,
+        "M (A/m)": results_hysteresis.M.q,
+    }
+)
 hyst_data.to_csv("hystloop.dat", index=False, sep="\t")
 
 extrinsic_properties = mammos_analysis.hysteresis.extrinsic_properties(
