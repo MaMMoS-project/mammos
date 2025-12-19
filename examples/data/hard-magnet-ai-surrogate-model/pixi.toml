@@ -1,0 +1,26 @@
+[project]
+authors = ["Andrea Petrocchi"]
+channels = ["conda-forge"]
+name = "ai-vs-mumag"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[dependencies]
+python = "==3.11"
+jupyter = "*"
+matplotlib = "*"
+pandas = "<2.3"
+esys-escript = "==5.10"
+packaging = "<25"
+mammos-analysis = "*"
+mammos-dft = "*"
+mammos-entity = "*"
+mammos-mumag = "*"
+mammos-spindynamics = "*"
+mammos-units = "*"
+
+[pypi-dependencies]
+jax = { version = "*", extras = ["cuda12"] }
+
+[tasks]
+launch = "python setup.py"
