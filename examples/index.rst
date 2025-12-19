@@ -25,8 +25,8 @@ of the individual notebooks.
 
    hard-magnet-tutorial
    hard-magnet-material-exploration
-   sensor
    hard-magnet-ai-surrogate-model
+   sensor
    spindynamics-temperature-dependent-parameters
 
 .. list-table::
