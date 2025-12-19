@@ -6,6 +6,22 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.11.1](https://github.com/MaMMoS-project/mammos/tree/0.11.1) – 2025-12-19
+
+### Added
+
+- Added micromagnetic simulation data to hard magnet AI example (and scripts to compute the data) ([#63](https://github.com/MaMMoS-project/mammos/pull/63))
+
+### Fixed
+
+- Set the available number of `OMP_NUM_THREADS` to 1 in the spindynamics notebook. ([#58](https://github.com/MaMMoS-project/mammos/pull/58))
+- Fixed binder links to AI an spindynamics notebooks. ([#59](https://github.com/MaMMoS-project/mammos/pull/59))
+
+### Misc
+
+- Reviewed hard magnet AI surrogate model example. ([#62](https://github.com/MaMMoS-project/mammos/pull/62))
+
+
 ## [mammos 0.11.0](https://github.com/MaMMoS-project/mammos/tree/0.11.0) – 2025-12-17
 
 ### Added

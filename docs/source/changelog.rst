@@ -9,6 +9,28 @@ updated according to the largest bump of any of the dependent packages.
 ..
    ADD NEW ENTRIES BELOW THIS COMMENT.
 
+0.11.1 -- 2025-12-18
+====================
+
+Added
+-----
+
+``mammos``
+  - Added micromagnetic simulation data to hard magnet AI example (and scripts to compute the data)
+    (`PR62 <https://github.com/MaMMoS-project/mammos/pull/62>`__, `PR63 <https://github.com/MaMMoS-project/mammos/pull/63>`__)
+
+Fixed
+-----
+
+``mammos``
+  - Set the available number of ``OMP_NUM_THREADS`` to 1 in the spindynamics notebook. (`PR58 <https://github.com/MaMMoS-project/mammos/pull/58>`__)
+  - Fixed binder links to AI spindynamics notebooks. (`PR59 <https://github.com/MaMMoS-project/mammos/pull/59>`__)
+
+``mammos-spindynamics``
+  - Indexing of ``TemperatureSweepData`` sub-runs. (`PR54 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/54>`__)
+
+
+   
 0.11.0 -- 2025-12-17
 ====================
 
