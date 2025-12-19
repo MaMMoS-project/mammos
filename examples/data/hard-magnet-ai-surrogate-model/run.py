@@ -1,3 +1,5 @@
+"""Python file to run a mammos-mumag simulation."""
+
 import json
 import pathlib
 

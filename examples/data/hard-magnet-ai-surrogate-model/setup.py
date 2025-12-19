@@ -1,3 +1,5 @@
+"""Python file to run all simulations."""
+
 import json
 import pathlib
 import shutil
@@ -14,6 +16,7 @@ HERE = pathlib.Path(__file__).parent.resolve()
 
 
 def setup():
+    """Setup hystloop simulation with mumag."""
     OUTDIR = HERE / "out"
     OUTDIR.mkdir(parents=True, exist_ok=True)
 
