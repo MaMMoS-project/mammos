@@ -38,10 +38,10 @@ of the individual notebooks.
      - |1-mybinder| |1-mpcdf|
    * - :doc:`hard-magnet-material-exploration`
      - |2-mybinder| |2-mpcdf|
-   * - :doc:`sensor`
-     - |3-mybinder| |3-mpcdf|
    * - :doc:`hard-magnet-ai-surrogate-model`
      - |4-mybinder| |4-mpcdf|
+   * - :doc:`sensor`
+     - |3-mybinder| |3-mpcdf|
    * - :doc:`spindynamics-temperature-dependent-parameters`
      - |5-mybinder| |5-mpcdf|
 
