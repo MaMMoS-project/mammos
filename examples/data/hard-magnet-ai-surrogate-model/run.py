@@ -37,6 +37,9 @@ hyst_data = pd.DataFrame(
 )
 hyst_data.to_csv("hystloop.dat", index=False, sep="\t")
 
+# compute extrinsic parameters here and write to disk for convenience. Can also be done
+# by `post-processing.ipynb` notebook later.
+
 extrinsic_properties = mammos_analysis.hysteresis.extrinsic_properties(
     results_hysteresis.H,
     results_hysteresis.M,
