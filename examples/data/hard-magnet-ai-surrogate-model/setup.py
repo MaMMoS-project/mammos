@@ -31,7 +31,7 @@ def setup():
     )
 
     # Download mesh if needed
-    if not Path.pathlib("mesh.fly").exists():
+    if not pathlib.Path("mesh.fly").exists():
         mesh = Mesh("cube50_singlegrain_msize2")
         mesh.write("mesh.fly")
 
