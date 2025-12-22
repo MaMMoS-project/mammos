@@ -7,10 +7,10 @@ import subprocess
 
 import mammos_analysis
 import mammos_dft
-from mammos_mumag.mesh import Mesh
 import mammos_spindynamics
 import mammos_units as u
 import numpy as np
+from mammos_mumag.mesh import Mesh
 
 u.set_enabled_equivalencies(u.magnetic_flux_field())
 HERE = pathlib.Path(__file__).parent.resolve()
