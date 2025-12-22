@@ -20,7 +20,7 @@
 #
 #SBATCH --mail-type=ALL
 # #SBATCH --mail-user=
-#SBATCH --time=1-00:00:00
+#SBATCH --time=2:00:00
 
 module purge
 mpsd-modules 25c $MPSD_MICROARCH
