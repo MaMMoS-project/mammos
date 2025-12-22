@@ -6,6 +6,13 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.11.2](https://github.com/MaMMoS-project/mammos/tree/0.11.2) – 2025-12-22
+
+### Misc
+
+- Updated hard magnetic AI surrogate model notebook ([#65](https://github.com/MaMMoS-project/mammos/pull/65))
+
+
 ## [mammos 0.11.1](https://github.com/MaMMoS-project/mammos/tree/0.11.1) – 2025-12-19
 
 ### Added

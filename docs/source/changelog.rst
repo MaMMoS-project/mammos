@@ -9,6 +9,29 @@ updated according to the largest bump of any of the dependent packages.
 ..
    ADD NEW ENTRIES BELOW THIS COMMENT.
 
+
+0.11.2 -- 2025-12-22
+====================
+
+Misc
+----
+
+``mammos``
+  - Updated hard magnetic AI surrogate model notebook (`PR65 <https://github.com/MaMMoS-project/mammos/pull/65>`__), after upgrade of `mammos-analysis to version 0.4.0 <https://github.com/MaMMoS-project/mammos-analysis/tree/0.4.0>`__
+
+Added
+-----
+
+``mammos-analysis``
+  - ``extract_BHmax``: calculate BHmax based on M, H and demagnization_coefficient. This replaces ``extract_maximum_energy_product()`` which has the same purpose but a different user interface. (`PR53 <https://github.com/MaMMoS-project/mammos-analysis/pull/53>`__)
+
+Removed
+-------
+
+``mammos-anylis``
+  - ``extract_maximum_energy_product()``. Use ``extract_BHmax`` instead. (`PR53 <https://github.com/MaMMoS-project/mammos-analysis/pull/53>`__)
+
+
 0.11.1 -- 2025-12-18
 ====================
 
