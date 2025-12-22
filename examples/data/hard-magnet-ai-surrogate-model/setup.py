@@ -7,6 +7,7 @@ import subprocess
 
 import mammos_analysis
 import mammos_dft
+from mammos_mumag.mesh import Mesh
 import mammos_spindynamics
 import mammos_units as u
 import numpy as np
@@ -29,7 +30,13 @@ def setup():
         K1_0=results_dft.Ku_0,
     )
 
-    for T in np.linspace(0, 1.1 * results_kuzmin.Tc.value, 20):
+    # Download mesh if needed
+    if not Path.pathlib("mesh.fly").exists():
+        mesh = Mesh("cube50_singlegrain_msize2")
+        mesh.write("mesh.fly")
+
+    for T in np.linspace(0, 0.95 * results_kuzmin.Tc.value, 20):
+        print(f"Working on {T=} K.")
         Ms = results_kuzmin.Ms(T)
         A = results_kuzmin.A(T)
         K1 = results_kuzmin.K1(T)
@@ -70,7 +77,7 @@ def setup():
         return_code = res.returncode
 
         if return_code:
-            raise RuntimeError(f"Simulation has failed. Exit with error: \n{res.stderr.decode('utf-8')}")
+            raise RuntimeError(f"Submission has failed. Exit with error: \n{res.stderr.decode('utf-8')}")
 
     print("Submission complete.")
 

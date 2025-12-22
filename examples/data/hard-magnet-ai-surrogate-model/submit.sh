@@ -8,7 +8,7 @@
 #SBATCH -D ./
 #
 # job name
-#SBATCH -J ai-vs-mumag
+#SBATCH -J CoFeH-300
 #
 # job requirements
 #SBATCH --nodes=1
@@ -19,8 +19,8 @@
 #SBATCH --partition=gpu
 #
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=andrea.petrocchi@mpsd.mpg.de
-#SBATCH --time=2-00:00:00
+# #SBATCH --mail-user=
+#SBATCH --time=1-00:00:00
 
 module purge
 mpsd-modules 25c $MPSD_MICROARCH

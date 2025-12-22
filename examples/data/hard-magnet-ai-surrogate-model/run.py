@@ -18,7 +18,7 @@ with open(HERE / "inp_parameters.json") as f:
 H_max = (5 * u.T).to("A/m")
 
 results_hysteresis = mammos_mumag.hysteresis.run(
-    mesh="mesh.fly",  # this is cube50_singlegrain_msize2
+    mesh="mesh.fly",
     Ms=me.Ms(parameters["Ms"]),
     A=me.A(parameters["A"]),
     K1=me.Ku(parameters["K1"]),
@@ -26,7 +26,7 @@ results_hysteresis = mammos_mumag.hysteresis.run(
     phi=0,
     h_start=H_max,
     h_final=-H_max,
-    h_n_steps=30,
+    h_n_steps=300,
 )
 
 hyst_data = pd.DataFrame(
