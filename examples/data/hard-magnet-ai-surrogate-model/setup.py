@@ -35,7 +35,7 @@ def setup():
         mesh = Mesh("cube50_singlegrain_msize2")
         mesh.write("mesh.fly")
 
-    for T in np.linspace(0, 0.95 * results_kuzmin.Tc.value, 20):
+    for T in np.linspace(0, 0.95 * results_kuzmin.Tc.value, 16):
         print(f"Working on {T=} K.")
         Ms = results_kuzmin.Ms(T)
         A = results_kuzmin.A(T)
