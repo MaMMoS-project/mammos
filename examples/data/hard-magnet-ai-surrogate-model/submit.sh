@@ -1,4 +1,4 @@
-#!/bin/zsh -l
+#!/bin/bash -l
 #
 # Standard output and error
 #SBATCH -o ./job.out.%j
@@ -28,5 +28,6 @@ module load gcc/13.2.0 cuda/12.6.2
 
 unset LD_LIBRARY_PATH
 
-eval "$(pixi shell-hook)"
+eval "$(/home/fangohr/.pixi/bin/pixi shell-hook)"
 time python -u run.py
+
