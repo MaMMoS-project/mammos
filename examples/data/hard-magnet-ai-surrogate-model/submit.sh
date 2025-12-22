@@ -1,4 +1,4 @@
-#!/bin/zsh -l
+#!/bin/bash -l
 #
 # Standard output and error
 #SBATCH -o ./job.out.%j
@@ -8,7 +8,7 @@
 #SBATCH -D ./
 #
 # job name
-#SBATCH -J ai-vs-mumag
+#SBATCH -J CoFeH-300
 #
 # job requirements
 #SBATCH --nodes=1
@@ -19,8 +19,8 @@
 #SBATCH --partition=gpu
 #
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=andrea.petrocchi@mpsd.mpg.de
-#SBATCH --time=2-00:00:00
+# #SBATCH --mail-user=
+#SBATCH --time=2:00:00
 
 module purge
 mpsd-modules 25c $MPSD_MICROARCH
@@ -28,5 +28,6 @@ module load gcc/13.2.0 cuda/12.6.2
 
 unset LD_LIBRARY_PATH
 
-eval "$(pixi shell-hook)"
+eval "$(/home/fangohr/.pixi/bin/pixi shell-hook)"
 time python -u run.py
+

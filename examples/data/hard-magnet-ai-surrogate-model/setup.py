@@ -10,6 +10,7 @@ import mammos_dft
 import mammos_spindynamics
 import mammos_units as u
 import numpy as np
+from mammos_mumag.mesh import Mesh
 
 u.set_enabled_equivalencies(u.magnetic_flux_field())
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -29,7 +30,14 @@ def setup():
         K1_0=results_dft.Ku_0,
     )
 
-    for T in np.linspace(0, 1.1 * results_kuzmin.Tc.value, 20):
+    # Download mesh if needed
+    if not pathlib.Path("mesh.fly").exists():
+        mesh = Mesh("cube50_singlegrain_msize2")
+        mesh.write("mesh.fly")
+
+    for T_full in np.linspace(0, 0.95 * results_kuzmin.Tc.value, 16):
+        T = round(T_full, 3)  # avoid very large floating point numbers
+        print(f"Working on {T=} K.")
         Ms = results_kuzmin.Ms(T)
         A = results_kuzmin.A(T)
         K1 = results_kuzmin.K1(T)
@@ -70,7 +78,7 @@ def setup():
         return_code = res.returncode
 
         if return_code:
-            raise RuntimeError(f"Simulation has failed. Exit with error: \n{res.stderr.decode('utf-8')}")
+            raise RuntimeError(f"Submission has failed. Exit with error: \n{res.stderr.decode('utf-8')}")
 
     print("Submission complete.")
 
