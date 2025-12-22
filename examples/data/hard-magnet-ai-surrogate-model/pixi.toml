@@ -26,4 +26,4 @@ mammos-units = "*"
 # submit HPC runs
 submit = "python setup.py"
 # gather data after HPC runs to create hystloop_extrinsic_properties.csv
-postprocess = "jupyter-nbconvert --to html --execute post-processing.ipynb
+postprocess = "jupyter-nbconvert --to html --execute post-processing.ipynb"
