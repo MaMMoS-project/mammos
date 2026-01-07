@@ -14,14 +14,14 @@ help:
 
 prepare:
 	mkdir -p packages
-	for PKG in mammos-analysis mammos-dft mammos-entity mammos-mumag mammos-spindynamics mammos-units ; do \
+	for PKG in mammos-ai mammos-analysis mammos-dft mammos-entity mammos-mumag mammos-spindynamics mammos-units ; do \
 		git clone --branch latest --depth 1 "https://github.com/mammos-project/$$PKG.git" packages/$$PKG || (cd packages/$$PKG && git pull --rebase) ;\
 		rsync -a packages/$$PKG/examples/ source/examples/$$PKG ;\
 	done
 	rsync -a ../examples/ source/demonstrator/
 
 prepare-local:
-	for PKG in mammos-analysis mammos-dft mammos-entity mammos-mumag mammos-spindynamics mammos-units ; do \
+	for PKG in mammos-ai mammos-analysis mammos-dft mammos-entity mammos-mumag mammos-spindynamics mammos-units ; do \
 		rsync -a ../../$$PKG/examples/ source/examples/$$PKG;\
 	done
 	rsync -a ../examples/ source/demonstrator/
