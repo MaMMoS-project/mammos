@@ -31,6 +31,10 @@ running the examples for the individual packages interactively in the cloud.
      - :doc:`Demonstrator <demonstrator/index>`
      - –
      - |binder-mammos-1| |binder-mammos-2|
+   * - `mammos-ai <https://github.com/mammos-project/mammos-ai>`__
+     - :doc:`examples/mammos-ai/index`
+     - :doc:`api/mammos_ai`
+     - |binder-ai-1| |binder-ai-2|
    * - `mammos-analysis <https://github.com/mammos-project/mammos-analysis>`__
      - :doc:`examples/mammos-analysis/index`
      - :doc:`api/mammos_analysis`
@@ -60,6 +64,10 @@ running the examples for the individual packages interactively in the cloud.
           :target: https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-mammos-2| image:: /_static/badge-launch-binder2.svg
           :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-ai-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/mammos-ai/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-ai-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-ai/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-analysis-1| image:: /_static/badge-launch-binder.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-analysis/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-analysis-2| image:: /_static/badge-launch-binder2.svg

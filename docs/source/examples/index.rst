@@ -11,6 +11,7 @@ Further examples for the individual packages are available in these tutorials:
 .. toctree::
    :maxdepth: 2
 
+   mammos-ai/index
    mammos-analysis/index
    mammos-dft/index
    mammos-entity/index
