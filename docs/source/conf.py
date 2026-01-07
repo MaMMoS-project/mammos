@@ -44,6 +44,7 @@ extensions = [
 
 myst_enable_extensions = [
     "colon_fence",
+    "dollarmath",
 ]
 templates_path = ["_templates"]
 autosummary_generate = True
