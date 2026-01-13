@@ -15,6 +15,7 @@ together {
     [spindynamics] <-- [entity]
     [mumag] <-- [entity]
     [analysis] <-- [entity]
+    [ai] <-- [entity]
   }
   
   ' Core components
@@ -38,6 +39,7 @@ HardMagnetWorkflow <--[#green]- mumag
 HardMagnetWorkflow <--[#green]- spindynamics
 HardMagnetWorkflow <--[#green]- dft
 HardMagnetWorkflow <--[#green]- analysis
+HardMagnetWorkflow <--[#green]- ai
 
 SensorWorkflow <--[#darkblue]- entity 
 ' SensorWorkflow <--[#darkblue]- units 
