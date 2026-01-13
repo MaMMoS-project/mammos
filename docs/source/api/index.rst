@@ -5,6 +5,7 @@ API Reference
    :toctree: .
    :recursive:
 
+   mammos_ai
    mammos_analysis
    mammos_dft
    mammos_entity
