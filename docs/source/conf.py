@@ -52,6 +52,7 @@ autosummary_generate_overwrite = True
 autodoc_mock_imports = ["esys-escript"]
 autoclass_content = "both"
 autodoc_typehints = "description"
+python_use_unqualified_type_names = True
 autodoc_default_options = {
     # Autodoc members
     "members": True,
