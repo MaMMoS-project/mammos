@@ -50,7 +50,8 @@ templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
 autodoc_mock_imports = ["esys-escript"]
-autoclass_content = "both"
+autodoc_class_signature = "separated"
+autoclass_content = "class"
 autodoc_typehints = "description"
 python_use_unqualified_type_names = True
 autodoc_default_options = {
@@ -61,8 +62,7 @@ autodoc_default_options = {
     # Autodoc private memebers
     "private-members": False,
     # Autodoc special members (for the moment only __init__)
-    # "special-members": "__init__",
-    "special-members": "__class_getitem__",
+    "special-members": "__init__",
 }
 intersphinx_mapping = {
     "astropy": ("https://docs.astropy.org/en/stable", None),
