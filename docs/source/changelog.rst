@@ -53,7 +53,7 @@ Fixed
   - Indexing of ``TemperatureSweepData`` sub-runs. (`PR54 <https://github.com/MaMMoS-project/mammos-spindynamics/pull/54>`__)
 
 
-   
+
 0.11.0 -- 2025-12-17
 ====================
 
@@ -162,7 +162,7 @@ Changed
 -------
 
 ``mammos_entity``
-  - Improved :doc:`/examples/mammos-entity/io>` notebook. Use cases for working with :py:class:`~mammos_entity.io.EntityCollection` objects are added. (`PR83 <https://github.com/MaMMoS-project/mammos-entity/pull/83>`__)
+  - Improved :doc:`/examples/mammos-entity/io` notebook. Use cases for working with :py:class:`~mammos_entity.EntityCollection` objects are added. (`PR83 <https://github.com/MaMMoS-project/mammos-entity/pull/83>`__)
 
 
 Misc
@@ -191,7 +191,7 @@ Fixed
 -----
 
 ``mammos-analysis``
-  - The function :py:func:`mammos_analysis.kuzmin_properties` will not assume the magnetization input is in ``A/m``. If the input is in a unit not convertible to ``A/m`` (e.g., Tesla), an error is raised. (`PR31 <https://github.com/MaMMoS-project/mammos-analysis/pull/31>`__)
+  - The function :py:func:`mammos_analysis.kuzmin.kuzmin_properties` will not assume the magnetization input is in ``A/m``. If the input is in a unit not convertible to ``A/m`` (e.g., Tesla), an error is raised. (`PR31 <https://github.com/MaMMoS-project/mammos-analysis/pull/31>`__)
 ``mammos-mumag``
   - Fixed default ``outdir`` input in two functions in :py:mod:`mammos_mumag.simulation`. (`PR69 <https://github.com/MaMMoS-project/mammos-mumag/pull/69>`__)
 
@@ -208,7 +208,7 @@ Misc
 ----
 
 ``mammos-mumag``
-  - Added :doc:`examples/mammos-mumag/hysteresis` to document full functionality of :py:mod:`mammos-mumag` when running a hysteresis loop simulation. Additionally, show the functionality of the package irrelevant to an average user in :doc:`examples/mammos-mumag/additional-functionality`. (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
+  - Added :doc:`examples/mammos-mumag/hysteresis` to document full functionality of :py:mod:`mammos_mumag` when running a hysteresis loop simulation. Additionally, show the functionality of the package irrelevant to an average user in :doc:`examples/mammos-mumag/additional-functionality`. (`PR42 <https://github.com/MaMMoS-project/mammos-mumag/pull/42>`__)
 
 0.6.0 -- 2025-08-13
 ===================
@@ -228,7 +228,7 @@ Added
     :py:func:`mammos_entity.io.entities_from_file` to write and read entity
     files. The file type is inferred from the file extension. (`PR57
     <https://github.com/MaMMoS-project/mammos-entity/pull/57>`__)
-  - A function :py:func:`mammos_entity.concat_flat` to concatenate compatible
+  - A function :py:func:`mammos_entity.operations.concat_flat` to concatenate compatible
     entities, quantities and array-likes into a single entity. (`PR56
     <https://github.com/MaMMoS-project/mammos-entity/pull/56>`__)
 ``mammos-mumag``

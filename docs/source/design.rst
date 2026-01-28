@@ -44,7 +44,7 @@ To make this ambitious aim tractable, we use the following design strategy:
    ``mammos``), their interdependencies, how they can be combined
    to form workflows (``hard_magnet_workflow`` and ``sensor_workflow``), and how
    existing tools of the research software for magnetism can be connected
-   (example: ``ubermag``). 
+   (example: ``ubermag``).
    Arrows show which package is used by which other package: e.g., the ``mammos-entity``
    package uses the ``mammos-units`` package (through an ``import``). The
    ``hard_magnetic_workflow.py`` makes use of the ``mammos-mumag`` package.
@@ -77,9 +77,9 @@ existing tools if desired).
 
 The figures shows two demonstrator workflows:
 
-1. *Hard magnet workflow* shown in green in :numref:`label-figure-overview` (see :doc:`hard magnetic workflow tutorial <examples/workflows/hard-magnet-tutorial>`). 
+1. *Hard magnet workflow* shown in green in :numref:`label-figure-overview` (see :doc:`hard magnetic workflow tutorial <demonstrator/hard-magnet-tutorial>`).
 
-2. *Sensor workflow* shown in blue in :numref:`label-figure-overview` (see :doc:`sensor workflow example <examples/workflows/sensor>`). 
+2. *Sensor workflow* shown in blue in :numref:`label-figure-overview` (see :doc:`sensor workflow example <demonstrator/sensor>`). 
 
 Through choosing Python as the environment within which the MaMMoS capabilities
 are (most easily) accessible, users can immediately connect all existing

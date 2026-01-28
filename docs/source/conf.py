@@ -49,6 +49,7 @@ myst_enable_extensions = [
 templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
+autosummary_ignore_module_all = False
 autodoc_mock_imports = ["esys-escript"]
 autodoc_class_signature = "separated"
 autoclass_content = "class"
