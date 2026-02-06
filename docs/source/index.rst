@@ -124,8 +124,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       Pixi will install Python and mammos.
 
       To conveniently work with the notebook tutorials we install
-      ``jupyterlab``. (``packaging`` needs to be pinned due to a limitation of
-      pixi/PyPI.):
+      ``jupyterlab``.
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
@@ -137,8 +136,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         .. code:: shell
 
            pixi init
-           pixi add python=3.11 jupyterlab esys-escript uppasd
-           pixi add mammos --pypi
+           pixi add python=3.11 jupyterlab esys-escript uppasd mammos
            pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       - Mac/Windows:
@@ -146,8 +144,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         .. code:: shell
 
            pixi init
-           pixi add python=3.11 jupyterlab uppasd
-           pixi add mammos --pypi
+           pixi add python=3.11 jupyterlab uppasd mammos
            pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Finally start a shell where the installed packages are available:
@@ -164,8 +161,7 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       conda-forge and PyPI.
 
       To conveniently work with the notebook tutorials we install
-      ``jupyterlab``. (``packaging`` needs to be pinned due to a dependency
-      issue in ``mammos-entity``.)
+      ``jupyterlab``.
 
       Some examples also require `esys-escript
       <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
@@ -174,9 +170,8 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
 
       .. code:: shell
 
-         conda create -n mammos-environment python=3.11 pip jupyterlab esys-escript uppasd
+         conda create -n mammos-environment python=3.11 pip jupyterlab esys-escript uppasd mammos
          conda activate mammos-environment
-         pip install mammos
          pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
    .. tab-item:: pip
@@ -214,9 +209,10 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
       Some examples also require `esys-escript
-      <https://github.com/LutzGross/esys-escript.github.io>`__, which must be
-      installed separately. Please refer to the documentation of esys-escript
-      for installation instructions.
+      <https://github.com/LutzGross/esys-escript.github.io>`__, or `UppASD
+      <https://github.com/uppasd/uppasd>`__ which must be installed separately.
+      Please refer to the documentation of esys-escript and UppASD for
+      installation instructions.
 
 .. include:: /downloading-examples.rst
 
