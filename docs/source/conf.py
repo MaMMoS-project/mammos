@@ -49,7 +49,6 @@ myst_enable_extensions = [
 templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
-autosummary_ignore_module_all = False
 autodoc_mock_imports = ["esys-escript"]
 autodoc_class_signature = "separated"
 autoclass_content = "class"
@@ -75,6 +74,7 @@ intersphinx_mapping = {
     "pydantic": ("https://docs.pydantic.dev/latest", None),
     "python": ("https://docs.python.org/3", None),
     "pyvista": ("https://docs.pyvista.org/", None),
+    "h5py": ("https://docs.h5py.org/en/stable/", None),
 }
 exclude_patterns = ["**.ipynb_checkpoints"]
 numfig = True
