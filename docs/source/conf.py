@@ -75,6 +75,7 @@ intersphinx_mapping = {
     "pydantic": ("https://docs.pydantic.dev/latest", None),
     "python": ("https://docs.python.org/3", None),
     "pyvista": ("https://docs.pyvista.org/", None),
+    "h5py": ("https://docs.h5py.org/en/stable/", None),
 }
 exclude_patterns = ["**.ipynb_checkpoints"]
 numfig = True
