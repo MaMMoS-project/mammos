@@ -55,6 +55,12 @@ autodoc_mock_imports = ["esys-escript"]
 autodoc_class_signature = "separated"
 autoclass_content = "class"
 autodoc_typehints = "description"
+autodoc_type_aliases = {
+    # get correct forwarding for Quantity class; sphinx seems to only see `Quantity`,
+    # not the full qualified name, for safety we anyway but both.
+    "mammos_units.Quantity": "astropy.units.Quantity",
+    "Quantity": "astropy.units.Quantity",
+}
 python_use_unqualified_type_names = True
 autodoc_default_options = {
     # Autodoc members
