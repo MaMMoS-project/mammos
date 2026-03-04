@@ -70,6 +70,11 @@ def _render_value(value: object) -> str:
     return html.escape(text)
 
 
+def _normalized_text(value: object) -> str:
+    """Return a normalized text form for duplicate detection."""
+    return " ".join(str(value).split())
+
+
 def _popup_rows(entity: Entity) -> list[tuple[str, list[object]]]:
     """Collect all available ontology metadata rows for popup rendering."""
     ontology = entity.ontology
@@ -89,13 +94,33 @@ def _popup_rows(entity: Entity) -> list[tuple[str, list[object]]]:
         rows.setdefault("is_a", [])
         rows["is_a"].extend(ontology.is_a)
 
+    names_by_lower = {name.lower(): name for name in rows}
+    comment_name = names_by_lower.get("comment")
+    elucidation_name = names_by_lower.get("elucidation")
+    if comment_name and elucidation_name:
+        elucidation_texts = {
+            text
+            for value in rows[elucidation_name]
+            if (text := _normalized_text(value))
+        }
+
+        filtered_comment_values = [
+            value
+            for value in rows[comment_name]
+            if (text := _normalized_text(value)) and text not in elucidation_texts
+        ]
+        if filtered_comment_values:
+            rows[comment_name] = filtered_comment_values
+        else:
+            rows.pop(comment_name, None)
+
     preferred_order = [
-        "prefLabel",
-        "altLabel",
-        "comment",
         "definition",
         "elucidation",
+        "comment",
         "example",
+        "prefLabel",
+        "altLabel",
         "isDefinedBy",
         "hasMeasurementUnit",
         "wikipediaReference",
