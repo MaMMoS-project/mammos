@@ -4,6 +4,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 from __future__ import annotations
 
+import os
+
 from typing import TYPE_CHECKING
 from sphinx.domains.python import PythonDomain
 
@@ -83,7 +85,10 @@ numfig_format = {
     'table': 'Table %s',
     'code-block': 'Listing %s',
 }
-nb_execution_mode = "off"
+# export NB_EXECUTION_MODE=force on the command line to run notebooks
+nb_execution_mode = os.environ.get("NB_EXECUTION_MODE", "off")
+nb_execution_in_temp = True
+nb_execution_timeout = -1
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
