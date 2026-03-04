@@ -42,10 +42,6 @@ body {
     border-radius: 2px;
 }
 
-.entity-tip-data {
-    display: none !important;
-}
-
 .tippy-box[data-theme~="mammos-entity"] {
     border: 1px solid var(--pst-color-border);
     border-radius: 0.6rem;
