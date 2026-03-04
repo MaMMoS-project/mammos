@@ -4,10 +4,14 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 from __future__ import annotations
 
+import sys
+from pathlib import Path
 from typing import TYPE_CHECKING
 from sphinx.domains.python import PythonDomain
 
 from sphinx.ext import intersphinx
+
+sys.path.insert(0, str(Path(__file__).parent.resolve()))
 
 if TYPE_CHECKING:
     from sphinx import addnodes, application, environment
@@ -32,6 +36,7 @@ nitpick_ignore = [
 ]
 
 extensions = [
+    "mammos_entity_role",
     "myst_nb",
     "sphinx_copybutton",
     "sphinx_design",
@@ -96,7 +101,12 @@ nb_execution_mode = "off"
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
-html_css_files = ["css/custom.css"]
+html_css_files = ["vendor/tippy.css", "css/custom.css"]
+html_js_files = [
+    "vendor/popper.min.js",
+    "vendor/tippy-bundle.umd.min.js",
+    "js/entity_tippy_click.js",
+]
 html_logo = "_static/logo.png"
 html_favicon = "_static/favicon.png"
 html_show_sourcelink = False
