@@ -27,7 +27,7 @@
         }
 
         let openInstance = null;
-        const links = document.querySelectorAll("a.entity-ref");
+        const links = document.querySelectorAll(".entity-ref");
 
         links.forEach((link) => {
             if (link.dataset.entityPopupInit === "1") {

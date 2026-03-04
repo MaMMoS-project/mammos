@@ -180,13 +180,8 @@ def entity_role(  # noqa: PLR0913
 
     classes = list(options.pop("classes", []))
     classes.append("entity-ref")
-    reference = nodes.reference(
-        rawtext,
-        "",
-        refuri=entity.ontology_iri,
-        classes=classes,
-        **options,
-    )
+    reference = nodes.inline(rawtext, "", classes=classes)
+    reference["tabindex"] = 0
     reference += nodes.emphasis(text=entity.ontology_label)
     popup_payload = nodes.raw(
         "",
