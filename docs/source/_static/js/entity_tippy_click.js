@@ -21,6 +21,8 @@
         }
     }
 
+    var globalListenersAttached = false;
+
     function initEntityPopups() {
         if (typeof window.tippy !== "function") {
             return;
@@ -68,25 +70,29 @@
             });
         });
 
-        document.addEventListener("pointerdown", (event) => {
-            if (!openInstance) {
-                return;
-            }
-            const target = event.target;
-            if (!(target instanceof Element)) {
-                return;
-            }
-            if (target.closest(".tippy-box")) {
-                return;
-            }
-            openInstance.hide();
-        });
+        if (!globalListenersAttached) {
+            globalListenersAttached = true;
 
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape" && openInstance) {
+            document.addEventListener("pointerdown", (event) => {
+                if (!openInstance) {
+                    return;
+                }
+                const target = event.target;
+                if (!(target instanceof Element)) {
+                    return;
+                }
+                if (target.closest(".tippy-box")) {
+                    return;
+                }
                 openInstance.hide();
-            }
-        });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && openInstance) {
+                    openInstance.hide();
+                }
+            });
+        }
     }
 
     if (document.readyState === "loading") {
