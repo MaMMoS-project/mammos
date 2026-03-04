@@ -1,4 +1,22 @@
-"""Sphinx role for linking ontology entities to their IRI."""
+"""Sphinx role ``entity`` – inline ontology metadata popups.
+
+Usage in reStructuredText or MyST Markdown::
+
+    :entity:`SpontaneousMagnetization`
+
+Architecture
+------------
+* **Python role** (this module) – resolves the ontology label via
+  ``mammos_entity.Entity``, builds a popup HTML fragment, and emits two
+  docutils nodes: an ``inline`` node styled as the visible text and a
+  ``raw`` node containing a ``<script type="application/json">`` element
+  with the popup payload.
+* **JavaScript** (``_static/js/entity_tippy_click.js``) – on page load,
+  finds each ``.entity-ref`` element, reads its adjacent JSON payload,
+  and attaches a *tippy.js* popup.
+* **CSS** (``_static/css/custom.css``) – styles the inline term
+  (italic + dotted underline) and the popup card.
+"""
 
 from __future__ import annotations
 
@@ -83,7 +101,9 @@ def _popup_rows(entity: Entity) -> list[tuple[str, list[object]]]:
     for prop in ontology.get_class_properties():
         try:
             values = list(prop[ontology])
-        except Exception:
+        except Exception:  # noqa: BLE001
+            # Some ontology properties cannot be evaluated for every
+            # class; skip them silently so the popup still renders.
             continue
         values = [value for value in values if str(value).strip()]
         if not values:
