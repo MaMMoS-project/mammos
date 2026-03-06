@@ -6,6 +6,13 @@ This project uses [towncrier](https://towncrier.readthedocs.io/) and the changes
 
 <!-- towncrier release notes start -->
 
+## [mammos 0.12.0](https://github.com/MaMMoS-project/mammos/tree/0.12.0) – 2026-03-06
+
+### Misc
+
+- Documentation: update mammos components diagram in design section (adding ai) ([#64](https://github.com/MaMMoS-project/mammos/pull/64))
+
+
 ## [mammos 0.11.2](https://github.com/MaMMoS-project/mammos/tree/0.11.2) – 2025-12-22
 
 ### Misc
