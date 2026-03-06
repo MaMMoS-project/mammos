@@ -120,6 +120,36 @@ html_sidebars = {
 
 # -- Code to fix various Sphinx issues related to type hints -----------------
 
+TYPE_REFERENCE_REWRITES = {
+    "mammos_units.Quantity": "astropy.units.Quantity",
+    "mammos_units.UnitBase": "astropy.units.UnitBase",
+    "mammos_units.Unit": "astropy.units.Unit",
+}
+
+
+def _rewrite_type_annotation(annotation: str | None) -> str | None:
+    if annotation is None:
+        return None
+    for src, dst in TYPE_REFERENCE_REWRITES.items():
+        annotation = annotation.replace(src, dst)
+    return annotation
+
+
+def autodoc_process_signature_handler(
+    app: application.Sphinx,  # noqa: ARG001
+    what: str,  # noqa: ARG001
+    name: str,  # noqa: ARG001
+    obj,  # noqa: ANN001,ARG001
+    options,  # noqa: ANN001,ARG001
+    signature: str | None,
+    return_annotation: str | None,
+):
+    return (
+        _rewrite_type_annotation(signature),
+        _rewrite_type_annotation(return_annotation),
+    )
+
+
 # code snippet for fixing mapping for pathlib.Path, taken from
 # https://github.com/tox-dev/pyproject-api/blob/136e5ded8f65fb157c2e5fee5e8e05de9eefcdd4/docs/conf.py
 class PatchedPythonDomain(PythonDomain):
@@ -153,6 +183,11 @@ def missing_reference_handler(
     contnode,
 ):
     target = node["reftarget"]
+    mapped_target = TYPE_REFERENCE_REWRITES.get(target)
+    if mapped_target:
+        node["reftarget"] = mapped_target
+        return intersphinx.missing_reference(app, env, node, contnode)
+
     if "." in target and node["reftype"] == "class":
         # Try again as `obj` so we pick up Unions, TypeVars and other things
         if target.startswith("ophyd_async"):
@@ -169,5 +204,6 @@ def missing_reference_handler(
 
 
 def setup(app: application.Sphinx):
+    app.connect("autodoc-process-signature", autodoc_process_signature_handler)
     app.connect("missing-reference", missing_reference_handler)
     app.add_domain(PatchedPythonDomain, override=True)
