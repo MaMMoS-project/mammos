@@ -26,8 +26,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Setup headless display
+      uses: pyvista/setup-headless-display-action@v3
     - uses: prefix-dev/setup-pixi@v0.8.8
-    - run: pixi run docs-build
+    - name: build docs (execute all notebooks)
+      run: |-
+        export NB_EXECUTION_MODE=force
+        pixi run docs-build
+      if: ${{ inputs.deploy_pages }}
+    - name: build docs
+      run: |-
+        pixi run docs-build
+      if: ${{ ! inputs.deploy_pages }}
     # - run: pixi run docs-linkcheck
     - uses: actions/upload-pages-artifact@v3
       with:
