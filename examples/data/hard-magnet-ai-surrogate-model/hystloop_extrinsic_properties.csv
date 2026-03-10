@@ -1,10 +1,11 @@
-#mammos csv v2
+# mammos csv v3
 #----------------------------------------
 # These extrinsic properties were calculated using mammos-mumag simulations with 300 steps.
 #----------------------------------------
-#ThermodynamicTemperature,CoercivityHcExternal,Remanence,MaximumEnergyProduct
-#https://w3id.org/emmo#EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f,https://w3id.org/emmo/domain/magnetic_material#EMMO_fe101d1d-f1f7-54f8-886b-fa6d6052ce98,https://w3id.org/emmo/domain/magnetic_material#EMMO_8fc78216-4859-53c2-b41e-e38062b04054,https://w3id.org/emmo/domain/magnetic_material#EMMO_e1028129-c23e-57ac-9174-2f34ddbf3926
-#K,A / m,A / m,J / m3
+ThermodynamicTemperature,CoercivityHcExternal,Remanence,MaximumEnergyProduct
+,,,
+https://w3id.org/emmo#EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f,https://w3id.org/emmo/domain/magnetic-materials#EMMO_fe101d1d-f1f7-54f8-886b-fa6d6052ce98,https://w3id.org/emmo/domain/magnetic-materials#EMMO_8fc78216-4859-53c2-b41e-e38062b04054,https://w3id.org/emmo/domain/magnetic-materials#EMMO_e1028129-c23e-57ac-9174-2f34ddbf3926
+K,A / m,A / m,J / m3
 T,Hc,Mr,BHmax
 0.0,3063643.7827939717,1137190.816626736,406204.2072086813
 67.215,3010589.355341836,1127399.7942251803,399250.01489221986
