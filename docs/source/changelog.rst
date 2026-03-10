@@ -9,6 +9,20 @@ updated according to the largest bump of any of the dependent packages.
 ..
    ADD NEW ENTRIES BELOW THIS COMMENT.
 
+0.12.1 -- 2026-03-10
+====================
+
+Changed
+-------
+
+``mammos-analysis``
+  - Change in the signature of ``KuzminResult.plot`` function: it does not accept
+    a ``matplotlib.axes.Axes`` object to plot the Kuzmin plots any more.
+    (`PR82 <https://github.com/MaMMoS-project/mammos-analysis/pull/82>`__)
+  - Store spontaneous magnetisation in kA/m in ``KuzminResult``.
+    (`PR83 <https://github.com/MaMMoS-project/mammos-analysis/pull/83>`__)
+
+
 0.12.0 -- 2026-03-06
 ====================
 
