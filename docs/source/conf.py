@@ -5,11 +5,14 @@
 from __future__ import annotations
 
 import os
-
+from pathlib import Path
+import sys
 from typing import TYPE_CHECKING
-from sphinx.domains.python import PythonDomain
 
+from sphinx.domains.python import PythonDomain
 from sphinx.ext import intersphinx
+
+sys.path.insert(0, str(Path(__file__).parent.resolve()))
 
 if TYPE_CHECKING:
     from sphinx import addnodes, application, environment
@@ -34,6 +37,7 @@ nitpick_ignore = [
 ]
 
 extensions = [
+    "mammos_entity_role",
     "myst_nb",
     "sphinx_copybutton",
     "sphinx_design",
@@ -55,6 +59,12 @@ autodoc_mock_imports = ["esys-escript"]
 autodoc_class_signature = "separated"
 autoclass_content = "class"
 autodoc_typehints = "description"
+autodoc_type_aliases = {
+    # get correct forwarding for Quantity class; sphinx seems to only see `Quantity`,
+    # not the full qualified name, for safety we anyway but both.
+    "mammos_units.Quantity": "astropy.units.Quantity",
+    "Quantity": "astropy.units.Quantity",
+}
 python_use_unqualified_type_names = True
 autodoc_default_options = {
     # Autodoc members
@@ -95,7 +105,12 @@ nb_execution_timeout = -1
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
-html_css_files = ["css/custom.css"]
+html_css_files = ["vendor/tippy.css", "css/custom.css"]
+html_js_files = [
+    "vendor/popper.min.js",
+    "vendor/tippy-bundle.umd.min.js",
+    "js/entity_tippy_click.js",
+]
 html_logo = "_static/logo.png"
 html_favicon = "_static/favicon.png"
 html_show_sourcelink = False
