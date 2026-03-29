@@ -345,7 +345,7 @@ Changed
 -------
 
 ``mammos_entity``
-  - Improved :doc:`/examples/mammos-entity/io` notebook. Use cases for working with :py:class:`~mammos_entity.EntityCollection` objects are added. (`PR83 <https://github.com/MaMMoS-project/mammos-entity/pull/83>`__)
+  - Improved ``io`` notebook. Use cases for working with :py:class:`~mammos_entity.EntityCollection` objects are added. (`PR83 <https://github.com/MaMMoS-project/mammos-entity/pull/83>`__)
 
 
 Misc
@@ -400,15 +400,15 @@ Added
 -----
 
 ``mammos-entity``
-  - CSV files written with :py:mod:`mammos_entity.io` can now optionally contain
+  - CSV files written with ``mammos_entity.io`` can now optionally contain
     a description. (`PR52
     <https://github.com/MaMMoS-project/mammos-entity/pull/52>`__)
-  - Support for YAML as additional file format in :py:mod:`mammos_entity.io`.
+  - Support for YAML as additional file format in ``mammos_entity.io``.
     (`PR59 <https://github.com/MaMMoS-project/mammos-entity/pull/59>`__, `PR69
     <https://github.com/MaMMoS-project/mammos-entity/pull/69>`__, `PR70
     <https://github.com/MaMMoS-project/mammos-entity/pull/70>`__)
-  - Two new functions :py:func:`mammos_entity.io.entities_to_file` and
-    :py:func:`mammos_entity.io.entities_from_file` to write and read entity
+  - Two new functions ``mammos_entity.io.entities_to_file`` and
+    ``mammos_entity.io.entities_from_file`` to write and read entity
     files. The file type is inferred from the file extension. (`PR57
     <https://github.com/MaMMoS-project/mammos-entity/pull/57>`__)
   - A function :py:func:`mammos_entity.operations.concat_flat` to concatenate compatible
@@ -436,13 +436,13 @@ Changed
     formula is set to a much lower temperature (depending on the data). (`PR18
     <https://github.com/MaMMoS-project/mammos-analysis/pull/18>`__)
 ``mammos-entity``
-  - When reading files with :py:mod:`mammos_entity.io` IRIs are now checked in
+  - When reading files with ``mammos_entity.io`` IRIs are now checked in
     addition to ontology labels and file reading fails if there is a mismatch
     between IRI and ontology label. (`PR68
     <https://github.com/MaMMoS-project/mammos-entity/pull/68>`__)
 ``mammos-mumag``
   - Changed the output of the hysteresis loop in compliance with
-    :py:mod:`mammos_entity.io` v2. (`PR54
+    ``mammos_entity.io`` v2. (`PR54
     <https://github.com/MaMMoS-project/mammos-mumag/pull/54>`__)
 
 Deprecated
@@ -451,8 +451,8 @@ Deprecated
 ``mammos-entity``
   - The functions ``mammos.entity.io.entities_to_csv`` and
     ``mammos_entity.io.entities_from_csv`` have been deprecated. Use
-    :py:func:`mammos_entity.io.entities_to_file` and
-    :py:func:`mammos_entity.io.entities_from_file` instead. (`PR58
+    ``mammos_entity.io.entities_to_file`` and
+    ``mammos_entity.io.entities_from_file`` instead. (`PR58
     <https://github.com/MaMMoS-project/mammos-entity/pull/58>`__)
 
 Fixed
@@ -481,9 +481,9 @@ Added
 -----
 
 ``mammos-entity``
-  - A new submodule :py:mod:`mammos_entity.io` that provides two functions to
+  - A new submodule ``mammos_entity.io`` that provides two functions to
     write and read CSV files with additional ontology metadata. For more details
-    refer to the new :doc:`io documentation </examples/mammos-entity/io>`.
+    refer to the new ``io`` documentation.
     (`PR29 <https://github.com/MaMMoS-project/mammos-entity/pull/29>`__, `PR46
     <https://github.com/MaMMoS-project/mammos-entity/pull/46>`__, `PR47
     <https://github.com/MaMMoS-project/mammos-entity/pull/47>`__ )
