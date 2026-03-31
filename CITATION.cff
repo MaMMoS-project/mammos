@@ -1,0 +1,54 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: mammos
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Andrea
+    family-names: Petrocchi
+    email: andrea.petrocchi@mpsd.mpg.de
+    affiliation: >-
+      Max Planck Institute for the Structure and Dynamics of
+      Matter
+    orcid: 'https://orcid.org/0009-0005-1867-6732'
+  - given-names: Swapneel Amit
+    family-names: Pathak
+    email: swapneel-amit.pathak@mpsd.mpg.de
+    affiliation: >-
+      Max Planck Institute for the Structure and Dynamics of
+      Matter
+    orcid: 'https://orcid.org/0000-0003-3840-955X'
+  - given-names: Martin
+    family-names: Lang
+    email: martin.lang@mpsd.mpg.de
+    affiliation: >-
+      Max Planck Institute for the Structure and Dynamics of
+      Matter
+    orcid: 'https://orcid.org/0000-0001-7104-7867'
+  - given-names: Samuel
+    family-names: Holt
+    email: samuel.holt@mpsd.mpg.de
+    affiliation: >-
+      Max Planck Institute for the Structure and Dynamics of
+      Matter
+    orcid: 'https://orcid.org/0000-0003-3323-8958'
+  - given-names: Hans
+    family-names: Fangohr
+    email: hans.fangohr@mpsd.mpg.de
+    affiliation: >-
+      Max Planck Institute for the Structure and Dynamics of
+      Matter, European XFEL GmbH, University of Southampton
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.15756441
+repository-code: 'https://github.com/MaMMoS-project/mammos'
+url: 'https://mammos-project.github.io/'
+abstract: Meta package to install the full MaMMoS simulation suite.
+license: MIT
+commit: 56e0d7519279d3ab4b1e31659707cbfb647bee3e
+version: 0.11.2
+date-released: '2025-12-22'
