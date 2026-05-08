@@ -49,6 +49,3 @@ repository-code: 'https://github.com/MaMMoS-project/mammos'
 url: 'https://mammos-project.github.io/'
 abstract: Meta package to install the full MaMMoS simulation suite.
 license: MIT
-commit: 56e0d7519279d3ab4b1e31659707cbfb647bee3e
-version: 0.11.2
-date-released: '2025-12-22'
