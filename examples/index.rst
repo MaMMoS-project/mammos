@@ -27,6 +27,7 @@ of the individual notebooks.
    hard-magnet-material-exploration
    hard-magnet-ai-surrogate-model
    sensor
+   dakota
    spindynamics-temperature-dependent-parameters
 
 .. list-table::
@@ -42,6 +43,8 @@ of the individual notebooks.
      - |4-mybinder| |4-mpcdf|
    * - :doc:`sensor`
      - |3-mybinder| |3-mpcdf|
+   * - :doc:`dakota`
+     -
    * - :doc:`spindynamics-temperature-dependent-parameters`
      - |5-mybinder| |5-mpcdf|
 
