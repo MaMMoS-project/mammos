@@ -1,4 +1,4 @@
-{% if ('examples' in pagename or 'demonstrator' in pagename) and not 'index' in pagename %}
+{% if page_source_suffix == '.ipynb' %}
 <div class="tocsection onthispace pt-5 bp-3">
     <h5>Try online:</h5>
     {% if 'demonstrator' in pagename %}
