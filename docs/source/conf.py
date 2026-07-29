@@ -52,6 +52,7 @@ myst_enable_extensions = [
     "colon_fence",
     "dollarmath",
 ]
+nb_mime_priority_overrides = [("html", "application/vnd.jupyter.widget-view+json", None)]
 templates_path = ["_templates"]
 autosummary_generate = True
 autosummary_generate_overwrite = True
