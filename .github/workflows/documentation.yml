@@ -25,10 +25,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Setup headless display
       uses: pyvista/setup-headless-display-action@v3
-    - uses: prefix-dev/setup-pixi@v0.8.8
+    - uses: prefix-dev/setup-pixi@v0.10.1
     - name: build docs (execute all notebooks)
       run: |-
         export NB_EXECUTION_MODE=force
@@ -55,5 +55,5 @@ jobs:
       url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/deploy-pages@v4
+    - uses: actions/deploy-pages@v7
       id: deployment
