@@ -5,12 +5,10 @@ channels:
 dependencies:
   - python=3.11
   - bayesian-optimization
-  - esys-escript
+  - esys-escript=5.10
   - ubermag
   - uppasd
   - pip
+  - trame-jupyter-extension
   - pip:
-      - --extra-index-url https://wheels.vtk.org  # based on https://github.com/pyvista/pyvista/blob/main/docker/slim.Dockerfile
-      - vtk-osmesa
       - mammos==0.13.0
-      - trame_jupyter_extension
