@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mammos"
-version = "0.13.0"
+version = "0.14.0"
 description = "A multiphyscis simulation suite for magnetic materials."
 readme = "README.md"
 authors = [
@@ -26,13 +26,13 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-  "mammos-ai==0.2.0",
-  "mammos-analysis==0.6.0",
+  "mammos-ai==0.4.0",
+  "mammos-analysis==0.7.0",
   "mammos-dft==0.5.0",
-  "mammos-entity==0.13.0",
-  "mammos-mumag==0.11.0",
-  "mammos-spindynamics==0.4.0",
+  "mammos-entity==0.15.0",
+  "mammos-spindynamics==0.5.0",
   "mammos-units==0.3.2",
+  "tommos-adapter==0.1.0",
 ]
 
 [project.scripts]
@@ -92,10 +92,8 @@ trame-vtk = ">=2.5.8"
 trame-vuetify = ">=2.3.1"
 towncrier = "*"
 uppasd = "*"
-
-[tool.pixi.target.linux-64.dependencies]
-esys-escript = ">=5.10,<6"
 ubermag = ">=2024"
+neper = "*"
 
 [tool.pixi.pypi-dependencies]
 mammos = { path = ".", editable = true }

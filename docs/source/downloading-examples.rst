@@ -21,7 +21,9 @@ Upon completion a list of downloaded examples is displayed:
    examples/mammos-dft/quickstart.ipynb
    examples/mammos-entity/quickstart.ipynb
    examples/mammos-entity/io.ipynb
-   examples/mammos-mumag/quickstart.ipynb
    examples/mammos-spindynamics/quickstart.ipynb
    examples/mammos-units/example.ipynb
    examples/mammos-units/quickstart.ipynb
+   examples/tommos-adapter/example.ipynb
+   examples/tommos-adapter/singlegrain-tutorial.ipynb
+   examples/tommos-adapter/multigrain-tutorial.ipynb

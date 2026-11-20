@@ -132,13 +132,15 @@ def main():
         │   └── quickstart.ipynb
         ├── mammos-entity
         │   └── quickstart.ipynb
-        ├── mammos-mumag
-        │   └── quickstart.ipynb
         ├── mammos-spindynamics
         │   └── quickstart.ipynb
-        └── mammos-units
+        ├── mammos-units
+        │   ├── example.ipynb
+        │   └── quickstart.ipynb
+        └── tommos-adapter
             ├── example.ipynb
-            └── quickstart.ipynb
+            ├── singlegrain-tutorial.ipynb
+            └── multigrain-tutorial.ipynb
 
     """
     base_dir = Path("examples")
@@ -149,9 +151,9 @@ def main():
         "mammos-analysis",
         "mammos-dft",
         "mammos-entity",
-        "mammos-mumag",
         "mammos-spindynamics",
         "mammos-units",
+        "tommos-adapter",
     ]:
         module = importlib.import_module(package.replace("-", "_"))
         fetch_notebooks_for_repo(package, module.__version__, "examples", base_dir)
