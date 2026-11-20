@@ -47,10 +47,6 @@ running the examples for the individual packages interactively in the cloud.
      - :doc:`examples/mammos-entity/index`
      - :doc:`api/mammos_entity`
      - |binder-entity-1| |binder-entity-2|
-   * - `mammos-mumag <https://github.com/mammos-project/mammos-mumag>`__
-     - :doc:`examples/mammos-mumag/index`
-     - :doc:`api/mammos_mumag`
-     - |binder-mumag-1| |binder-mumag-2|
    * - `mammos-spindynamics <https://github.com/mammos-project/mammos-spindynamics>`__
      - :doc:`examples/mammos-spindynamics/index`
      - :doc:`api/mammos_spindynamics`
@@ -59,6 +55,10 @@ running the examples for the individual packages interactively in the cloud.
      - :doc:`examples/mammos-units/index`
      - :doc:`api/mammos_units`
      - |binder-units-1| |binder-units-2|
+   * - `tommos-adapter <https://github.com/mammos-project/tommos-adapter>`__
+     - :doc:`examples/tommos-adapter/index`
+     - :doc:`api/tommos_adapter`
+     - |binder-tommos-adapter-1| |binder-tommos-adapter-2|
 
 .. |binder-mammos-1| image:: /_static/badge-launch-binder.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos/latest?urlpath=lab%2Ftree%2Fexamples
@@ -80,10 +80,6 @@ running the examples for the individual packages interactively in the cloud.
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-entity-2| image:: /_static/badge-launch-binder2.svg
           :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-entity/latest?urlpath=lab%2Ftree%2Fexamples
-.. |binder-mumag-1| image:: /_static/badge-launch-binder.svg
-          :target: https://mybinder.org/v2/gh/mammos-project/mammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
-.. |binder-mumag-2| image:: /_static/badge-launch-binder2.svg
-          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-mumag/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-spindynamics-1| image:: /_static/badge-launch-binder.svg
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-spindynamics/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-spindynamics-2| image:: /_static/badge-launch-binder2.svg
@@ -92,6 +88,10 @@ running the examples for the individual packages interactively in the cloud.
           :target: https://mybinder.org/v2/gh/mammos-project/mammos-units/latest?urlpath=lab%2Ftree%2Fexamples
 .. |binder-units-2| image:: /_static/badge-launch-binder2.svg
           :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/mammos-project%2Fmammos-units/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-tommos-adapter-1| image:: /_static/badge-launch-binder.svg
+          :target: https://mybinder.org/v2/gh/mammos-project/tommos-adapter/latest?urlpath=lab%2Ftree%2Fexamples
+.. |binder-tommos-adapter-2| image:: /_static/badge-launch-binder2.svg
+          :target: https://notebooks.mpcdf.mpg.de/binder/v2/gl/tommos-apdater%2Fmammos-units/latest?urlpath=lab%2Ftree%2Fexamples
 
 
 Additional tools
@@ -109,11 +109,11 @@ The MaMMoS framework consists of a collection of packages (see :doc:`design
 <design>` for more details). The metapackage ``mammos`` can be used to install a
 consistent set of these packages.
 
-The package ``mammos-mumag`` depends on ``jax``. To get jax with GPU support you
-will need to manually install ``jax`` with the required optional dependencies
-matching your GPU hardware/software, e.g. for an NVIDIA GPU you may need to
-install ``jax[cuda12]``. For details please refer to the `jax installation
-instructions <https://docs.jax.dev/en/latest/installation.html>`__.
+The micromagnetic software ``tommos`` depends on ``jax``. To get jax with GPU
+support you will need to manually install ``jax`` with the required optional
+dependencies matching your GPU hardware/software, e.g. for an NVIDIA GPU you may
+need to install ``jax[cuda12]``. For details please refer to the `jax
+installation instructions <https://docs.jax.dev/en/latest/installation.html>`__.
 
 .. tab-set::
 
@@ -126,20 +126,19 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``.
 
-      Some examples also require `esys-escript
-      <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
-      install it from conda-forge. On Mac or Windows refer to the esys-escript
-      installation instructions:
+      Some examples also require `Neper <https://neper.info>`__. On Linux and
+      MacOS we can install it from conda-forge. For Windows, refer to the Neper
+      installation instructions.
 
-      - Linux:
+      - Linux/MacOS:
 
         .. code:: shell
 
            pixi init
-           pixi add python=3.11 jupyterlab esys-escript uppasd mammos
+           pixi add python=3.11 jupyterlab neper uppasd mammos
            pixi add --pypi "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
-      - Mac/Windows:
+      - Windows:
 
         .. code:: shell
 
@@ -163,14 +162,13 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
       To conveniently work with the notebook tutorials we install
       ``jupyterlab``.
 
-      Some examples also require `esys-escript
-      <https://github.com/LutzGross/esys-escript.github.io>`__. On linux we can
-      install it from conda-forge. On Mac or Windows refer to the esys-escript
+      Some examples also require `Neper <https://neper.info>`__. On Linux and
+      MacOS we can install it from conda-forge. For Windows, refer to the Neper
       installation instructions.
 
       .. code:: shell
 
-         conda create -n mammos-environment python=3.11 pip jupyterlab esys-escript uppasd mammos
+         conda create -n mammos-environment python=3.11 pip jupyterlab neper uppasd mammos
          conda activate mammos-environment
          pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
@@ -208,10 +206,9 @@ instructions <https://docs.jax.dev/en/latest/installation.html>`__.
         pip install mammos
         pip install "jax[cuda12]"  # assuming an NVIDIA GPU with CUDA 12, see comment above
 
-      Some examples also require `esys-escript
-      <https://github.com/LutzGross/esys-escript.github.io>`__, or `UppASD
+      Some examples also require `Neper <https://neper.info>`__, or `UppASD
       <https://github.com/uppasd/uppasd>`__ which must be installed separately.
-      Please refer to the documentation of esys-escript and UppASD for
+      Please refer to the documentation of Neper and UppASD for
       installation instructions.
 
 .. include:: /downloading-examples.rst

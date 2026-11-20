@@ -47,7 +47,7 @@ To make this ambitious aim tractable, we use the following design strategy:
    (example: ``ubermag``).
    Arrows show which package is used by which other package: e.g., the ``mammos-entity``
    package uses the ``mammos-units`` package (through an ``import``). The
-   ``hard_magnetic_workflow.py`` makes use of the ``mammos-mumag`` package.
+   ``hard_magnetic_workflow.py`` makes use of the ``tommos-adapter`` package.
 
 Framework components
 ~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ all of the components together. The :doc:`mammos framework components <index>` a
 - ``mammos-entity`` providing Entity objects (Quantity and `EMMO <https://emmc.eu/emmo/>`__ ontology label)
 - ``mammos-spindynamics`` providing spindynamics-based magnetic material properties
 - ``mammos-dft`` providing DFT-based magnetic material properties
-- ``mammos-mumag`` providing finite-element micromagnetic hysteresis simulations
+- ``tommos-apdater`` Ubermag adapter for micromagnetic calculator tommos
 - ``mammos-analysis`` providing post-processing tools (hysteresis loop, kuzmin, ...)
 
 Workflows
