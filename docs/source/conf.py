@@ -100,6 +100,12 @@ numfig_format = {
 nb_execution_mode = os.environ.get("NB_EXECUTION_MODE", "off")
 nb_execution_in_temp = True
 nb_execution_timeout = -1
+# Static pages have no kernel, so the interactive anywidget view of an
+# EntityCollection cannot load its lazy children. Rank it below text/html to
+# use the static tree from EntityCollection._repr_html_.
+nb_mime_priority_overrides = [
+    ("html", "application/vnd.jupyter.widget-view+json", 35),
+]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
