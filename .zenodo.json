@@ -35,13 +35,6 @@
   "upload_type": "software",
   "license": "mit",
   "language": "eng",
-  "keywords": [
-    "magnetic materials",
-    "multiphysics",
-    "multiscale modeling",
-    "simulation",
-    "MaMMoS"
-  ],
   "grants": [
     {
       "id": "10.13039/501100000780::101135546"
