@@ -57,12 +57,12 @@ doi: [10.1109/TMAG.2026.3689962](https://doi.org/10.1109/TMAG.2026.3689962).
 The software is also archived on Zenodo. To cite it independently of a specific
 release, use the Concept DOI:
 
-M. Adams et al., *mammos* [Software], Zenodo, 2025,
+H. Fangohr et al., *mammos* [Software], Zenodo, 2025,
 doi: [10.5281/zenodo.15756441](https://doi.org/10.5281/zenodo.15756441).
 
 ```bibtex
 @software{mammos_zenodo,
-  author={Adams, Michael and Petrocchi, Andrea and Pathak, Swapneel Amit and Lang, Martin and Holt, Samuel and Fangohr, Hans},
+  author={Fangohr, Hans and Holt, Samuel J. R. and Lang, Martin and Pathak, Swapneel and Petrocchi, Andrea and Adams, Michael and Hortschitz, Wilfried and Pile, Santa and Vishina, Alena and Nur Hasan, M. and Marchant, Georgia A. and Colnaghi, Timoteo and Winkler, Christina and Winkler, Jonas and Rigaut, William and Devillers, Thibaut and Berre, Pierre Le and Rahi, Camille and Dempsey, Nora M. and Woodcock, Thomas G. and Marek, Andreas and Herper, Heike C. and Schrefl, Thomas},
   title={mammos},
   year={2025},
   publisher={Zenodo},
