@@ -1,0 +1,126 @@
+{
+  "creators": [
+    {
+      "name": "Fangohr, Hans",
+      "orcid": "0000-0001-5494-7193",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter, European XFEL GmbH, University of Southampton"
+    },
+    {
+      "name": "Holt, Samuel J. R.",
+      "orcid": "0000-0003-3323-8958",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter"
+    },
+    {
+      "name": "Lang, Martin",
+      "orcid": "0000-0001-7104-7867",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter"
+    },
+    {
+      "name": "Pathak, Swapneel",
+      "orcid": "0000-0003-3840-955X",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter"
+    },
+    {
+      "name": "Petrocchi, Andrea",
+      "orcid": "0009-0005-1867-6732",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter"
+    },
+    {
+      "name": "Adams, Michael",
+      "orcid": "0000-0001-9269-8087",
+      "affiliation": "Max Planck Institute for the Structure and Dynamics of Matter"
+    },
+    {
+      "name": "Hortschitz, Wilfried",
+      "orcid": "0000-0003-2950-642X",
+      "affiliation": "University for Continuing Education Krems"
+    },
+    {
+      "name": "Pile, Santa",
+      "orcid": "0000-0001-7854-847X",
+      "affiliation": "University for Continuing Education Krems"
+    },
+    {
+      "name": "Vishina, Alena",
+      "affiliation": "Uppsala University"
+    },
+    {
+      "name": "Nur Hasan, M.",
+      "affiliation": "Uppsala University"
+    },
+    {
+      "name": "Marchant, Georgia A.",
+      "affiliation": "Uppsala University"
+    },
+    {
+      "name": "Colnaghi, Timoteo",
+      "orcid": "0000-0002-2380-7128",
+      "affiliation": "Max Planck Computing and Data Facility"
+    },
+    {
+      "name": "Winkler, Christina",
+      "affiliation": "Max Planck Computing and Data Facility"
+    },
+    {
+      "name": "Winkler, Jonas",
+      "orcid": "0009-0000-7815-5916",
+      "affiliation": "Leibniz Institute for Solid State and Materials Research Dresden"
+    },
+    {
+      "name": "Rigaut, William",
+      "affiliation": "Institut Néel, Université Grenoble Alpes"
+    },
+    {
+      "name": "Devillers, Thibaut",
+      "affiliation": "Institut Néel, Université Grenoble Alpes"
+    },
+    {
+      "name": "Berre, Pierre Le",
+      "orcid": "0009-0008-9045-8416",
+      "affiliation": "Institut Néel, Université Grenoble Alpes"
+    },
+    {
+      "name": "Rahi, Camille",
+      "affiliation": "Institut Néel, Université Grenoble Alpes"
+    },
+    {
+      "name": "Dempsey, Nora M.",
+      "affiliation": "Institut Néel, Université Grenoble Alpes"
+    },
+    {
+      "name": "Woodcock, Thomas G.",
+      "orcid": "0000-0003-2351-973X",
+      "affiliation": "Leibniz Institute for Solid State and Materials Research Dresden"
+    },
+    {
+      "name": "Marek, Andreas",
+      "orcid": "0000-0001-5403-7528",
+      "affiliation": "Max Planck Computing and Data Facility"
+    },
+    {
+      "name": "Herper, Heike C.",
+      "orcid": "0000-0001-6159-1244",
+      "affiliation": "Uppsala University"
+    },
+    {
+      "name": "Schrefl, Thomas",
+      "orcid": "0000-0002-0871-0520",
+      "affiliation": "University for Continuing Education Krems"
+    }
+  ],
+  "title": "mammos",
+  "description": "Meta package to install the full MaMMoS simulation suite.",
+  "upload_type": "software",
+  "license": "mit",
+  "language": "eng",
+  "grants": [
+    {
+      "id": "10.13039/501100000780::101135546"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "mammos"
+    }
+  ]
+}
